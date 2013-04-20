@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources version="cm-10.1">
+<!--
+***********************************************************************
+***********************************************************************
+**                            Applications                           **
+***********************************************************************
+***********************************************************************
+ -->
+    <!-- Superuser -->
+    <project name="Superuser" shortname="Superuser" aosp="false">
+        <file filepath="external/koush/Superuser/Superuser/res/values/strings.xml"/>
+    </project>
+    <!-- android_frameworks_base -->
+ 	<project name="android_frameworks_base" shortname="Frameworks base" aosp="true">
+        <file filepath="frameworks/base/core/res/res/values/strings.xml"/>
+        <file filepath="frameworks/base/packages/SystemUI/res/values/strings.xml"/>
+        <file filepath="frameworks/base/core/res/res/values/cm_strings.xml"/>
+        <file filepath="frameworks/base/packages/SystemUI/res/values/cm_strings.xml"/>
+        <skip type="string">alternate_eri_file</skip>
+        <skip type="string">autofill_address_line_1_label_re</skip>
+        <skip type="string">autofill_address_line_1_re</skip>
+        <skip type="string">autofill_address_line_2_re</skip>
+        <skip type="string">autofill_address_line_3_re</skip>
+        <skip type="string">autofill_address_type_same_as_re</skip>
+        <skip type="string">autofill_address_type_use_my_re</skip>
+        <skip type="string">autofill_area_code_notext_re</skip>
+        <skip type="string">autofill_area_code_re</skip>
+        <skip type="string">autofill_attention_ignored_re</skip>
+        <skip type="string">autofill_billing_designator_re</skip>
+        <skip type="string">autofill_card_cvc_re</skip>
+        <skip type="string">autofill_card_ignored_re</skip>
+        <skip type="string">autofill_card_number_re</skip>
+        <skip type="string">autofill_city_re</skip>
+        <skip type="string">autofill_company_re</skip>
+        <skip type="string">autofill_country_code_re</skip>
+        <skip type="string">autofill_country_re</skip>
+        <skip type="string">autofill_email_re</skip>
+        <skip type="string">autofill_expiration_date_re</skip>
+        <skip type="string">autofill_expiration_month_re</skip>
+        <skip type="string">autofill_fax_re</skip>
+        <skip type="string">autofill_first_name_re</skip>
+        <skip type="string">autofill_last_name_re</skip>
+        <skip type="string">autofill_middle_initial_re</skip>
+        <skip type="string">autofill_middle_name_re</skip>
+        <skip type="string">autofill_name_on_card_contextual_re</skip>
+        <skip type="string">autofill_name_on_card_re</skip>
+        <skip type="string">autofill_name_re</skip>
+        <skip type="string">autofill_name_specific_re</skip>
+        <skip type="string">autofill_phone_extension_re</skip>
+        <skip type="string">autofill_phone_prefix_re</skip>
+        <skip type="string">autofill_phone_prefix_separator_re</skip>
+        <skip type="string">autofill_phone_re</skip>
+        <skip type="string">autofill_phone_suffix_re</skip>
+        <skip type="string">autofill_phone_suffix_separator_re</skip>
+        <skip type="string">autofill_region_ignored_re</skip>
+        <skip type="string">autofill_shipping_designator_re</skip>
+        <skip type="string">autofill_state_re</skip>
+        <skip type="string">autofill_username_re</skip>
+        <skip type="string">autofill_zip_4_re</skip>
+        <skip type="string">autofill_zip_code_re</skip>
+        <skip type="string">locale_replacement</skip>
+        <skip type="string">network_available_sign_in_detailed</skip>
+        <skip type="string">accessibility_battery_level</skip>
+        <skip type="string">accessibility_data_connection_HP</skip>
+        <skip type="string">bean_dream_settings_cid_summary</skip>
+        <skip type="string">bean_dream_settings_cid_title</skip>
+        <skip type="string">symbol_picker_A</skip>
+        <skip type="string">symbol_picker_C</skip>
+        <skip type="string">symbol_picker_D</skip>
+        <skip type="string">symbol_picker_E</skip>
+        <skip type="string">symbol_picker_G</skip>
+        <skip type="string">symbol_picker_L</skip>
+        <skip type="string">symbol_picker_I</skip>
+        <skip type="string">symbol_picker_N</skip>
+        <skip type="string">symbol_picker_O</skip>
+        <skip type="string">symbol_picker_R</skip>
+        <skip type="string">symbol_picker_S</skip>
+        <skip type="string">symbol_picker_T</skip>
+        <skip type="string">symbol_picker_U</skip>
+        <skip type="string">symbol_picker_Y</skip>
+        <skip type="string">symbol_picker_Z</skip>
+        <skip type="string">symbol_picker_a</skip>
+        <skip type="string">symbol_picker_c</skip>
+        <skip type="string">symbol_picker_d</skip>
+        <skip type="string">symbol_picker_e</skip>
+        <skip type="string">symbol_picker_g</skip>
+        <skip type="string">symbol_picker_i</skip>
+        <skip type="string">symbol_picker_l</skip>
+        <skip type="string">symbol_picker_n</skip>
+        <skip type="string">symbol_picker_o</skip>
+        <skip type="string">symbol_picker_r</skip>
+        <skip type="string">symbol_picker_s</skip>
+        <skip type="string">symbol_picker_t</skip>
+        <skip type="string">symbol_picker_u</skip>
+        <skip type="string">symbol_picker_y</skip>
+        <skip type="string">symbol_picker_z</skip>
+        <skip type="string">symbol_picker_sym</skip>
+        <skip type="string">symbol_picker_slash</skip>
+        <skip type="string">symbol_picker_1</skip>
+        <skip type="string">symbol_picker_2</skip>
+        <skip type="string">symbol_picker_3</skip>
+        <skip type="string">symbol_picker_4</skip>
+        <skip type="string">symbol_picker_5</skip>
+        <skip type="string">symbol_picker_7</skip>
+        <skip type="string">symbol_picker_0</skip>
+        <skip type="string">symbol_picker_dollar</skip>
+        <skip type="string">symbol_picker_percent</skip>
+        <skip type="string">symbol_picker_star</skip>
+        <skip type="string">symbol_picker_minus</skip>
+        <skip type="string">symbol_picker_plus</skip>
+        <skip type="string">symbol_picker_opening_parenthesis</skip>
+        <skip type="string">symbol_picker_closing_parenthesis</skip>
+        <skip type="string">symbol_picker_exclamation</skip>
+        <skip type="string">symbol_picker_quote</skip>
+        <skip type="string">symbol_picker_question</skip>
+        <skip type="string">symbol_picker_comma</skip>
+        <skip type="string">symbol_picker_equal</skip>
+        <skip type="string">symbol_picker_lt</skip>
+        <skip type="string">symbol_picker_gt</skip>
+	</project>
+    <!-- android_packages_apps_Apollo -->
+	<project name="android_packages_apps_Apollo" shortname="Apollo" aosp="false">
+        <file filepath="packages/apps/Apollo/res/values/strings.xml"/>
+        <file filepath="packages/apps/Apollo/res/values/plurals.xml"/>
+	</project>
+    <!-- android_packages_apps_BasicSmsReceiver -->
+    <project name="android_packages_apps_BasicSmsReceiver" shortname="BasicSmsReceiver" aosp="true">
+        <file filepath="packages/apps/BasicSmsReceiver/res/values/strings.xml"/>
+        <file filepath="packages/apps/BasicSmsReceiver/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Bluetooth -->
+    <project name="android_packages_apps_Bluetooth" shortname="Bluetooth" aosp="true">
+        <file filepath="packages/apps/Bluetooth/res/values/strings.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/strings_map.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/strings_pbap.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/cm_strings_map.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/cm_strings_pbap.xml"/>
+    </project>
+    <!-- android_packages_apps_Browser -->
+    <project name="android_packages_apps_Browser" shortname="Browser" aosp="true">
+        <file filepath="packages/apps/Browser/res/values/strings.xml"/>
+        <file filepath="packages/apps/Browser/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_CMFileManager -->	
+    <project name="android_packages_apps_CMFileManager" shortname="CMFileManager" aosp="false">
+        <file filepath="packages/apps/CMFileManager/res/values/strings.xml"/>
+        <skip type="string">root_directory_name</skip>     <!-- AVAILABLE - ADD TRANSLATABLE = FALSE -->
+    </project>
+    <!-- android_packages_apps_CMUpdater -->	
+    <project name="android_packages_apps_CMUpdater" shortname="CMUpdater" aosp="false">
+        <file filepath="packages/apps/CMUpdater/res/values/strings.xml"/>
+    </project>
+    <!-- android_packages_apps_CMWallpapers -->	
+    <project name="android_packages_apps_CMWallpapers" shortname="CMWallpapers" aosp="false">
+        <file filepath="packages/apps/CMWallpapers/res/values/strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Calculator -->	
+    <project name="android_packages_apps_Calculator" shortname="Calculator" aosp="true">
+        <file filepath="packages/apps/Calculator/res/values/strings.xml"/>
+        <file filepath="packages/apps/Calculator/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Calendar -->	
+    <project name="android_packages_apps_Calendar" shortname="Calendar" aosp="true">
+        <file filepath="packages/apps/Calendar/res/values/strings.xml"/>
+        <file filepath="packages/apps/Calendar/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Calendar/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/Calendar/res/values/cm_arrays.xml"/>
+    </project>
+    <!-- android_packages_apps_Camera -->
+    <project name="android_packages_apps_Camera" shortname="Camera" aosp="true">
+        <file filepath="packages/apps/Camera/res/values/strings.xml"/>
+        <file filepath="packages/apps/Camera/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Contacts -->
+    <project name="android_packages_apps_Contacts" shortname="Contacts" aosp="true">
+        <file filepath="packages/apps/Contacts/res/values/strings.xml"/>
+        <file filepath="packages/apps/Contacts/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/Contacts/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Contacts/res/values/cm_arrays.xml"/>
+        <skip type="string">from_account_format</skip>     <!-- AOSP untranslatable - %1$s -->
+        <skip type="string-array">call_stats_nav_items</skip>    <!-- AOSP untranslatable - @string/call_stats_nav -->
+    </project>
+    <!-- android_packages_apps_DSPManager -->	
+    <project name="android_packages_apps_DSPManager" shortname="DSPManager" aosp="false">
+        <file filepath="packages/apps/DSPManager/res/values/strings.xml"/>
+        <file filepath="packages/apps/DSPManager/res/values/arrays.xml"/>
+        <skip type="string">app_name</skip>    <!-- ASK ABOUT THAT -->
+    </project>
+    <!-- android_packages_apps_DeskClock -->
+    <project name="android_packages_apps_DeskClock" shortname="DeskClock" aosp="true">
+        <file filepath="packages/apps/DeskClock/res/values/arrays.xml"/>
+		<file filepath="packages/apps/DeskClock/res/values/strings.xml"/>
+        <file filepath="packages/apps/DeskClock/res/values/cm_arrays.xml"/>
+		<file filepath="packages/apps/DeskClock/res/values/cm_strings.xml"/>
+        <skip type="string">control_set_alarm_with_existing</skip>     <!-- AOSP untranslatable - %s -->
+    </project>
+    <!-- android_packages_apps_Email -->	
+    <project name="android_packages_apps_Email" shortname="Email" aosp="true">
+		<file filepath="packages/apps/Email/res/values/strings.xml"/>
+		<file filepath="packages/apps/Email/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Gallery2 -->	
+    <project name="android_packages_apps_Gallery2" shortname="Gallery2" aosp="true">
+        <file filepath="packages/apps/Gallery2/res/values/filtershow_strings.xml"/>
+		<file filepath="packages/apps/Gallery2/res/values/photoeditor_strings.xml"/>
+		<file filepath="packages/apps/Gallery2/res/values/strings.xml"/>
+        <file filepath="packages/apps/Gallery2/res/values/cm_filtershow_strings.xml"/>
+		<file filepath="packages/apps/Gallery2/res/values/cm_photoeditor_strings.xml"/>
+		<file filepath="packages/apps/Gallery2/res/values/cm_strings.xml"/>
+        <skip type="string">aspectOriginal_effect</skip>    <!-- AOSP untranslatable - @android/original -->
+        <skip type="string">history_original</skip>         <!-- AOSP untranslatable - @android/original -->
+        <skip type="string">original_picture_text</skip>    <!-- AOSP untranslatable - @android/original -->
+        <skip type="string">crop</skip>
+        <skip type="string">rotate</skip>
+        <skip type="string">saturation</skip>
+        <skip type="string">straighten</skip>
+        <skip type="string">vignette</skip>
+        <skip type="string">done</skip>
+        <skip type="string">save</skip>
+        <skip type="string">redeye</skip>
+    </project>
+    <!-- android_packages_apps_HTMLViewer -->	
+    <project name="android_packages_apps_HTMLViewer" shortname="HTMLViewer" aosp="true">
+        <file filepath="packages/apps/HTMLViewer/res/values/strings.xml"/>
+        <file filepath="packages/apps/HTMLViewer/res/values/cm_strings.xml"/>
+    </project>	
+    <!-- android_packages_apps_KeyChain -->
+    <project name="android_packages_apps_KeyChain" shortname="KeyChain" aosp="true">
+        <file filepath="packages/apps/KeyChain/res/values/strings.xml"/>
+    </project>
+    <!-- android_packages_apps_LegacyCamera -->
+    <project name="android_packages_apps_LegacyCamera" shortname="LegacyCamera" aosp="true">
+		<file filepath="packages/apps/LegacyCamera/res/values/strings.xml"/>
+		<file filepath="packages/apps/LegacyCamera/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_LockClock -->
+    <project name="android_packages_apps_LockClock" shortname="LockClock" aosp="false">
+        <file filepath="packages/apps/LockClock/res/values/strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Mms -->
+    <project name="android_packages_apps_Mms" shortname="Mms" aosp="true">
+        <file filepath="packages/apps/Mms/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Mms/res/values/strings.xml"/>
+        <file filepath="packages/apps/Mms/res/values/cm_arrays.xml"/>
+        <file filepath="packages/apps/Mms/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Nfc -->
+    <project name="android_packages_apps_Nfc" shortname="Nfc" aosp="true">
+        <file filepath="packages/apps/Nfc/res/values/strings.xml"/>
+        <file filepath="packages/apps/Nfc/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_PackageInstaller -->
+    <project name="android_packages_apps_PackageInstaller" shortname="PackageInstaller" aosp="true">
+        <file filepath="packages/apps/PackageInstaller/res/values/strings.xml"/>
+        <file filepath="packages/apps/PackageInstaller/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Phone -->
+    <project name="android_packages_apps_Phone" shortname="Phone" aosp="true">
+        <file filepath="packages/apps/Phone/res/values/strings.xml"/>
+        <file filepath="packages/apps/Phone/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/Phone/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Phone/res/values/cm_arrays.xml"/>
+    </project>
+    <!-- android_packages_apps_QuickSearchBox -->
+    <project name="android_packages_apps_QuickSearchBox" shortname="QuickSearchBox" aosp="true">
+        <file filepath="packages/apps/QuickSearchBox/res/values/strings.xml"/>
+        <file filepath="packages/apps/QuickSearchBox/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_SamsungServiceMode -->
+    <project name="android_packages_apps_SamsungServiceMode" shortname="SamsungServiceMode" aosp="false">
+        <file filepath="packages/apps/SamsungServiceMode/res/values/strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Settings -->
+	<project name="android_packages_apps_Settings" shortname="Settings" aosp="true">
+        <file filepath="packages/apps/Settings/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Settings/res/values/strings.xml"/>
+        <file filepath="packages/apps/Settings/res/values/cm_arrays.xml"/>
+        <file filepath="packages/apps/Settings/res/values/cm_strings.xml"/>
+        <skip type="string-array">emergency_tone_values</skip>
+        <skip type="string-array">tts_pitch_values</skip>
+        <skip type="string-array">tts_rate_values</skip>
+        <skip type="string-array">wifi_frequency_band_values</skip>
+        <skip type="string-array">wifi_security</skip>
+        <skip type="string-array">wifi_security_no_eap</skip>
+        <skip type="string-array">wifi_sleep_policy_values</skip>
+        <skip type="string">battery_stats_last_duration</skip>
+        <skip type="string">debug_intent_sender_label</skip>
+        <skip type="string">default_date_format</skip>
+        <skip type="string">font_size_preview_text</skip>
+        <skip type="string">intent_sender_data_label</skip>
+        <skip type="string">lock_pattern_size_3</skip>
+        <skip type="string">lock_pattern_size_4</skip>
+        <skip type="string">lock_pattern_size_5</skip>
+        <skip type="string">lock_pattern_size_6</skip>
+        <skip type="string">lockpattern_need_to_unlock_footer</skip>
+        <skip type="string">lockpattern_need_to_unlock_wrong_footer</skip>
+        <skip type="string">percentage</skip>
+        <skip type="string">service_client_name</skip>
+        <skip type="string">service_process_name</skip>
+        <skip type="string">status_imei</skip>
+        <skip type="string">status_imei_sv</skip>
+        <skip type="string">sync_item_title</skip>
+        <skip type="string">testing_sim_toolkit</skip>
+        <skip type="string">wifi_security_eap</skip>
+        <skip type="string">wifi_security_psk_generic</skip>
+        <skip type="string">wifi_security_short_eap</skip>
+        <skip type="string">wifi_security_short_psk_generic</skip>
+        <skip type="string">wifi_security_short_wep</skip>
+        <skip type="string">wifi_security_short_wpa</skip>
+        <skip type="string">wifi_security_short_wpa2</skip>
+        <skip type="string">wifi_security_short_wpa_wpa2</skip>
+        <skip type="string">wifi_security_wep</skip>
+        <skip type="string">wifi_security_wpa</skip>
+        <skip type="string">wifi_security_wpa2</skip>
+        <skip type="string">wifi_security_wpa_wpa2</skip>
+        <skip type="string">wifi_mhz</skip>
+	</project>
+    <!-- android_packages_apps_SoundRecorder -->
+    <project name="android_packages_apps_SoundRecorder" shortname="SoundRecorder" aosp="true">
+        <file filepath="packages/apps/SoundRecorder/res/values/strings.xml"/>
+        <file filepath="packages/apps/SoundRecorder/res/values/cm_strings.xml"/>
+        <skip type="string">audio_db_title_format</skip>
+    </project>
+    <!-- android_packages_apps_Stk -->
+    <project name="android_packages_apps_Stk" shortname="Stk" aosp="true">
+        <file filepath="packages/apps/Stk/res/values/strings.xml"/>
+        <file filepath="packages/apps/Stk/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Tag -->
+    <project name="android_packages_apps_Tag" shortname="Tag" aosp="true">
+        <file filepath="packages/apps/Tag/res/values/strings.xml"/>
+        <file filepath="packages/apps/Tag/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Torch -->
+    <project name="android_packages_apps_Torch" shortname="Torch" aosp="false">
+        <file filepath="packages/apps/Torch/res/values/strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Trebuchet -->
+    <project name="android_packages_apps_Trebuchet" shortname="Trebuchet" aosp="true">
+        <file filepath="packages/apps/Trebuchet/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Trebuchet/res/values/strings.xml"/>
+        <file filepath="packages/apps/Trebuchet/res/values/cm_arrays.xml"/>
+        <file filepath="packages/apps/Trebuchet/res/values/cm_strings.xml"/>
+        <skip type="string">application_copyright</skip>
+        <skip type="string">application_version</skip>
+        <skip type="string">dummy_custom_cling_error_message</skip>
+    </project>
+    <!-- android_packages_apps_VideoEditor -->
+    <project name="android_packages_apps_VideoEditor" shortname="VideoEditor" aosp="true">
+        <file filepath="packages/apps/VideoEditor/res/values/strings.xml"/>
+        <file filepath="packages/apps/VideoEditor/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_VoiceDialer -->
+    <project name="android_packages_apps_VoiceDialer" shortname="VoiceDialer" aosp="true">
+        <file filepath="packages/apps/VoiceDialer/res/values/strings.xml"/>
+        <file filepath="packages/apps/VoiceDialer/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_inputmethods_LatinIME -->
+    <project name="android_packages_inputmethods_LatinIME" shortname="LatinIME" aosp="true" aosp="true">
+        <file filepath="packages/inputmethods/LatinIME/java/res/values/strings.xml"/>
+        <file filepath="packages/inputmethods/LatinIME/java/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_screensavers_Basic -->
+    <project name="android_packages_screensavers_Basic" shortname="Screensavers Basic" aosp="true">
+        <file filepath="packages/screensavers/Basic/res/values/strings.xml"/>
+        <file filepath="packages/screensavers/Basic/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_screensavers_PhotoTable -->
+    <project name="android_packages_screensavers_PhotoTable" shortname="Screensavers PhotoTable" aosp="true">
+        <file filepath="packages/screensavers/PhotoTable/res/values/strings.xml"/>
+        <file filepath="packages/screensavers/PhotoTable/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_Basic -->
+    <project name="android_packages_wallpapers_Basic" shortname="Wallpapers Basic" aosp="true">
+        <file filepath="packages/wallpapers/Basic/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/Basic/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_Galaxy4 -->
+    <project name="android_packages_wallpapers_Galaxy" shortname="Wallpapers Galaxy" aosp="true">
+        <file filepath="packages/wallpapers/Galaxy/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/Galaxy/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_HoloSpiral -->
+    <project name="android_packages_wallpapers_HoloSpiral" shortname="Wallpapers HoloSpiral" aosp="true">
+        <file filepath="packages/wallpapers/HoloSpiral/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/HoloSpiral/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_LivePicker -->
+    <project name="android_packages_wallpapers_LivePicker" shortname="Wallpapers LivePicker" aosp="true">
+        <file filepath="packages/wallpapers/LivePicker/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/LivePicker/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_MagicSmoke -->
+    <project name="android_packages_wallpapers_MagicSmoke" shortname="Wallpapers MagicSmoke" aosp="true">
+        <file filepath="packages/wallpapers/MagicSmoke/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/MagicSmoke/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_MusicVisualization -->
+    <project name="android_packages_wallpapers_MusicVisualization" shortname="Wallpapers MusicVisualization" aosp="true">
+        <file filepath="packages/wallpapers/MusicVisualization/res/values/cube.xml"/>
+        <file filepath="packages/wallpapers/MusicVisualization/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/MusicVisualization/res/values/cm_cube.xml"/>
+        <file filepath="packages/wallpapers/MusicVisualization/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_NoiseField -->
+    <project name="android_packages_wallpapers_NoiseField" shortname="Wallpapers NoiseField" aosp="true">
+        <file filepath="packages/wallpapers/NoiseField/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/NoiseField/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_PhaseBeam -->
+    <project name="android_packages_wallpapers_PhaseBeam" shortname="Wallpapers PhaseBeam" aosp="true">
+        <file filepath="packages/wallpapers/PhaseBeam/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/PhaseBeam/res/values/cm_strings.xml"/>
+    </project>
+    <!-- themes-platform-vendor-tmobile-apps-ThemeChooser -->
+    <project name="themes-platform-vendor-tmobile-apps-ThemeChooser" shortname="ThemeChooser" aosp="false">
+        <file filepath="vendor/tmobile/apps/ThemeChooser/res/values/strings.xml"/>
+    </project>
+    <!-- android_vendor_tmobile_providers_ThemeManager -->
+    <project name="android_vendor_tmobile_providers_ThemeManager" shortname="ThemeManager" aosp="false">
+        <file filepath="vendor/tmobile/providers/ThemeManager/res/values/strings.xml"/>
+    </project>
+
+<!--
+***********************************************************************
+***********************************************************************
+**                            Device parts                           **
+***********************************************************************
+***********************************************************************
+ -->
+
+    <!-- ASUS Transformer Pad - tf300t -->
+    <project name="android_device_asus_tf300t" shortname="Asus tf300t" aosp="false">
+        <file filepath="device/asus/tf300t/AutoParts/res/values/arrays.xml"/>
+        <file filepath="device/asus/tf300t/AutoParts/res/values/strings.xml"/>
+    </project>
+    <!-- ASUS Transformer Pad Infinity - tf700t -->
+    <project name="android_device_asus_tf700t" shortname="Asus tf700t" aosp="false">
+        <file filepath="device/asus/tf700t/AutoParts/res/values/arrays.xml"/>
+        <file filepath="device/asus/tf700t/AutoParts/res/values/strings.xml"/>
+    </project>
+    <!-- HTC One X - endeavoru -->
+    <project name="android_device_htc_endeavoru" shortname="HTC endeavoru" aosp="false">
+        <file filepath="device/htc/endeavoru/EndeavoruParts/res/values/arrays.xml"/>
+        <file filepath="device/htc/endeavoru/EndeavoruParts/res/values/strings.xml"/>
+    </project>
+    <!-- MOTOROLA Xoom - wingray -->
+    <project name="android_device_moto_wingray" shortname="Motorola wingray" aosp="false">
+        <file filepath="device/moto/wingray/StingrayParts/res/values/arrays.xml"/>
+        <file filepath="device/moto/wingray/StingrayParts/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Nexus S - crespo -->
+    <project name="android_device_samsung_crespo" shortname="Samsung  crespo" aosp="false">
+	    <file filepath="device/samsung/CrespoParts/res/values/arrays.xml"/>
+	    <file filepath="device/samsung/CrespoParts/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Epic 4G - epicmtd -->
+    <project name="android_device_samsung_epicmtd" shortname="Samsung epicmtd" aosp="false">
+	    <file filepath="device/samsung/Epicmtd/res/values/arrays.xml"/>       
+	    <file filepath="device/samsung/Epicmtd/res/values/strings.xml"/>       
+    </project>
+    <!-- SAMSUNG Galaxy S2 ATT - i777 -->
+    <project name="android_device_samsung_i777" shortname="Samsung i777" aosp="false">
+	    <file filepath="device/samsung/i777/DeviceSettings/res/values/arrays.xml"/>       
+	    <file filepath="device/samsung/i777/DeviceSettings/res/values/strings.xml"/>       
+    </project>
+    <!-- SAMSUNG Galaxy S II - i9100 -->
+    <project name="android_device_samsung_i9100" shortname="Samsung i9100" aosp="false">
+        <file filepath="device/samsung/i9100/DeviceSettings/res/values/arrays.xml"/>       
+        <file filepath="device/samsung/i9100/DeviceSettings/res/values/strings.xml"/>       
+    </project>
+    <!-- SAMSUNG Galaxy S II (G) - i9100g -->
+    <project name="android_device_samsung_i9100g" shortname="Samsung i9100g" aosp="false">
+        <file filepath="device/samsung/i9100g/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/i9100g/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Galaxy R - i9103 -->
+    <project name="android_device_samsung_i9103" shortname="Samsung i9103" aosp="false">
+        <file filepath="device/samsung/i9103/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/i9103/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Galaxy S III - i9300 -->
+    <project name="android_device_samsung_i9300" shortname="Samsung i9300" aosp="false">
+        <file filepath="device/samsung/i9300/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/i9300/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Galaxy S III 4G - i9305 -->
+    <project name="android_device_samsung_i9305" shortname="Samsung i9305" aosp="false">
+	    <file filepath="device/samsung/i9305/DeviceSettings/res/values/arrays.xml"/>
+       	<file filepath="device/samsung/i9305/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Galaxy Note - N7000 -->
+    <project name="android_device_samsung_n7000" shortname="Samsung N7000" aosp="false">
+        <file filepath="device/samsung/n7000/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/n7000/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Galaxy Note II - N7100 -->
+    <project name="android_device_samsung_n7100" shortname="Samsung N7100" aosp="false">
+        <file filepath="device/samsung/n7100/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/n7100/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Galaxy Tab2 10.1 -->
+    <project name="android_device_samsung_p5100" shortname="Samsung P5100" aosp="false">
+        <file filepath="device/samsung/p5100/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/p5100/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG t0lte -->
+    <project name="android_device_samsung_t0lte" shortname="Samsung t0lte" aosp="false">
+        <file filepath="device/samsung/t0lte/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/t0lte/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG t0ltecdma -->
+    <project name="android_device_samsung_t0ltecdma" shortname="Samsung t0ltecdma" aosp="false">
+        <file filepath="device/samsung/t0ltecdma/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/t0ltecdma/DeviceSettings/res/values/strings.xml"/>
+    </project>
+</resources>
