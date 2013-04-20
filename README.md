@@ -8,6 +8,6 @@ Simply in your root source folder
 
 Code :
 
-wget -P .repo/local_manifests/  https://raw.github.com/DelphinPETER/TranslationTools/cm-10.1/repo_file/ttools.xml
+wget -P .repo/local_manifests/  https://raw.github.com/DelphinPETER/TranslationTools/cm-10.1/repo_file/TranslationTools.xml
 
 repo sync
