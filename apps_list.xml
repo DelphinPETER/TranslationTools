@@ -172,6 +172,7 @@
     <project name="android_packages_apps_Camera" shortname="Camera" aosp="true">
         <file filepath="packages/apps/Camera/res/values/strings.xml"/>
         <file filepath="packages/apps/Camera/res/values/cm_strings.xml"/>
+        <skip type="string">pref_camera_hdr_default</skip>    <!-- AOSP untranslatable - @string/setting_off_value -->
     </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" shortname="Contacts" aosp="true">
