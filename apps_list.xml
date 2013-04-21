@@ -146,7 +146,7 @@
     <!-- android_packages_apps_CMFileManager -->	
     <project name="android_packages_apps_CMFileManager" shortname="CMFileManager" aosp="false">
         <file filepath="packages/apps/CMFileManager/res/values/strings.xml"/>
-        <skip type="string">root_directory_name</skip>     <!-- AVAILABLE - ADD TRANSLATABLE = FALSE -->
+        <skip type="string">root_directory_name</skip>                  <!-- AVAILABLE - ADD TRANSLATABLE = FALSE -->
     </project>
     <!-- android_packages_apps_CMUpdater -->	
     <project name="android_packages_apps_CMUpdater" shortname="CMUpdater" aosp="false">
@@ -167,12 +167,15 @@
         <file filepath="packages/apps/Calendar/res/values/arrays.xml"/>
         <file filepath="packages/apps/Calendar/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Calendar/res/values/cm_arrays.xml"/>
+        <skip type="string">preferences_week_start_day_default</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">preferences_home_tz_default</skip>           <!-- AOSP untranslatable -->
+        <skip type="string">tardis</skip>                                <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Camera -->
     <project name="android_packages_apps_Camera" shortname="Camera" aosp="true">
         <file filepath="packages/apps/Camera/res/values/strings.xml"/>
         <file filepath="packages/apps/Camera/res/values/cm_strings.xml"/>
-        <skip type="string">pref_camera_hdr_default</skip>    <!-- AOSP untranslatable - @string/setting_off_value -->
+        <skip type="string">pref_camera_hdr_default</skip>               <!-- AOSP untranslatable - @string/setting_off_value -->
     </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" shortname="Contacts" aosp="true">
@@ -180,14 +183,13 @@
         <file filepath="packages/apps/Contacts/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Contacts/res/values/arrays.xml"/>
         <file filepath="packages/apps/Contacts/res/values/cm_arrays.xml"/>
-        <skip type="string">from_account_format</skip>     <!-- AOSP untranslatable - %1$s -->
-        <skip type="string-array">call_stats_nav_items</skip>    <!-- AOSP untranslatable - @string/call_stats_nav -->
+        <skip type="string">from_account_format</skip>                   <!-- AOSP untranslatable - %1$s -->
+        <skip type="string-array">call_stats_nav_items</skip>            <!-- AOSP untranslatable - @string/call_stats_nav -->
     </project>
     <!-- android_packages_apps_DSPManager -->	
     <project name="android_packages_apps_DSPManager" shortname="DSPManager" aosp="false">
         <file filepath="packages/apps/DSPManager/res/values/strings.xml"/>
         <file filepath="packages/apps/DSPManager/res/values/arrays.xml"/>
-        <skip type="string">app_name</skip>    <!-- ASK ABOUT THAT -->
     </project>
     <!-- android_packages_apps_DeskClock -->
     <project name="android_packages_apps_DeskClock" shortname="DeskClock" aosp="true">
@@ -195,7 +197,7 @@
 		<file filepath="packages/apps/DeskClock/res/values/strings.xml"/>
         <file filepath="packages/apps/DeskClock/res/values/cm_arrays.xml"/>
 		<file filepath="packages/apps/DeskClock/res/values/cm_strings.xml"/>
-        <skip type="string">control_set_alarm_with_existing</skip>     <!-- AOSP untranslatable - %s -->
+        <skip type="string">control_set_alarm_with_existing</skip>       <!-- AOSP untranslatable - %s -->
     </project>
     <!-- android_packages_apps_Email -->	
     <project name="android_packages_apps_Email" shortname="Email" aosp="true">
