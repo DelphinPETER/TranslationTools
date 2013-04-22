@@ -1,36 +1,36 @@
 Translation Tools
 ======
 
-How to add Translation Tools and/or translatable device
+How to add Translation Tools & extra translatable packages
 ------
 
-In your root source folder :
-<blockquote>
-    <p>curl https://raw.github.com/DelphinPETER/TranslationTools/cm-10.1/repo_file/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml</p>
-    <p>repo sync</p>
-</blockquote>
+In your root source folder:
 
-When Translation Tools will download, you will find it in SOURCE_FOLDER/tools/TranslationTools/binary
+    curl https://raw.github.com/DelphinPETER/TranslationTools/cm-10.1/repo_file/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml
+    repo sync
 
-If you want all translatable device
+When the sync is finished, you can find Translation Tools under SOURCE_FOLDER/tools/TranslationTools/binary
 
-(WARNING : if you are already download device with "breakfast", maybe you need make a "repo init")
-<blockquote>
-    <p>curl https://raw.github.com/DelphinPETER/TranslationTools/cm-10.1/repo_file/device.xml > .repo/local_manifests/device.xml</p>
-    <p>repo sync</p>
-</blockquote>
+If you want to get all the available CyanogenMod translatable packages that are not synced by default (not included in the default CM manifest), execute:
 
-To remove Translation Tools or device
+    curl https://raw.github.com/DelphinPETER/TranslationTools/cm-10.1/repo_file/cm_translations.xml > .repo/local_manifests/cm_translations.xml
+    repo sync
+
+Hint: if you are already downloaded some device repositories with "breakfast" and have problems syncing, execute:
+
+    rm ./repo/local_manifests/roomservice.xml
+    repo sync
+    breakfast <device>
+
+How to remove Translation Tools & extra translatable packages
 -----
 
-Remove Translation Tools :
-<blockquote>
-    <p>rm .repo/local_manifests/TranslationTools.xml</p>
-    <p>repo sync</p>
-</blockquote>
+Remove Translation Tools:
 
-Remove device :
-<blockquote>
-    <p>rm .repo/local_manifests/device.xml</p>
-    <p>repo sync</p>
-</blockquote>
+    rm .repo/local_manifests/TranslationTools.xml
+    repo sync
+
+Remove extra packages:
+
+    rm .repo/local_manifests/cm_translations.xml
+    repo sync
