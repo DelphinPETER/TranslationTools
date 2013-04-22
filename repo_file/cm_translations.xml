@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Extra packages not included in the main manifest
+       WARNING: Cid is not working yet for these repositories. -->
+  <project path="packages/apps/FmRadio" name="CyanogenMod/android_packages_apps_FMRadio" revision="jellybean" />
+  <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" />
 
   <!-- Device repositories that can be translated -->
   <project path="device/asus/tf300t" name="CyanogenMod/android_device_asus_tf300t" />
