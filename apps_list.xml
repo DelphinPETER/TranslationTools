@@ -16,7 +16,11 @@
         <file filepath="frameworks/base/core/res/res/values/strings.xml"/>
         <file filepath="frameworks/base/packages/SystemUI/res/values/strings.xml"/>
         <file filepath="frameworks/base/core/res/res/values/cm_strings.xml"/>
+        <file filepath="frameworks/base/core/res/res/values/cm_arrays.xml"/>
+        <file filepath="frameworks/base/core/res/res/values/cm_plurals.xml"/>
         <file filepath="frameworks/base/packages/SystemUI/res/values/cm_strings.xml"/>
+        <file filepath="frameworks/base/packages/SystemUI/res/values/cm_arrays.xml"/>
+        <file filepath="frameworks/base/packages/SystemUI/res/values/cm_plurals.xml"/>
         <skip type="string">alternate_eri_file</skip>
         <skip type="string">autofill_address_line_1_label_re</skip>
         <skip type="string">autofill_address_line_1_re</skip>
@@ -180,8 +184,8 @@
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" shortname="Contacts" aosp="true">
         <file filepath="packages/apps/Contacts/res/values/strings.xml"/>
-        <file filepath="packages/apps/Contacts/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Contacts/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Contacts/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Contacts/res/values/cm_arrays.xml"/>
         <skip type="string">from_account_format</skip>                   <!-- AOSP untranslatable - %1$s -->
         <skip type="string-array">call_stats_nav_items</skip>            <!-- AOSP untranslatable - @string/call_stats_nav -->
@@ -203,6 +207,10 @@
     <project name="android_packages_apps_Email" shortname="Email" aosp="true">
 		<file filepath="packages/apps/Email/res/values/strings.xml"/>
 		<file filepath="packages/apps/Email/res/values/cm_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_FmRadio -->
+    <project name="android_packages_apps_FmRadio" shortname="FmRadio" aosp="false">
+		<file filepath="packages/apps/FmRadio/res/values/strings.xml"/>
     </project>
     <!-- android_packages_apps_Gallery2 -->	
     <project name="android_packages_apps_Gallery2" shortname="Gallery2" aosp="true">
@@ -247,6 +255,7 @@
         <file filepath="packages/apps/Mms/res/values/arrays.xml"/>
         <file filepath="packages/apps/Mms/res/values/strings.xml"/>
         <file filepath="packages/apps/Mms/res/values/cm_arrays.xml"/>
+        <file filepath="packages/apps/Mms/res/values/cm_plurals.xml"/>
         <file filepath="packages/apps/Mms/res/values/cm_strings.xml"/>
     </project>
     <!-- android_packages_apps_Nfc -->
@@ -262,8 +271,8 @@
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone" shortname="Phone" aosp="true">
         <file filepath="packages/apps/Phone/res/values/strings.xml"/>
-        <file filepath="packages/apps/Phone/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Phone/res/values/arrays.xml"/>
+        <file filepath="packages/apps/Phone/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Phone/res/values/cm_arrays.xml"/>
     </project>
     <!-- android_packages_apps_QuickSearchBox -->
@@ -433,13 +442,21 @@
 ***********************************************************************
 ***********************************************************************
  -->
-
+    <!-- ACER - t30-common -->
+    <project name="android_device_acer_t30-common" shortname="Acer t30-common" aosp="false">
+        <file filepath="device/acer/t30-common/DeviceParts/res/values/arrays.xml"/>
+        <file filepath="device/acer/t30-common/DeviceParts/res/values/strings.xml"/>
+    </project>
+    <!-- ACER - t30-common -->
+    <project name="android_device_amazon_otter-common" shortname="Amazon Otter-common" aosp="false">
+        <file filepath="device/amazon/otter-common/OtterParts/res/values"/>
+    </project>
     <!-- ASUS Transformer Pad - tf300t -->
     <project name="android_device_asus_tf300t" shortname="Asus tf300t" aosp="false">
         <file filepath="device/asus/tf300t/AutoParts/res/values/arrays.xml"/>
         <file filepath="device/asus/tf300t/AutoParts/res/values/strings.xml"/>
     </project>
-    <!-- ASUS Transformer Pad Infinity - tf700t -->
+    <!-- ASUS Transformer Pad - tf700t -->
     <project name="android_device_asus_tf700t" shortname="Asus tf700t" aosp="false">
         <file filepath="device/asus/tf700t/AutoParts/res/values/arrays.xml"/>
         <file filepath="device/asus/tf700t/AutoParts/res/values/strings.xml"/>
@@ -449,20 +466,24 @@
         <file filepath="device/htc/endeavoru/EndeavoruParts/res/values/arrays.xml"/>
         <file filepath="device/htc/endeavoru/EndeavoruParts/res/values/strings.xml"/>
     </project>
+    <!-- MOTOROLA - omap4-common -->
+    <project name="android_device_motorola_omap4-common" shortname="Moto omap4-common" aosp="false">
+        <file filepath="device/motorola/omap4-common/OMAP4Parts/res/values/strings.xml"/>
+    </project>
     <!-- MOTOROLA Xoom - wingray -->
     <project name="android_device_moto_wingray" shortname="Motorola wingray" aosp="false">
         <file filepath="device/moto/wingray/StingrayParts/res/values/arrays.xml"/>
         <file filepath="device/moto/wingray/StingrayParts/res/values/strings.xml"/>
     </project>
-    <!-- SAMSUNG Nexus S - crespo -->
-    <project name="android_device_samsung_crespo" shortname="Samsung  crespo" aosp="false">
-	    <file filepath="device/samsung/CrespoParts/res/values/arrays.xml"/>
-	    <file filepath="device/samsung/CrespoParts/res/values/strings.xml"/>
+    <!-- SAMSUNG aries-common -->
+    <project name="android_device_samsung_aries-common" shortname="Samsung aries-common" aosp="false">
+        <file filepath="device/samsung/aries-common/AriesParts/res/values/arrays.xml"/>
+        <file filepath="device/samsung/aries-common/AriesParts/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Epic 4G - epicmtd -->
     <project name="android_device_samsung_epicmtd" shortname="Samsung epicmtd" aosp="false">
-	    <file filepath="device/samsung/Epicmtd/res/values/arrays.xml"/>       
-	    <file filepath="device/samsung/Epicmtd/res/values/strings.xml"/>       
+	    <file filepath="device/samsung/epicmtd/EpicParts/res/values/arrays.xml"/>
+	    <file filepath="device/samsung/epicmtd/EpicParts/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Galaxy S2 ATT - i777 -->
     <project name="android_device_samsung_i777" shortname="Samsung i777" aosp="false">
@@ -509,14 +530,48 @@
         <file filepath="device/samsung/p5100/DeviceSettings/res/values/arrays.xml"/>
         <file filepath="device/samsung/p5100/DeviceSettings/res/values/strings.xml"/>
     </project>
-    <!-- SAMSUNG t0lte -->
+    <!-- SAMSUNG - msm8660-common -->
+    <project name="android_device_samsung_msm8660-common" shortname="Samsung msm8660-common" aosp="false">
+        <file filepath="device/samsung/msm8660-common/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/msm8660-common/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG - msm8960-common -->
+    <project name="android_device_samsung_msm8960-common" shortname="Samsung msm8960-common" aosp="false">
+        <file filepath="device/samsung/msm8960-common/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/msm8960-common/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG - n80xx-common -->
+    <project name="android_device_samsung_n80xx-common" shortname="Samsung n80xx-common" aosp="false">
+        <file filepath="device/samsung/n80xx-common/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/n80xx-common/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG Nexus S - crespo -->
+    <project name="android_device_samsung_crespo" shortname="Samsung  crespo" aosp="false">
+	    <file filepath="device/samsung/crespo/CrespoParts/res/values/arrays.xml"/>
+	    <file filepath="device/samsung/crespo/CrespoParts/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG p1-common -->
+    <project name="android_device_samsung_p1-common" shortname="Samsung p1-common" aosp="false">
+        <file filepath="device/samsung/p1-common/P1Parts/res/values/arrays.xml"/>
+        <file filepath="device/samsung/p1-common/P1Parts/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG - t0lte -->
     <project name="android_device_samsung_t0lte" shortname="Samsung t0lte" aosp="false">
         <file filepath="device/samsung/t0lte/DeviceSettings/res/values/arrays.xml"/>
         <file filepath="device/samsung/t0lte/DeviceSettings/res/values/strings.xml"/>
     </project>
-    <!-- SAMSUNG t0ltecdma -->
+    <!-- SAMSUNG - t0ltecdma -->
     <project name="android_device_samsung_t0ltecdma" shortname="Samsung t0ltecdma" aosp="false">
         <file filepath="device/samsung/t0ltecdma/DeviceSettings/res/values/arrays.xml"/>
         <file filepath="device/samsung/t0ltecdma/DeviceSettings/res/values/strings.xml"/>
+    </project>
+    <!-- SAMSUNG - tuna -->
+    <project name="android_device_samsung_tuna" shortname="Samsung tuna" aosp="false">
+        <file filepath="device/samsung/tuna/GNexusParts/res/values/arrays.xml"/>
+        <file filepath="device/samsung/tuna/GNexusParts/res/values/strings.xml"/>
+    </project>
+    <!-- Sony - blue-common -->
+    <project name="android_device_sony_blue-common" shortname="Sony blue-common" aosp="false">
+        <file filepath="device/sony/blue-common/XperiaSettings/res/values/strings.xml"/>
     </project>
 </resources>
