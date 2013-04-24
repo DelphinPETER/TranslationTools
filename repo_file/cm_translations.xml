@@ -35,5 +35,5 @@
   <project path="device/samsung/n80xx-common" name="CyanogenMod/android_device_samsung_n80xx-common" />
   <project path="device/samsung/p1-common" name="CyanogenMod/android_device_samsung_p1-common" />
   <project path="device/samsung/tuna" name="CyanogenMod/android_device_samsung_tuna" />
-  <project path="device/sony/blue-common" name="CyanogenMod/android_device_sony_blue-common" />
+  <project path="device/sony/common" name="CyanogenMod/android_device_sony_common" />
 </manifest>

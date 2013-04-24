@@ -570,8 +570,8 @@
         <file filepath="device/samsung/tuna/GNexusParts/res/values/arrays.xml"/>
         <file filepath="device/samsung/tuna/GNexusParts/res/values/strings.xml"/>
     </project>
-    <!-- Sony - blue-common -->
-    <project name="android_device_sony_blue-common" shortname="Sony blue-common" aosp="false">
-        <file filepath="device/sony/blue-common/XperiaSettings/res/values/strings.xml"/>
+    <!-- Sony - common -->
+    <project name="android_device_sony_common" shortname="Sony common" aosp="false">
+        <file filepath="device/sony/common/XperiaSettings/res/values/strings.xml"/>
     </project>
 </resources>
