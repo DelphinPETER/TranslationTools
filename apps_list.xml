@@ -130,8 +130,10 @@
     </project>
     <!-- android_packages_apps_Bluetooth -->
     <project name="android_packages_apps_Bluetooth" shortname="Bluetooth" aosp="true">
+        <file filepath="packages/apps/Bluetooth/res/values/strings.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/strings_map.xml"/>
         <file filepath="packages/apps/Bluetooth/res/values/strings_pbap.xml"/>
-        <file filepath="packages/apps/Bluetooth/res/values/cm_strings_map.xml"/>
+        <file filepath="packages/apps/Bluetooth/res/values/cm_strings.xml"/>
     </project>
     <!-- android_packages_apps_Browser -->
     <project name="android_packages_apps_Browser" shortname="Browser" aosp="true">
