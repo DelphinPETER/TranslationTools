@@ -163,7 +163,6 @@
         <file filepath="packages/apps/Calendar/res/values/strings.xml"/>
         <file filepath="packages/apps/Calendar/res/values/arrays.xml"/>
         <file filepath="packages/apps/Calendar/res/values/cm_strings.xml"/>
-        <file filepath="packages/apps/Calendar/res/values/cm_arrays.xml"/>
         <skip type="string">preferences_week_start_day_default</skip>    <!-- AOSP untranslatable -->
         <skip type="string">preferences_home_tz_default</skip>           <!-- AOSP untranslatable -->
         <skip type="string">tardis</skip>                                <!-- AOSP untranslatable -->
@@ -174,6 +173,7 @@
         <file filepath="packages/apps/Camera/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Camera/res/values/cm_arrays.xml"/>
         <skip type="string">pref_camera_hdr_default</skip>               <!-- AOSP untranslatable - @string/setting_off_value -->
+        <skip type="string">pref_nohands_persistent_default</skip>
     </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" shortname="Contacts" aosp="true">
@@ -229,6 +229,7 @@
     <!-- android_packages_apps_KeyChain -->
     <project name="android_packages_apps_KeyChain" shortname="KeyChain" aosp="true">
         <file filepath="packages/apps/KeyChain/res/values/strings.xml"/>
+        <file filepath="packages/apps/KeyChain/res/values/cm_strings.xml"/>
     </project>
     <!-- android_packages_apps_LegacyCamera -->
     <project name="android_packages_apps_LegacyCamera" shortname="LegacyCamera" aosp="true">
@@ -258,9 +259,11 @@
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone" shortname="Phone" aosp="true">
         <file filepath="packages/apps/Phone/res/values/strings.xml"/>
-        <file filepath="packages/apps/Phone/res/values/array.xml"/>
         <file filepath="packages/apps/Phone/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Phone/res/values/cm_arrays.xml"/>
+        <skip type="string-array">sip_call_options_entries</skip>
+        <skip type="string-array">sip_call_options_wifi_only_entries</skip>
+        <skip type="string-array">sip_send_keepalive_options</skip>
     </project>
     <!-- android_packages_apps_QuickSearchBox -->
     <project name="android_packages_apps_QuickSearchBox" shortname="QuickSearchBox" aosp="true">
@@ -456,13 +459,13 @@
     </project>
     <!-- SAMSUNG Galaxy S2 ATT - i777 -->
     <project name="android_device_samsung_i777" shortname="Samsung i777" aosp="false">
-	    <file filepath="device/samsung/i777/DeviceSettings/res/values/arrays.xml"/>       
-	    <file filepath="device/samsung/i777/DeviceSettings/res/values/strings.xml"/>       
+	    <file filepath="device/samsung/i777/DeviceSettings/res/values/arrays.xml"/>
+	    <file filepath="device/samsung/i777/DeviceSettings/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Galaxy S II - i9100 -->
     <project name="android_device_samsung_i9100" shortname="Samsung i9100" aosp="false">
-        <file filepath="device/samsung/i9100/DeviceSettings/res/values/arrays.xml"/>       
-        <file filepath="device/samsung/i9100/DeviceSettings/res/values/strings.xml"/>       
+        <file filepath="device/samsung/i9100/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/i9100/DeviceSettings/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Galaxy S II (G) - i9100g -->
     <project name="android_device_samsung_i9100g" shortname="Samsung i9100g" aosp="false">
