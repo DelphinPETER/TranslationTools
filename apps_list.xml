@@ -419,7 +419,7 @@
         <file filepath="device/acer/t30-common/DeviceParts/res/values/arrays.xml"/>
         <file filepath="device/acer/t30-common/DeviceParts/res/values/strings.xml"/>
         <skip type="string-array">touch_sensitivity_entries</skip>    <!-- untranslatable - @string/touch_sensitivity -->
-        <skip type="string-array">power_mode_entries"></skip>         <!-- untranslatable - @string/power_mode -->
+        <skip type="string-array">power_mode_entries</skip>           <!-- untranslatable - @string/power_mode -->
     </project>
     <!-- AMAZON - Otter-common -->
     <project name="android_device_amazon_otter-common" shortname="Amazon Otter-common" aosp="false">
