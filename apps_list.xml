@@ -419,9 +419,9 @@
         <file filepath="device/acer/t30-common/DeviceParts/res/values/arrays.xml"/>
         <file filepath="device/acer/t30-common/DeviceParts/res/values/strings.xml"/>
     </project>
-    <!-- ACER - t30-common -->
+    <!-- AMAZON - Otter-common -->
     <project name="android_device_amazon_otter-common" shortname="Amazon Otter-common" aosp="false">
-        <file filepath="device/amazon/otter-common/OtterParts/res/values"/>
+        <file filepath="device/amazon/otter-common/OtterParts/res/values/strings.xml"/>
     </project>
     <!-- ASUS Transformer Pad - tf300t -->
     <project name="android_device_asus_tf300t" shortname="Asus tf300t" aosp="false">
