@@ -157,6 +157,29 @@
     <project name="android_packages_apps_Calculator" shortname="Calculator" aosp="true">
         <file filepath="packages/apps/Calculator/res/values/strings.xml"/>
         <file filepath="packages/apps/Calculator/res/values/cm_strings.xml"/>
+        <skip type="string">digit0</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit1</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit2</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit3</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit4</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit5</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit6</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit7</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit8</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">digit9</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">div</skip>       <!-- AOSP untranslatable -->
+        <skip type="string">dot</skip>       <!-- AOSP untranslatable -->
+        <skip type="string">enter</skip>     <!-- AOSP untranslatable -->
+        <skip type="string">equal</skip>     <!-- AOSP untranslatable -->
+        <skip type="string">factorial</skip> <!-- AOSP untranslatable -->
+        <skip type="string">minus</skip>     <!-- AOSP untranslatable -->
+        <skip type="string">mul</skip>       <!-- AOSP untranslatable -->
+        <skip type="string">pi</skip>        <!-- AOSP untranslatable -->
+        <skip type="string">plus</skip>      <!-- AOSP untranslatable -->
+        <skip type="string">power</skip>     <!-- AOSP untranslatable -->
+        <skip type="string">sqrt</skip>      <!-- AOSP untranslatable -->
+        <skip type="string">leftParen</skip> <!-- AOSP untranslatable -->
+        <skip type="string">rightParen</skip><!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Calendar -->	
     <project name="android_packages_apps_Calendar" shortname="Calendar" aosp="true">
@@ -372,6 +395,7 @@
     <!-- android_packages_wallpapers_Galaxy4 -->
     <project name="android_packages_wallpapers_Galaxy4" shortname="Wallpapers Galaxy4" aosp="true">
         <file filepath="packages/wallpapers/Galaxy4/res/values/strings.xml"/>
+        <file filepath="packages/wallpapers/Galaxy4/res/values/cm_strings.xml"/>
     </project>
     <!-- android_packages_wallpapers_HoloSpiral -->
     <project name="android_packages_wallpapers_HoloSpiral" shortname="Wallpapers HoloSpiral" aosp="true">
