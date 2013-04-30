@@ -376,7 +376,7 @@
         <file filepath="packages/apps/VoiceDialer/res/values/strings.xml"/>
     </project>
     <!-- android_packages_inputmethods_LatinIME -->
-    <project name="android_packages_inputmethods_LatinIME" shortname="LatinIME" aosp="true" aosp="true">
+    <project name="android_packages_inputmethods_LatinIME" shortname="LatinIME" aosp="true">
         <file filepath="packages/inputmethods/LatinIME/java/res/values/strings.xml"/>
         <file filepath="packages/inputmethods/LatinIME/java/res/values/cm_strings.xml"/>
     </project>
