@@ -142,6 +142,8 @@
     </project>
     <!-- android_packages_apps_CMFileManager -->	
     <project name="android_packages_apps_CMFileManager" shortname="CMFileManager" aosp="false">
+        <file filepath="packages/apps/CMFileManager/res/values/arrays.xml"/>
+        <file filepath="packages/apps/CMFileManager/res/values/plurals.xml"/>
         <file filepath="packages/apps/CMFileManager/res/values/strings.xml"/>
         <skip type="string">root_directory_name</skip>                  <!-- AVAILABLE - ADD TRANSLATABLE = FALSE -->
     </project>
