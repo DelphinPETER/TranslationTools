@@ -18,7 +18,7 @@ If you want to get all the available CyanogenMod translatable packages that are 
 
 Hint: if you are already downloaded some device repositories with "breakfast" and have problems syncing, execute:
 
-    rm ./repo/local_manifests/roomservice.xml
+    rm .repo/local_manifests/roomservice.xml
     repo sync
     breakfast <device>
 
