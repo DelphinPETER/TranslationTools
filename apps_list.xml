@@ -149,6 +149,8 @@
     </project>
     <!-- android_packages_apps_CMUpdater -->	
     <project name="android_packages_apps_CMUpdater" shortname="CMUpdater" aosp="false">
+        <file filepath="packages/apps/CMUpdater/res/values/arrays.xml"/>
+        <file filepath="packages/apps/CMUpdater/res/values/plurals.xml"/>
         <file filepath="packages/apps/CMUpdater/res/values/strings.xml"/>
     </project>
     <!-- android_packages_apps_CMWallpapers -->	
