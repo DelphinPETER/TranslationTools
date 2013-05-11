@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources version="cm-10.1">
+
 <!--
 ***********************************************************************
 ***********************************************************************
@@ -12,7 +13,7 @@
         <file filepath="external/koush/Superuser/Superuser/res/values/strings.xml"/>
     </project>
     <!-- android_frameworks_base -->
- 	<project name="android_frameworks_base" shortname="Frameworks base" aosp="true">
+     <project name="android_frameworks_base" shortname="Frameworks base" aosp="true">
         <file filepath="frameworks/base/core/res/res/values/strings.xml"/>
         <file filepath="frameworks/base/core/res/res/values/cm_strings.xml"/>
         <file filepath="frameworks/base/packages/SystemUI/res/values/strings.xml"/>
@@ -114,12 +115,12 @@
         <skip type="string">symbol_picker_equal</skip>
         <skip type="string">symbol_picker_lt</skip>
         <skip type="string">symbol_picker_gt</skip>
-	</project>
+    </project>
     <!-- android_packages_apps_Apollo -->
-	<project name="android_packages_apps_Apollo" shortname="Apollo" aosp="false">
+    <project name="android_packages_apps_Apollo" shortname="Apollo" aosp="false">
         <file filepath="packages/apps/Apollo/res/values/strings.xml"/>
         <file filepath="packages/apps/Apollo/res/values/plurals.xml"/>
-	</project>
+    </project>
     <!-- android_packages_apps_BasicSmsReceiver -->
     <project name="android_packages_apps_BasicSmsReceiver" shortname="BasicSmsReceiver" aosp="true">
         <file filepath="packages/apps/BasicSmsReceiver/res/values/strings.xml"/>
@@ -136,23 +137,23 @@
         <file filepath="packages/apps/Browser/res/values/strings.xml"/>
         <file filepath="packages/apps/Browser/res/values/cm_strings.xml"/>
     </project>
-    <!-- android_packages_apps_CMFileManager -->	
+    <!-- android_packages_apps_CMFileManager -->
     <project name="android_packages_apps_CMFileManager" shortname="CMFileManager" aosp="false">
         <file filepath="packages/apps/CMFileManager/res/values/arrays.xml"/>
         <file filepath="packages/apps/CMFileManager/res/values/plurals.xml"/>
         <file filepath="packages/apps/CMFileManager/res/values/strings.xml"/>
     </project>
-    <!-- android_packages_apps_CMUpdater -->	
+    <!-- android_packages_apps_CMUpdater -->
     <project name="android_packages_apps_CMUpdater" shortname="CMUpdater" aosp="false">
         <file filepath="packages/apps/CMUpdater/res/values/arrays.xml"/>
         <file filepath="packages/apps/CMUpdater/res/values/plurals.xml"/>
         <file filepath="packages/apps/CMUpdater/res/values/strings.xml"/>
     </project>
-    <!-- android_packages_apps_CMWallpapers -->	
+    <!-- android_packages_apps_CMWallpapers -->
     <project name="android_packages_apps_CMWallpapers" shortname="CMWallpapers" aosp="false">
         <file filepath="packages/apps/CMWallpapers/res/values/strings.xml"/>
     </project>
-    <!-- android_packages_apps_Calculator -->	
+    <!-- android_packages_apps_Calculator -->
     <project name="android_packages_apps_Calculator" shortname="Calculator" aosp="true">
         <file filepath="packages/apps/Calculator/res/values/strings.xml"/>
         <file filepath="packages/apps/Calculator/res/values/cm_strings.xml"/>
@@ -180,7 +181,7 @@
         <skip type="string">leftParen</skip> <!-- AOSP untranslatable -->
         <skip type="string">rightParen</skip><!-- AOSP untranslatable -->
     </project>
-    <!-- android_packages_apps_Calendar -->	
+    <!-- android_packages_apps_Calendar -->
     <project name="android_packages_apps_Calendar" shortname="Calendar" aosp="true">
         <file filepath="packages/apps/Calendar/res/values/strings.xml"/>
         <file filepath="packages/apps/Calendar/res/values/arrays.xml"/>
@@ -204,7 +205,7 @@
         <skip type="string">from_account_format</skip>                   <!-- AOSP untranslatable -->
         <skip type="string-array">call_stats_nav_items</skip>            <!-- AOSP untranslatable -->
     </project>
-    <!-- android_packages_apps_DSPManager -->	
+    <!-- android_packages_apps_DSPManager -->
     <project name="android_packages_apps_DSPManager" shortname="DSPManager" aosp="false">
         <file filepath="packages/apps/DSPManager/res/values/strings.xml"/>
         <file filepath="packages/apps/DSPManager/res/values/arrays.xml"/>
@@ -212,25 +213,26 @@
     <!-- android_packages_apps_DeskClock -->
     <project name="android_packages_apps_DeskClock" shortname="DeskClock" aosp="true">
         <file filepath="packages/apps/DeskClock/res/values/array.xml"/>
-		<file filepath="packages/apps/DeskClock/res/values/strings.xml"/>
+        <file filepath="packages/apps/DeskClock/res/values/strings.xml"/>
         <file filepath="packages/apps/DeskClock/res/values/cm_arrays.xml"/>
-		<file filepath="packages/apps/DeskClock/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/DeskClock/res/values/cm_strings.xml"/>
         <skip type="string">control_set_alarm_with_existing</skip>       <!-- AOSP untranslatable -->
     </project>
-    <!-- android_packages_apps_Email -->	
+    <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email" shortname="Email" aosp="true">
-		<file filepath="packages/apps/Email/res/values/strings.xml"/>
-		<file filepath="packages/apps/Email/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/Email/res/values/strings.xml"/>
+        <file filepath="packages/apps/Email/res/values/cm_strings.xml"/>
     </project>
     <!-- android_packages_apps_FmRadio -->
     <project name="android_packages_apps_FmRadio" shortname="FmRadio" aosp="false">
-		<file filepath="packages/apps/FmRadio/res/values/strings.xml"/>
+        <file filepath="packages/apps/FmRadio/res/values/strings.xml"/>
     </project>
-    <!-- android_packages_apps_Gallery2 -->	
+    <!-- android_packages_apps_Gallery2 -->
     <project name="android_packages_apps_Gallery2" shortname="Gallery2" aosp="true">
         <file filepath="packages/apps/Gallery2/res/values/filtershow_strings.xml"/>
-		<file filepath="packages/apps/Gallery2/res/values/photoeditor_strings.xml"/>
-		<file filepath="packages/apps/Gallery2/res/values/strings.xml"/>
+        <file filepath="packages/apps/Gallery2/res/values/photoeditor_strings.xml"/>
+        <file filepath="packages/apps/Gallery2/res/values/strings.xml"/>
+        <file filepath="packages/apps/Gallery2/res/values/cm_strings.xml"/>
         <skip type="string">aspectOriginal_effect</skip>    <!-- AOSP untranslatable -->
         <skip type="string">history_original</skip>         <!-- AOSP untranslatable -->
         <skip type="string">original_picture_text</skip>    <!-- AOSP untranslatable -->
@@ -243,10 +245,10 @@
         <skip type="string">save</skip>
         <skip type="string">redeye</skip>
     </project>
-    <!-- android_packages_apps_HTMLViewer -->	
+    <!-- android_packages_apps_HTMLViewer -->
     <project name="android_packages_apps_HTMLViewer" shortname="HTMLViewer" aosp="true">
         <file filepath="packages/apps/HTMLViewer/res/values/strings.xml"/>
-    </project>	
+    </project>
     <!-- android_packages_apps_KeyChain -->
     <project name="android_packages_apps_KeyChain" shortname="KeyChain" aosp="true">
         <file filepath="packages/apps/KeyChain/res/values/strings.xml"/>
@@ -254,8 +256,8 @@
     </project>
     <!-- android_packages_apps_LegacyCamera -->
     <project name="android_packages_apps_LegacyCamera" shortname="LegacyCamera" aosp="true">
-		<file filepath="packages/apps/LegacyCamera/res/values/strings.xml"/>
-		<file filepath="packages/apps/LegacyCamera/res/values/cm_strings.xml"/>
+        <file filepath="packages/apps/LegacyCamera/res/values/strings.xml"/>
+        <file filepath="packages/apps/LegacyCamera/res/values/cm_strings.xml"/>
     </project>
     <!-- android_packages_apps_LockClock -->
     <project name="android_packages_apps_LockClock" shortname="LockClock" aosp="false">
@@ -282,9 +284,9 @@
         <file filepath="packages/apps/Phone/res/values/strings.xml"/>
         <file filepath="packages/apps/Phone/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Phone/res/values/cm_arrays.xml"/>
-        <skip type="string-array">sip_call_options_entries</skip>
-        <skip type="string-array">sip_call_options_wifi_only_entries</skip>
-        <skip type="string-array">sip_send_keepalive_options</skip>
+        <skip type="string-array">sip_call_options_entries</skip>             <!-- AOSP untranslatable -->
+        <skip type="string-array">sip_call_options_wifi_only_entries</skip>   <!-- AOSP untranslatable -->
+        <skip type="string-array">sip_send_keepalive_options</skip>           <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_QuickSearchBox -->
     <project name="android_packages_apps_QuickSearchBox" shortname="QuickSearchBox" aosp="true">
@@ -295,7 +297,7 @@
         <file filepath="packages/apps/SamsungServiceMode/res/values/strings.xml"/>
     </project>
     <!-- android_packages_apps_Settings -->
-	<project name="android_packages_apps_Settings" shortname="Settings" aosp="true">
+    <project name="android_packages_apps_Settings" shortname="Settings" aosp="true">
         <file filepath="packages/apps/Settings/res/values/arrays.xml"/>
         <file filepath="packages/apps/Settings/res/values/strings.xml"/>
         <file filepath="packages/apps/Settings/res/values/cm_arrays.xml"/>
@@ -332,11 +334,11 @@
         <skip type="string">wifi_security_wpa</skip>                       <!-- AOSP untranslatable -->
         <skip type="string">wifi_security_wpa2</skip>                      <!-- AOSP untranslatable -->
         <skip type="string">wifi_security_wpa_wpa2</skip>                  <!-- AOSP untranslatable -->
-	</project>
+    </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" shortname="SoundRecorder" aosp="true">
         <file filepath="packages/apps/SoundRecorder/res/values/strings.xml"/>
-        <skip type="string">audio_db_title_format</skip>
+        <skip type="string">audio_db_title_format</skip>                   <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Stk -->
     <project name="android_packages_apps_Stk" shortname="Stk" aosp="true">
@@ -355,9 +357,7 @@
         <file filepath="packages/apps/Trebuchet/res/values/strings.xml"/>
         <file filepath="packages/apps/Trebuchet/res/values/cm_arrays.xml"/>
         <file filepath="packages/apps/Trebuchet/res/values/cm_strings.xml"/>
-        <skip type="string">application_copyright</skip>
-        <skip type="string">application_version</skip>
-        <skip type="string">dummy_custom_cling_error_message</skip>
+        <skip type="string">dummy_custom_cling_error_message</skip>        <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_VideoEditor -->
     <project name="android_packages_apps_VideoEditor" shortname="VideoEditor" aosp="true">
@@ -434,8 +434,6 @@
     <project name="android_device_acer_t30-common" shortname="Acer t30-common" aosp="false">
         <file filepath="device/acer/t30-common/DeviceParts/res/values/arrays.xml"/>
         <file filepath="device/acer/t30-common/DeviceParts/res/values/strings.xml"/>
-        <skip type="string-array">touch_sensitivity_entries</skip>    <!-- untranslatable - @string/touch_sensitivity -->
-        <skip type="string-array">power_mode_entries</skip>           <!-- untranslatable - @string/power_mode -->
     </project>
     <!-- AMAZON - Otter-common -->
     <project name="android_device_amazon_otter-common" shortname="Amazon Otter-common" aosp="false">
@@ -472,13 +470,13 @@
     </project>
     <!-- SAMSUNG Epic 4G - epicmtd -->
     <project name="android_device_samsung_epicmtd" shortname="Samsung epicmtd" aosp="false">
-	    <file filepath="device/samsung/epicmtd/EpicParts/res/values/arrays.xml"/>
-	    <file filepath="device/samsung/epicmtd/EpicParts/res/values/strings.xml"/>
+        <file filepath="device/samsung/epicmtd/EpicParts/res/values/arrays.xml"/>
+        <file filepath="device/samsung/epicmtd/EpicParts/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Galaxy S2 ATT - i777 -->
     <project name="android_device_samsung_i777" shortname="Samsung i777" aosp="false">
-	    <file filepath="device/samsung/i777/DeviceSettings/res/values/arrays.xml"/>
-	    <file filepath="device/samsung/i777/DeviceSettings/res/values/strings.xml"/>
+        <file filepath="device/samsung/i777/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/i777/DeviceSettings/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Galaxy S II - i9100 -->
     <project name="android_device_samsung_i9100" shortname="Samsung i9100" aosp="false">
@@ -502,8 +500,8 @@
     </project>
     <!-- SAMSUNG Galaxy S III 4G - i9305 -->
     <project name="android_device_samsung_i9305" shortname="Samsung i9305" aosp="false">
-	    <file filepath="device/samsung/i9305/DeviceSettings/res/values/arrays.xml"/>
-       	<file filepath="device/samsung/i9305/DeviceSettings/res/values/strings.xml"/>
+        <file filepath="device/samsung/i9305/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/samsung/i9305/DeviceSettings/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG Galaxy Note - N7000 -->
     <project name="android_device_samsung_n7000" shortname="Samsung N7000" aosp="false">
@@ -537,8 +535,8 @@
     </project>
     <!-- SAMSUNG Nexus S - crespo -->
     <project name="android_device_samsung_crespo" shortname="Samsung  crespo" aosp="false">
-	    <file filepath="device/samsung/crespo/CrespoParts/res/values/arrays.xml"/>
-	    <file filepath="device/samsung/crespo/CrespoParts/res/values/strings.xml"/>
+        <file filepath="device/samsung/crespo/CrespoParts/res/values/arrays.xml"/>
+        <file filepath="device/samsung/crespo/CrespoParts/res/values/strings.xml"/>
     </project>
     <!-- SAMSUNG p1-common -->
     <project name="android_device_samsung_p1-common" shortname="Samsung p1-common" aosp="false">
