@@ -195,7 +195,6 @@
         <file filepath="packages/apps/Camera/res/values/cm_strings.xml"/>
         <file filepath="packages/apps/Camera/res/values/cm_arrays.xml"/>
         <skip type="string">pref_camera_hdr_default</skip>               <!-- AOSP untranslatable -->
-        <skip type="string">pref_nohands_persistent_default</skip>
     </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" shortname="Contacts" aosp="true">
