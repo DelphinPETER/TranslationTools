@@ -236,6 +236,8 @@
         <skip type="string">aspectOriginal_effect</skip>    <!-- AOSP untranslatable -->
         <skip type="string">history_original</skip>         <!-- AOSP untranslatable -->
         <skip type="string">original_picture_text</skip>    <!-- AOSP untranslatable -->
+        <skip type="string">filtershow_undo_toast</skip>    <!-- CM hint translatable -->
+        <skip type="string">filtershow_redo_toast</skip>    <!-- CM hint translatable -->
         <skip type="string">crop</skip>
         <skip type="string">rotate</skip>
         <skip type="string">saturation</skip>
