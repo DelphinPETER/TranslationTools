@@ -28,6 +28,7 @@
        WARNING: Cid is not working yet for these repositories. -->
   <project path="device/acer/t30-common" name="CyanogenMod/android_device_acer_t30-common" />
   <project path="device/amazon/otter-common" name="CyanogenMod/android_device_amazon_otter-common" />
+  <project path="device/htc/m7-common" name="CyanogenMod/android_device_htc_m7-common" />
   <project path="device/motorola/omap4-common" name="CyanogenMod/android_device_motorola_omap4-common" />
   <project path="device/samsung/aries-common" name="CyanogenMod/android_device_samsung_aries-common" />
   <project path="device/samsung/msm8660-common" name="CyanogenMod/android_device_samsung_msm8660-common" />

@@ -454,6 +454,11 @@
         <file filepath="device/htc/endeavoru/EndeavoruParts/res/values/arrays.xml"/>
         <file filepath="device/htc/endeavoru/EndeavoruParts/res/values/strings.xml"/>
     </project>
+    <!-- HTC - m7-common -->
+    <project name="android_device_htc_m7-common" shortname="HTC m7-common" aosp="false">
+        <file filepath="device/htc/m7-common/DeviceSettings/res/values/arrays.xml"/>
+        <file filepath="device/htc/m7-common/DeviceSettings/res/values/strings.xml"/>
+    </project>
     <!-- MOTOROLA - omap4-common -->
     <project name="android_device_motorola_omap4-common" shortname="Moto omap4-common" aosp="false">
         <file filepath="device/motorola/omap4-common/OMAP4Parts/res/values/strings.xml"/>
