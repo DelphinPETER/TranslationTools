@@ -12,6 +12,7 @@
     <project name="Superuser" resourceID="external/koush/Superuser/Superuser/res/values"/>
     <!-- android_frameworks_base-core-->
     <project name="android_frameworks_base/Core" resourceID="frameworks/base/core/res/res/values">
+        <skip-file name="config.xml"/>                                           <!-- AOSP untranslatable -->
         <skip-file name="donottranslate.xml"/>                                   <!-- AOSP untranslatable -->
         <skip-file name="donottranslate-cldr.xml"/>                              <!-- AOSP untranslatable -->
         <skip-file name="donottranslate-maps.xml"/>                              <!-- AOSP untranslatable -->
@@ -115,7 +116,9 @@
         <skip-string type="string" name="symbol_picker_gt"/>                     <!-- CM Customization -->
     </project>
     <!-- android_frameworks_base-SystemUI-->
-    <project name="android_frameworks_base/SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values"/>
+    <project name="android_frameworks_base/SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values">
+        <skip-file name="donottranslate.xml"/>                                   <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_apps_Apollo -->
     <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values"/>
     <!-- android_packages_apps_BasicSmsReceiver -->
@@ -164,10 +167,13 @@
     </project>
     <!-- android_packages_apps_Camera -->
     <project name="android_packages_apps_Camera" resourceID="packages/apps/Camera/res/values">
-        <skip-string type="string" name="pref_camera_hdr_default"/>               <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/> <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>   <!-- AOSP untranslatable -->
+        <skip-string type="string" name="pref_camera_hdr_default"/>                            <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
+        <skip-file name="donottranslate_config.xml"/>                             <!-- AOSP untranslatable -->
         <skip-string type="string" name="from_account_format"/>                   <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="call_stats_nav_items"/>            <!-- AOSP untranslatable -->
     </project>
@@ -175,10 +181,13 @@
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values"/>
     <!-- android_packages_apps_DeskClock -->
     <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values">
+        <skip-file name="donottranslate.xml"/>                                    <!-- AOSP untranslatable -->
         <skip-string type="string" name="control_set_alarm_with_existing"/>       <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Email -->
-    <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values"/>
+    <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
+        <skip-file name="arrays.xml"/>                                            <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_apps_FmRadio -->
     <project name="android_packages_apps_FmRadio" resourceID="packages/apps/FmRadio/res/values"/>
     <!-- android_packages_apps_Gallery2 -->
@@ -213,6 +222,7 @@
     <project name="android_packages_apps_PackageInstaller" resourceID="packages/apps/PackageInstaller/res/values"/>
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone" resourceID="packages/apps/Phone/res/values">
+        <skip-file name="config.xml"/>                                                 <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="sip_call_options_entries"/>             <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>   <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="sip_send_keepalive_options"/>           <!-- AOSP untranslatable -->
@@ -223,6 +233,8 @@
     <project name="android_packages_apps_SamsungServiceMode" resourceID="packages/apps/SamsungServiceMode/res/values"/>
     <!-- android_packages_apps_Settings -->
     <project name="android_packages_apps_Settings" resourceID="packages/apps/Settings/res/values">
+        <skip-file name="analytics.xml"/>                                           <!-- AOSP untranslatable -->
+        <skip-file name="donottranslate.xml"/>                                      <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="emergency_tone_values"/>             <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="tts_pitch_values"/>                  <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="tts_rate_values"/>                   <!-- AOSP untranslatable -->
@@ -265,9 +277,13 @@
     <!-- android_packages_apps_Tag -->
     <project name="android_packages_apps_Tag" resourceID="packages/apps/Tag/res/values"/>
     <!-- android_packages_apps_Torch -->
-    <project name="android_packages_apps_Torch" resourceID="packages/apps/Torch/res/values"/>
+    <project name="android_packages_apps_Torch" resourceID="packages/apps/Torch/res/values">
+        <skip-file name="config.xml"/>                                              <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_apps_Trebuchet -->
     <project name="android_packages_apps_Trebuchet" resourceID="packages/apps/Trebuchet/res/values">
+        <skip-file name="config.xml"/>                                              <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="extra_wallpapers"/>                  <!-- AOSP untranslatable -->
         <skip-string type="string" name="dummy_custom_cling_error_message"/>        <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_VideoEditor -->
@@ -275,7 +291,9 @@
     <!-- android_packages_apps_VoiceDialer -->
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values"/>
     <!-- android_packages_inputmethods_LatinIME -->
-    <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values"/>
+    <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values">
+        <skip-file name="donottranslate.xml"/>                                      <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_screensavers_Basic -->
     <project name="android_packages_screensavers_Basic" resourceID="packages/screensavers/Basic/res/values"/>
     <!-- android_packages_screensavers_PhotoTable -->
@@ -319,7 +337,9 @@
     <!-- HTC One X - endeavoru -->
     <project name="android_device_htc_endeavoru" resourceID="device/htc/endeavoru/EndeavoruParts/res/values"/>
     <!-- HTC - m7-common -->
-    <project name="android_device_htc_m7-common" resourceID="device/htc/m7-common/DeviceSettings/res/values"/>
+    <project name="android_device_htc_m7-common" resourceID="device/htc/m7-common/DeviceSettings/res/values">
+        <skip-file name="config.xml"/>                                           <!-- untranslatable -->
+    </project>
     <!-- MOTOROLA - omap4-common -->
     <project name="android_device_motorola_omap4-common" resourceID="device/motorola/omap4-common/OMAP4Parts/res/values"/>
     <!-- MOTOROLA Xoom - wingray -->
@@ -363,5 +383,7 @@
     <!-- SAMSUNG - tuna -->
     <project name="android_device_samsung_tuna" resourceID="device/samsung/tuna/GNexusParts/res/values"/>
     <!-- Sony - common -->
-    <project name="android_device_sony_common" resourceID="device/sony/common/XperiaSettings/res/values"/>
+    <project name="android_device_sony_common" resourceID="device/sony/common/XperiaSettings/res/values">
+        <skip-file name="config.xml"/>                                           <!-- AOSP untranslatable -->
+    </project>
 </resources>
