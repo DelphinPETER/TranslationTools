@@ -21,6 +21,13 @@ Hint: if you are already downloaded some device repositories with "breakfast" an
     rm .repo/local_manifests/roomservice.xml
     repo sync
     breakfast <device>
+    
+Packages needed to be installed on your system
+------
+
+You need to have this packages installed on your system:
+
+    sudo apt-get install libqt4-gui libqt4-xml libqt4-core
 
 How to remove Translation Tools & extra translatable packages
 -----
