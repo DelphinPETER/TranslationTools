@@ -28,6 +28,10 @@ Packages needed to be installed on your system
 You need to have this packages installed on your system:
 
     sudo apt-get install libqt4-gui libqt4-xml libqt4-core
+    
+Script for quick access to Translation Tools
+------
+You can add [**tt script**](https://github.com/jackmu95/tt) for quick access to Translation Tools :
 
 How to remove Translation Tools & extra translatable packages
 -----
