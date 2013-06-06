@@ -2,7 +2,7 @@
 <manifest>
   <!-- Extra packages not included in the main manifest
        WARNING: Cid is not working yet for these repositories. -->
-  <project path="packages/apps/FmRadio" name="CyanogenMod/android_packages_apps_FMRadio" revision="jellybean" />
+  <project path="packages/apps/FmRadio" name="CyanogenMod/android_packages_apps_FMRadio" />
   <project path="packages/apps/SamsungServiceMode" name="CyanogenMod/android_packages_apps_SamsungServiceMode" />
 
   <!-- Device repositories that can be translated -->
