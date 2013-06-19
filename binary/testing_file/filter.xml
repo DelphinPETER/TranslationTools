@@ -254,6 +254,14 @@
     <project name="android_device_htc_m7-common">
         <skip-file name="config.xml"/>                                                         <!-- untranslatable -->
     </project>
+    <!-- Samsung - galaxys2-common -->
+    <project name="android_device_samsung_galaxys2-common">
+        <skip-file name="config.xml"/>                                                         <!-- untranslatable -->
+    </project>
+    <!-- Samsung - smdk4412-common -->
+    <project name="android_device_samsung_smdk4412-common">
+        <skip-file name="config.xml"/>                                                         <!-- untranslatable -->
+    </project>
     <!-- Sony - common -->
     <project name="android_device_sony_common">
         <skip-file name="config.xml"/>                                                         <!-- untranslatable -->
