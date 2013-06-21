@@ -53,34 +53,34 @@
     <project name="android_packages_wallpapers_MusicVisualization" resourceID="packages/wallpapers/MusicVisualization/res/values"/>
     <project name="android_packages_wallpapers_NoiseField" resourceID="packages/wallpapers/NoiseField/res/values"/>
     <project name="android_packages_wallpapers_PhaseBeam" resourceID="packages/wallpapers/PhaseBeam/res/values"/>
-    <project name="themes-platform-vendor-tmobile-apps-ThemeChooser" resourceID="packages/vendor/tmobile/apps/ThemeChooser/res/values"/>
-    <project name="android_vendor_tmobile_providers_ThemeManager" resourceID="packages/vendor/tmobile/providers/ThemeManager/res/values"/>
+    <project name="themes-platform-vendor-tmobile-apps-ThemeChooser" resourceID="vendor/tmobile/apps/ThemeChooser/res/values"/>
+    <project name="android_vendor_tmobile_providers_ThemeManager" resourceID="vendor/tmobile/providers/ThemeManager/res/values"/>
 <!--*******************************************************************
 ***********************************************************************
 **                            Device parts                           **
 ***********************************************************************
 ********************************************************************-->
-    <project name="android_device_acer_t30-common" resourceID="packages/device/acer/t30-common/DeviceParts/res/values"/>
-    <project name="android_device_amazon_otter-common" resourceID="packages/device/amazon/otter-common/OtterParts/res/values"/>
-    <project name="android_device_asus_tf300t" resourceID="packages/device/asus/tf300t/AutoParts/res/values"/>
-    <project name="android_device_asus_tf700t" resourceID="packages/device/asus/tf700t/AutoParts/res/values"/>
-    <project name="android_device_htc_endeavoru" resourceID="packages/device/htc/endeavoru/EndeavoruParts/res/values"/>
-    <project name="android_device_htc_m7-common" resourceID="packages/device/htc/m7-common/DeviceSettings/res/values"/>
-    <project name="android_device_motorola_omap4-common" resourceID="packages/device/motorola/omap4-common/OMAP4Parts/res/values"/>
-    <project name="android_device_moto_wingray" resourceID="packages/device/moto/wingray/StingrayParts/res/values"/>
-    <project name="android_device_samsung_aries-common" resourceID="packages/device/samsung/aries-common/AriesParts/res/values"/>
+    <project name="android_device_acer_t30-common" resourceID="device/acer/t30-common/DeviceParts/res/values"/>
+    <project name="android_device_amazon_otter-common" resourceID="device/amazon/otter-common/OtterParts/res/values"/>
+    <project name="android_device_asus_tf300t" resourceID="device/asus/tf300t/AutoParts/res/values"/>
+    <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values"/>
+    <project name="android_device_htc_endeavoru" resourceID="device/htc/endeavoru/EndeavoruParts/res/values"/>
+    <project name="android_device_htc_m7-common" resourceID="device/htc/m7-common/DeviceSettings/res/values"/>
+    <project name="android_device_motorola_omap4-common" resourceID="device/motorola/omap4-common/OMAP4Parts/res/values"/>
+    <project name="android_device_moto_wingray" resourceID="device/moto/wingray/StingrayParts/res/values"/>
+    <project name="android_device_samsung_aries-common" resourceID="device/samsung/aries-common/AriesParts/res/values"/>
     <project name="android_device_samsung_galaxys2-common" resourceID="device/samsung/galaxys2-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_epicmtd" resourceID="packages/device/samsung/epicmtd/EpicParts/res/values"/>
-    <project name="android_device_samsung_i9100g" resourceID="packages/device/samsung/i9100g/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_i9103" resourceID="packages/device/samsung/i9103/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_p5100" resourceID="packages/device/samsung/p5100/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_msm8660-common" resourceID="packages/device/samsung/msm8660-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_msm8960-common" resourceID="packages/device/samsung/msm8960-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_n80xx-common" resourceID="packages/device/samsung/n80xx-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_crespo" resourceID="packages/device/samsung/crespo/CrespoParts/res/values"/>
-    <project name="android_device_samsung_p1-common" resourceID="packages/device/samsung/p1-common/P1Parts/res/values"/>
+    <project name="android_device_samsung_epicmtd" resourceID="device/samsung/epicmtd/EpicParts/res/values"/>
+    <project name="android_device_samsung_i9100g" resourceID="device/samsung/i9100g/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_i9103" resourceID="device/samsung/i9103/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_p5100" resourceID="device/samsung/p5100/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_msm8660-common" resourceID="device/samsung/msm8660-common/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_msm8960-common" resourceID="device/samsung/msm8960-common/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_crespo" resourceID="device/samsung/crespo/CrespoParts/res/values"/>
+    <project name="android_device_samsung_p1-common" resourceID="device/samsung/p1-common/P1Parts/res/values"/>
     <project name="android_device_samsung_smdk4412-common" resourceID="device/samsung/smdk4412-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_t0ltecdma" resourceID="packages/device/samsung/t0ltecdma/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_tuna" resourceID="packages/device/samsung/tuna/GNexusParts/res/values"/>
-    <project name="android_device_sony_common" resourceID="packages/device/sony/common/XperiaSettings/res/values"/>
+    <project name="android_device_samsung_t0ltecdma" resourceID="device/samsung/t0ltecdma/DeviceSettings/res/values"/>
+    <project name="android_device_samsung_tuna" resourceID="device/samsung/tuna/GNexusParts/res/values"/>
+    <project name="android_device_sony_common" resourceID="device/sony/common/XperiaSettings/res/values"/>
 </resources>
