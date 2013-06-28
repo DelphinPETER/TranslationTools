@@ -50,10 +50,13 @@ void MainWindow::on_pushButton_Scan_clicked()
     m_resourceID_sourceString.clear();
     m_resourceID_translationString.clear();
     m_resourceID_untranslatedString.clear();
-    uiOpenWindow->treeApps->clear();
-    uiOpenWindow->progressBar_scan->setValue(0);
     m_translatableCounter = 0;
     int appNumber = 0;
+    uiOpenWindow->treeApps->clear();
+    uiOpenWindow->progressBar_scan->setValue(0);
+    uiOpenWindow->label_FilePathText->clear();
+    uiOpenWindow->label_InfoTypeText->clear();
+    uiOpenWindow->label_LineNumberText->clear();
 
     //Scan application list
     QMapIterator<QString, QString> itrApps(m_resourceID_Name);
@@ -80,7 +83,7 @@ void MainWindow::on_pushButton_Scan_clicked()
     }
 
     if(m_stringID_stringName.isEmpty()){
-        QMessageBox::warning(this, "No XML files found", "No xml files are found. Make sure you launch TranslationTool in source folder or that your custom configuration is correct.", QMessageBox::Ok);
+        QMessageBox::warning(this, tr("No XML files found"), tr("No xml files are found. Make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
         qDebug() << "ERROR: No files found";
         return;
     }
@@ -160,7 +163,7 @@ void MainWindow::set_TreeProject()
                 QTreeWidgetItem* unusedItem = new QTreeWidgetItem;
                 unusedItem->setText(0, m_stringID_stringName.value(unUsedStringName));
                 unusedItem->setTextColor(0, Qt::red);
-                unusedItem->setText(1, "unused");
+                unusedItem->setText(1, tr("unused"));
                 unusedItem->setTextColor(1, Qt::red);
                 unusedItem->setText(2, unUsedStringName);
                 unusedItem->setTextColor(0, Qt::red);
@@ -185,7 +188,7 @@ void MainWindow::set_TreeProject()
     //No translation find, good work !!!
     if(uiOpenWindow->treeApps->topLevelItemCount() == 0) {
         QTreeWidgetItem* item = new QTreeWidgetItem;
-        item->setText(0,"No translation needed, good work!");
+        item->setText(0,tr("No translation needed, good work!"));
         uiOpenWindow->treeApps->addTopLevelItem(item);
         uiOpenWindow->pushButton_saveCurrentList->setEnabled(false);
     } else {
@@ -194,9 +197,9 @@ void MainWindow::set_TreeProject()
 
     //Add statistics
     int pourcent(((m_translatableCounter - untranslatedCounterFull)*100) / m_translatableCounter );
-    uiOpenWindow->label_ProgressionTranslated->setText("Progress: " + QString::number(pourcent) + "%");
+    uiOpenWindow->label_ProgressionTranslated->setText(tr("Progress:") + QString::number(pourcent) + "%");
     QStringList columnTitle;
-    columnTitle << "Apps name" << ("Untranslated (" + QString::number(untranslatedCounterFull) + "/" +QString::number(m_translatableCounter) + ")" );
+    columnTitle << tr("Apps name") << (tr("Untranslated") + " (" + QString::number(untranslatedCounterFull) + "/" +QString::number(m_translatableCounter) + ")" );
     uiOpenWindow->treeApps->setHeaderLabels(columnTitle);
     uiOpenWindow->treeApps->resizeColumnToContents(1);
 }
@@ -457,7 +460,7 @@ void MainWindow::load_FilterXMLFile()
 {
     QFile globalFilterFile(QCoreApplication::applicationDirPath() + "/filter.xml");
     if( !globalFilterFile.open( QIODevice::ReadOnly ) ) {
-        QMessageBox::warning(this, "File not found", "The file filter.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct.", QMessageBox::Ok);
+        QMessageBox::warning(this, tr("File not found"), tr("The file filter.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
         qDebug() << "ERROR: filter.xml file not found";
         exit(0);
     }
@@ -508,7 +511,7 @@ void MainWindow::load_LanguageXMLFile()
 {
     QFile languageFile(QCoreApplication::applicationDirPath() + "/language.xml");
     if( !languageFile.open( QIODevice::ReadOnly ) ) {
-        QMessageBox::warning(this, "File not found", "The file language.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct.", QMessageBox::Ok);
+        QMessageBox::warning(this, tr("File not found"), tr("The file language.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
         qDebug() << "ERROR: language.xml file not found";
         exit(0);
     }
@@ -547,7 +550,7 @@ void MainWindow::load_ProjectXMLFile()
 {
     QFile projectFile(QCoreApplication::applicationDirPath() + "/project.xml");
     if( !projectFile.open( QIODevice::ReadOnly ) ) {
-        QMessageBox::warning(this, "File not found", "The file project.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct.", QMessageBox::Ok);
+        QMessageBox::warning(this, tr("File not found"), tr("The file project.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
         qDebug() << "ERROR: project.xml file not found";
         exit(0);
     }

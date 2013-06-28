@@ -34,3 +34,6 @@ FORMS    += \
 
 RESOURCES += \
     icon.qrc
+
+TRANSLATIONS = \
+    language_fr.ts

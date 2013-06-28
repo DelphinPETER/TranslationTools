@@ -16,11 +16,19 @@
 
 #include <QtGui/QApplication>
 #include <QTextCodec>
+#include <QTranslator>
+
 #include "MainWindow.h"
 
 int main(int argc, char *argv[])
 {
     QApplication application(argc, argv);
+
+    //internationalization support
+    QString locale = QLocale::system().name().section('_', 0, 0);
+    QTranslator translator;
+    translator.load(QString("translation/language_") + locale);
+    application.installTranslator(&translator);
 
     //UTF-8 support
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));

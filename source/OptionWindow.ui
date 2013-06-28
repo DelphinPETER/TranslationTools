@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright (C) 2013 The CyanogenMod Project
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
 <ui version="4.0">
  <class>OptionWindow</class>
  <widget class="QDialog" name="OptionWindow">
@@ -23,12 +9,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>520</width>
+    <width>650</width>
     <height>103</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -47,7 +33,11 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="lineEdit_EditorCommand"/>
+      <widget class="QLineEdit" name="lineEdit_EditorCommand">
+       <property name="text">
+        <string notr="true"/>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
