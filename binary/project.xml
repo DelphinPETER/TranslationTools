@@ -80,7 +80,6 @@
     <project name="android_device_samsung_crespo" resourceID="device/samsung/crespo/CrespoParts/res/values"/>
     <project name="android_device_samsung_p1-common" resourceID="device/samsung/p1-common/P1Parts/res/values"/>
     <project name="android_device_samsung_smdk4412-common" resourceID="device/samsung/smdk4412-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_t0ltecdma" resourceID="device/samsung/t0ltecdma/DeviceSettings/res/values"/>
     <project name="android_device_samsung_tuna" resourceID="device/samsung/tuna/GNexusParts/res/values"/>
     <project name="android_device_sony_common" resourceID="device/sony/common/XperiaSettings/res/values"/>
 </resources>
