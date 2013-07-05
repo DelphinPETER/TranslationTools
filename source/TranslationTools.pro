@@ -36,4 +36,5 @@ RESOURCES += \
     icon.qrc
 
 TRANSLATIONS = \
+    language_da.ts\
     language_fr.ts
