@@ -16,7 +16,7 @@
     <message>
         <location filename="MainWindow.ui" line="57"/>
         <source>Scan</source>
-        <translation>Scanner</translation>
+        <translation>Scan</translation>
     </message>
     <message>
         <location filename="MainWindow.ui" line="79"/>
