@@ -56,6 +56,7 @@
         <skip-string type="string" name="autofill_zip_code_re"/>                               <!-- AOSP untranslatable -->
         <skip-string type="string" name="locale_replacement"/>                                 <!-- AOSP untranslatable -->
         <skip-string type="string" name="network_available_sign_in_detailed"/>                 <!-- AOSP untranslatable -->
+        <skip-string type="string" name="imProtocolGoogleTalk"/>                               <!-- AOSP untranslatable -->
         <skip-string type="string" name="symbol_picker_A"/>                                    <!-- CM Customization -->
         <skip-string type="string" name="symbol_picker_C"/>                                    <!-- CM Customization -->
         <skip-string type="string" name="symbol_picker_D"/>                                    <!-- CM Customization -->
@@ -163,6 +164,10 @@
         <skip-file name="donottranslate.xml"/>                                                 <!-- AOSP untranslatable -->
         <skip-string type="string" name="control_set_alarm_with_existing"/>                    <!-- AOSP untranslatable -->
     </project>
+    <!-- android_packages_apps_Dialer -->
+    <project name="android_packages_apps_Dialer">
+        <skip-file name="donottranslate_config.xml"/>                                          <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email">
         <skip-file name="arrays.xml"/>                                                         <!-- AOSP untranslatable -->
@@ -182,6 +187,12 @@
         <skip-string type="string" name="done"/>                                               <!-- AOSP duplicated -->
         <skip-string type="string" name="save"/>                                               <!-- AOSP duplicated -->
         <skip-string type="string" name="redeye"/>                                             <!-- AOSP duplicated -->
+        <skip-string type="string" name="pref_camera_timer_sound_default"/>                    <!-- AOSP duplicated -->
+        <skip-string type="string" name="pref_camera_hdr_default"/>                            <!-- AOSP duplicated -->
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/> <!-- AOSP duplicated -->
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>   <!-- AOSP duplicated -->
+        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>                 <!-- AOSP duplicated -->
+        <skip-string type="string-array" name="pref_camera_countdown_labels"/>                 <!-- AOSP duplicated -->
     </project>
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone">
@@ -201,6 +212,7 @@
         <skip-string type="string-array" name="wifi_security"/>                                <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="wifi_security_no_eap"/>                         <!-- AOSP untranslatable -->
         <skip-string type="string-array" name="wifi_sleep_policy_values"/>                     <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="wifi_ap_security"/>                             <!-- AOSP untranslatable -->
         <skip-string type="string" name="battery_stats_last_duration"/>                        <!-- AOSP untranslatable -->
         <skip-string type="string" name="debug_intent_sender_label"/>                          <!-- AOSP untranslatable -->
         <skip-string type="string" name="default_date_format"/>                                <!-- AOSP untranslatable -->

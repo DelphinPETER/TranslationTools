@@ -20,8 +20,9 @@
     <project name="android_packages_apps_Calendar" resourceID="packages/apps/Calendar/res/values"/>
     <project name="android_packages_apps_Camera" resourceID="packages/apps/Camera/res/values"/>
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values"/>
-    <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values"/>
     <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values"/>
+    <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values"/>
+    <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values"/>
     <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values"/>
     <project name="android_packages_apps_FmRadio" resourceID="packages/apps/FmRadio/res/values"/>
     <project name="android_packages_apps_Focal" resourceID="packages/apps/Focal/res/values"/>
