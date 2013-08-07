@@ -115,6 +115,10 @@
     <project name="android_frameworks_base/SystemUI">
         <skip-file name="donottranslate.xml"/>                                                 <!-- AOSP untranslatable -->
     </project>
+    <!-- android_packages_apps_Browser -->
+    <project name="android_packages_apps_Browser">
+        <skip-file name="donottranslate-search_engines.xml"/>                                  <!-- CM Customization -->
+    </project>
     <!-- android_packages_apps_Calculator -->
     <project name="android_packages_apps_Calculator">
         <skip-string type="string" name="digit0"/>                                             <!-- AOSP untranslatable -->
