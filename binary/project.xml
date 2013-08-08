@@ -18,7 +18,6 @@
     <project name="android_packages_apps_CMWallpapers" resourceID="packages/apps/CMWallpapers/res/values"/>
     <project name="android_packages_apps_Calculator" resourceID="packages/apps/Calculator/res/values"/>
     <project name="android_packages_apps_Calendar" resourceID="packages/apps/Calendar/res/values"/>
-    <project name="android_packages_apps_Camera" resourceID="packages/apps/Camera/res/values"/>
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values"/>
     <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values"/>
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values"/>

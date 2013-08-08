@@ -151,12 +151,6 @@
         <skip-string type="string" name="preferences_home_tz_default"/>                        <!-- AOSP untranslatable -->
         <skip-string type="string" name="tardis"/>                                             <!-- AOSP untranslatable -->
     </project>
-    <!-- android_packages_apps_Camera -->
-    <project name="android_packages_apps_Camera">
-        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/> <!-- AOSP untranslatable -->
-        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>   <!-- AOSP untranslatable -->
-        <skip-string type="string" name="pref_camera_hdr_default"/>                            <!-- AOSP untranslatable -->
-    </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts">
         <skip-file name="donottranslate_config.xml"/>                                          <!-- AOSP untranslatable -->
