@@ -139,6 +139,7 @@
         <skip-string type="string" name="sqrt"/>                                               <!-- AOSP untranslatable -->
         <skip-string type="string" name="leftParen"/>                                          <!-- AOSP untranslatable -->
         <skip-string type="string" name="rightParen"/>                                         <!-- AOSP untranslatable -->
+        <skip-string type="string" name="easter_egg"/>                                         <!-- CM Customization -->
     </project>
     <!-- android_packages_apps_Calendar -->
     <project name="android_packages_apps_Calendar">
