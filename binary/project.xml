@@ -70,5 +70,4 @@
     <project name="android_device_samsung_msm8960-common" resourceID="device/samsung/msm8960-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_p1-common" resourceID="device/samsung/p1-common/P1Parts/res/values"/>
-    <project name="android_device_samsung_tuna" resourceID="device/samsung/tuna/GNexusParts/res/values"/>
 </resources>
