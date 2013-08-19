@@ -66,7 +66,6 @@
     <project name="android_device_asus_tf300t" resourceID="device/asus/tf300t/AutoParts/res/values"/>
     <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values"/>
     <project name="android_device_samsung_aries-common" resourceID="device/samsung/aries-common/AriesParts/res/values"/>
-    <project name="android_device_samsung_msm8660-common" resourceID="device/samsung/msm8660-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_msm8960-common" resourceID="device/samsung/msm8960-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_p1-common" resourceID="device/samsung/p1-common/P1Parts/res/values"/>
