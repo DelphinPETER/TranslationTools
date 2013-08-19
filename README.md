@@ -25,10 +25,20 @@ Hint: if you are already downloaded some device repositories with "breakfast" an
 Packages needed to be installed on your system
 ------
 
-You need to have this packages installed on your system:
+You need to have some packages installed on your system:
+
+For ubuntu 10.04 x64, 12.04 x32 & x64 :
 
     sudo apt-get install libqt4-gui libqt4-xml libqt4-core
     
+For ubuntu 13.04 x64 :
+
+    sudo apt-get install libqt5gui5 libqt5xml5 libqt5core5 libqt5widgets5
+
+For Fedora 19 x64 :
+
+    yum install qt5-qtbase qt5-qtbase-x11
+
 Script for quick access to Translation Tools
 ------
 You can add [**tt script**](https://github.com/jackmu95/tt) for quick access to Translation Tools :
