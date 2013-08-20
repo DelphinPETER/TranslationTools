@@ -9,7 +9,6 @@
   <project path="device/asus/tf300t" name="CyanogenMod/android_device_asus_tf300t" />
   <project path="device/asus/tf700t" name="CyanogenMod/android_device_asus_tf700t" />
   <project path="device/samsung/aries-common" name="CyanogenMod/android_device_samsung_aries-common" />
-  <project path="device/samsung/msm8660-common" name="CyanogenMod/android_device_samsung_msm8660-common" />
   <project path="device/samsung/msm8960-common" name="CyanogenMod/android_device_samsung_msm8960-common" />
   <project path="device/samsung/n80xx-common" name="CyanogenMod/android_device_samsung_n80xx-common" />
   <project path="device/samsung/p1-common" name="CyanogenMod/android_device_samsung_p1-common" />
