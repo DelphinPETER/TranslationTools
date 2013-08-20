@@ -12,6 +12,7 @@
     <project name="android_packages_apps_BasicSmsReceiver" resourceID="packages/apps/BasicSmsReceiver/res/values"/>
     <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values"/>
     <project name="android_packages_apps_Browser" resourceID="packages/apps/Browser/res/values"/>
+    <project name="android_packages_apps_CMAccount" resourceID="packages/apps/CMAccount/res/values"/>
     <project name="android_packages_apps_CMFileManager" resourceID="packages/apps/CMFileManager/res/values"/>
     <project name="android_packages_apps_CMFileManager/themes" resourceID="packages/apps/CMFileManager/themes/res/values"/>
     <project name="android_packages_apps_CMUpdater" resourceID="packages/apps/CMUpdater/res/values"/>
