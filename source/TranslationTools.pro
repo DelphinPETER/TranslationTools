@@ -38,4 +38,5 @@ RESOURCES += \
 TRANSLATIONS = \
     language_da.ts \
     language_el.ts \
-    language_fr.ts
+    language_fr.ts \
+    language_sk.ts
