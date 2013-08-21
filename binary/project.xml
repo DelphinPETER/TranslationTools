@@ -47,6 +47,7 @@
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values"/>
     <project name="android_packages_apps_VoicePlus" resourceID="packages/apps/VoicePlus/res/values"/>
     <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values"/>
+    <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values"/>
     <project name="android_packages_screensavers_Basic" resourceID="packages/screensavers/Basic/res/values"/>
     <project name="android_packages_screensavers_PhotoTable" resourceID="packages/screensavers/PhotoTable/res/values"/>
     <project name="android_packages_wallpapers_Basic" resourceID="packages/wallpapers/Basic/res/values"/>
