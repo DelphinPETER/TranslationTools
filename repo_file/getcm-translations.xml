@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <!-- getcm-translations repositories. -->
-  <project path="website/getcm-translations" name="CyanogenMod/getcm-translations"  revision="master"/>
-</manifest>
