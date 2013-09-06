@@ -134,7 +134,7 @@
     <message>
         <location filename="OptionWindow.ui" line="47"/>
         <source>Use %1 for the path file and %2 for the line (for example : &quot;gedit +%2 %1&quot;)</source>
-        <translation type="unfinished">Utilizar %1 para la ruta del fichero y %2 para la línea (Por ejemplo : &quot;gedit +%2 %1&quot;)</translation>
+        <translation type="unfinished">Utiliza %1 para la ruta del archivo y %2 para la línea (Por ejemplo : &quot;gedit +%2 %1&quot;)</translation>
     </message>
 </context>
 </TS>
