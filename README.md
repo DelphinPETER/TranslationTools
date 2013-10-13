@@ -24,6 +24,7 @@ Installing
 ----------
 
 You can install Translation Tools by adding it to the local manifests of your local CyanogenMod repo. Execute the following in the root of your local repo:
+
     curl https://raw.github.com/DelphinPETER/CyanogenMod_TranslatorRepo/cm-10.2/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml
     repo sync
 
