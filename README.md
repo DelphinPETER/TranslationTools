@@ -1,57 +1,51 @@
 Translation Tools
-======
+=================
 
-How to add Translation Tools & extra translatable packages
-------
+Translation Tools is a program, developed by the French CyanogenMod translator Delphin PETER, to assist CyanogenMod translators in translating CyanogenMod into their language. You can find more information at the [CyanogenMod wiki](http://wiki.cyanogenmod.org/w/Doc:_Translation_Tool).
 
-In your root source folder:
+Dependencies
+------------
+
+Please install the following packages before you launch Translation Tools. These packages are required.
+
+Ubuntu 10.04 (x64), 12.04 (x86/x64):
+
+    sudo apt-get install libqt4-gui libqt4-xml libqt4-core
+
+Ubuntu 13.04 (x64):
+
+    sudo apt-get install libqt5gui5 libqt5xml5 libqt5core5 libqt5widgets5
+
+Fedora 19 (x64):
+
+    yum install qt5-qtbase qt5-qtbase-x11
+
+Installing
+----------
+
+You can install Translation Tools by adding it to the local manifests of your local CyanogenMod repo. Execute the following in the root of your local repo:
 
     curl https://raw.github.com/DelphinPETER/CyanogenMod_TranslatorRepo/cm-10.2/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml
     repo sync
 
-When the sync is finished, you can find Translation Tools under SOURCE_FOLDER/tools/TranslationTools/binary
+After sync'ing, you can find Translation Tools under tools/TranslationTools/binary.
 
-If you want to get all the available CyanogenMod translatable packages that are not synced by default (not included in the default CM manifest), execute:
+There is a helper script available for launching Translation Tools, created by the German CyanogenMod translator Jacob Müller. You can find more information on [this page](https://github.com/jackmu95/tt).
 
-    curl https://raw.github.com/DelphinPETER/CyanogenMod_TranslatorRepo/cm-10.2/extra_packages.xml > .repo/local_manifests/extra_packages.xml
-    repo sync
+Extra repositories
+------------------
 
-Hint: if you are already downloaded some device repositories with "breakfast" and have problems syncing, execute:
+There are other repositories available that are not downloaded by default. Check out [this page](https://github.com/DelphinPETER/CyanogenMod_TranslatorRepo) for more information.
 
-    rm .repo/local_manifests/roomservice.xml
-    repo sync
-    breakfast <device>
-    
-Packages needed to be installed on your system
-------
+Translating Translation Tools
+-----------------------------
 
-You need to have some packages installed on your system:
+The interface of Translation Tools is translatable. Use source/language_fr.ts (or any other language) as your base; language_fr contains both French and English texts. Submit your translation by creating a pull request.
 
-For ubuntu 10.04 x64, 12.04 x32 & x64 :
+Uninstalling
+------------
 
-    sudo apt-get install libqt4-gui libqt4-xml libqt4-core
-    
-For ubuntu 13.04 x64 :
-
-    sudo apt-get install libqt5gui5 libqt5xml5 libqt5core5 libqt5widgets5
-
-For Fedora 19 x64 :
-
-    yum install qt5-qtbase qt5-qtbase-x11
-
-Script for quick access to Translation Tools
-------
-You can add [**tt script**](https://github.com/jackmu95/tt) for quick access to Translation Tools :
-
-How to remove Translation Tools & extra translatable packages
------
-
-Remove Translation Tools:
+You can simply uninstall by removing the local manifest and sync again.
 
     rm .repo/local_manifests/TranslationTools.xml
-    repo sync
-
-Remove extra packages:
-
-    rm .repo/local_manifests/extra_packages.xml
     repo sync
