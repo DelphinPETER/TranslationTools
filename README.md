@@ -35,7 +35,7 @@ There is a helper script available for launching Translation Tools, created by t
 Extra repositories
 ------------------
 
-There are other repositories available that are not downloaded by default. Check out this page for more information.
+There are other repositories available that are not downloaded by default. Check out [this page](https://github.com/DelphinPETER/CyanogenMod_TranslatorRepo) for more information.
 
 Translating Translation Tools
 -----------------------------
