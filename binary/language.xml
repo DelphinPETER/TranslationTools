@@ -16,7 +16,7 @@
     <language value="de"/>
     <language value="el"/>
     <language value="en-rGB"/>
-    <language value="en-US"/>
+    <language value="en-rUS"/>
     <language value="es"/>
     <language value="es-rUS"/>
     <language value="et"/>
@@ -30,11 +30,14 @@
     <language value="iw"/>
     <language value="ja"/>
     <language value="ko"/>
+    <language value="ku"/>
     <language value="lt"/>
     <language value="lv"/>
+    <language value="ml"/>
     <language value="ms"/>
     <language value="nb"/>
     <language value="nl"/>
+    <language value="pa"/>
     <language value="pl"/>
     <language value="pt"/>
     <language value="pt-rBR" subst="pt"/>
@@ -50,6 +53,7 @@
     <language value="th"/>
     <language value="tl"/>
     <language value="tr"/>
+    <language value="ug"/>
     <language value="uk"/>
     <language value="vi"/>
     <language value="zh-rCN"/>
