@@ -134,7 +134,7 @@
     <message>
         <location filename="OptionWindow.ui" line="47"/>
         <source>Use %1 for the path file and %2 for the line (for example : &quot;gedit +%2 %1&quot;)</source>
-        <translation>Gebruik %1 voor het pad naar het bestand en %2 voor de regel (bijv.: &lsquo;gedit +%2 %1&rsquo;)</translation>
+        <translation>Gebruik %1 voor het pad naar het bestand en %2 voor de regel (bijv.: &quot;gedit +%2 %1&quot;)</translation>
     </message>
 </context>
 </TS>
