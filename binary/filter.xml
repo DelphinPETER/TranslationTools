@@ -152,6 +152,11 @@
         <skip-string type="string" name="preferences_home_tz_default"/>                        <!-- AOSP untranslatable -->
         <skip-string type="string" name="tardis"/>                                             <!-- AOSP untranslatable -->
     </project>
+    <!-- android_packages_apps_CellBroadcastReceiver -->
+    <project name="android_packages_apps_CellBroadcastReceiver">
+        <skip-string type="string" name="alert_reminder_interval_summary"/>                    <!-- CAF untranslatable -->
+        <skip-string type="string-array" name="alert_reminder_interval_values"/>               <!-- CAF untranslatable -->
+    </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts">
         <skip-file name="donottranslate_config.xml"/>                                          <!-- AOSP untranslatable -->
