@@ -202,6 +202,11 @@
         <skip-string type="string-array" name="pref_camera_scenemode_labels"/>                 <!-- AOSP duplicated -->
         <skip-string type="string-array" name="pref_camera_countdown_labels"/>                 <!-- AOSP duplicated -->
     </project>
+    <!-- android_packages_apps_Launcher3 -->
+    <project name="android_packages_apps_Launcher3">
+        <skip-string type="string" name="debug_memory_activity"/>                              <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dummy_custom_cling_error_message"/>                   <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone">
         <skip-file name="config.xml"/>                                                         <!-- AOSP untranslatable -->
@@ -254,12 +259,6 @@
     <!-- android_packages_apps_Torch -->
     <project name="android_packages_apps_Torch">
         <skip-file name="config.xml"/>                                                         <!-- AOSP untranslatable -->
-    </project>
-    <!-- android_packages_apps_Trebuchet -->
-    <project name="android_packages_apps_Trebuchet">
-        <skip-file name="config.xml"/>                                                         <!-- AOSP untranslatable -->
-        <skip-string type="string-array" name="extra_wallpapers"/>                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="dummy_custom_cling_error_message"/>                   <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_inputmethods_LatinIME -->
     <project name="android_packages_inputmethods_LatinIME">
