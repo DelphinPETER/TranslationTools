@@ -20,6 +20,10 @@ Fedora 19 (x64):
 
     yum install qt5-qtbase qt5-qtbase-x11
 
+Fedora 20 (x64):
+
+    yum install qt5-qtx11extras qt5-qtbase
+
 Installing
 ----------
 
