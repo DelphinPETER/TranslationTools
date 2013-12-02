@@ -115,7 +115,7 @@
     <!-- android_packages_apps_Launcher2 -->
     <project name="android_packages_apps_Launcher2">
         <skip-string type="string" name="dummy_custom_cling_error_message"/>                   <!-- AOSP untranslatable -->
-        <skip-string type="string-array" name="extra_wallpapers">                              <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="extra_wallpapers"/>                             <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone">
