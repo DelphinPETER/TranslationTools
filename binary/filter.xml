@@ -57,124 +57,36 @@
         <skip-string type="string" name="locale_replacement"/>                                 <!-- AOSP untranslatable -->
         <skip-string type="string" name="network_available_sign_in_detailed"/>                 <!-- AOSP untranslatable -->
         <skip-string type="string" name="imProtocolGoogleTalk"/>                               <!-- AOSP untranslatable -->
-        <skip-string type="string" name="symbol_picker_A"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_C"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_D"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_E"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_G"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_L"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_I"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_N"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_O"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_R"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_S"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_T"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_U"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_Y"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_Z"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_a"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_c"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_d"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_e"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_g"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_i"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_l"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_n"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_o"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_r"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_s"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_t"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_u"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_y"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_z"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_sym"/>                                  <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_slash"/>                                <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_1"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_2"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_3"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_4"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_5"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_7"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_0"/>                                    <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_dollar"/>                               <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_percent"/>                              <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_star"/>                                 <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_minus"/>                                <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_plus"/>                                 <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_opening_parenthesis"/>                  <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_closing_parenthesis"/>                  <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_exclamation"/>                          <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_quote"/>                                <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_question"/>                             <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_comma"/>                                <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_equal"/>                                <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_lt"/>                                   <!-- CM Customization -->
-        <skip-string type="string" name="symbol_picker_gt"/>                                   <!-- CM Customization -->
     </project>
     <!-- android_frameworks_base-SystemUI-->
     <project name="android_frameworks_base/SystemUI">
         <skip-file name="donottranslate.xml"/>                                                 <!-- AOSP untranslatable -->
     </project>
-    <!-- android_packages_apps_Browser -->
-    <project name="android_packages_apps_Browser">
-        <skip-file name="donottranslate-search_engines.xml"/>                                  <!-- CM Customization -->
-    </project>
-    <!-- android_packages_apps_Calculator -->
-    <project name="android_packages_apps_Calculator">
-        <skip-string type="string" name="digit0"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit1"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit2"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit3"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit4"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit5"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit6"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit7"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit8"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="digit9"/>                                             <!-- AOSP untranslatable -->
-        <skip-string type="string" name="div"/>                                                <!-- AOSP untranslatable -->
-        <skip-string type="string" name="dot"/>                                                <!-- AOSP untranslatable -->
-        <skip-string type="string" name="enter"/>                                              <!-- AOSP untranslatable -->
-        <skip-string type="string" name="equal"/>                                              <!-- AOSP untranslatable -->
-        <skip-string type="string" name="factorial"/>                                          <!-- AOSP untranslatable -->
-        <skip-string type="string" name="minus"/>                                              <!-- AOSP untranslatable -->
-        <skip-string type="string" name="mul"/>                                                <!-- AOSP untranslatable -->
-        <skip-string type="string" name="pi"/>                                                 <!-- AOSP untranslatable -->
-        <skip-string type="string" name="plus"/>                                               <!-- AOSP untranslatable -->
-        <skip-string type="string" name="power"/>                                              <!-- AOSP untranslatable -->
-        <skip-string type="string" name="sqrt"/>                                               <!-- AOSP untranslatable -->
-        <skip-string type="string" name="leftParen"/>                                          <!-- AOSP untranslatable -->
-        <skip-string type="string" name="rightParen"/>                                         <!-- AOSP untranslatable -->
-        <skip-string type="string" name="easter_egg"/>                                         <!-- CM Customization -->
-    </project>
-    <!-- android_packages_apps_Calendar -->
-    <project name="android_packages_apps_Calendar">
-        <skip-string type="string" name="preferences_week_start_day_default"/>                 <!-- AOSP untranslatable -->
-        <skip-string type="string" name="preferences_home_tz_default"/>                        <!-- AOSP untranslatable -->
-        <skip-string type="string" name="tardis"/>                                             <!-- AOSP untranslatable -->
-    </project>
-    <!-- android_packages_apps_CellBroadcastReceiver -->
-    <project name="android_packages_apps_CellBroadcastReceiver">
-        <skip-string type="string" name="alert_reminder_interval_summary"/>                    <!-- CAF untranslatable -->
-        <skip-string type="string-array" name="alert_reminder_interval_values"/>               <!-- CAF untranslatable -->
-    </project>
-    <!-- android_packages_apps_Contacts -->
-    <project name="android_packages_apps_Contacts">
-        <skip-file name="donottranslate_config.xml"/>                                          <!-- AOSP untranslatable -->
-        <skip-string type="string" name="from_account_format"/>                                <!-- AOSP untranslatable -->
-        <skip-string type="string-array" name="call_stats_nav_items"/>                         <!-- AOSP untranslatable -->
-    </project>
-    <!-- android_packages_apps_ContactsCommon -->
-    <project name="android_packages_apps_ContactsCommon">
-        <skip-string type="string" name="import_from_sim"/>                                    <!-- AOSP unused -->
-    </project>
-    <!-- android_packages_apps_DeskClock -->
-    <project name="android_packages_apps_DeskClock">
-        <skip-file name="donottranslate.xml"/>                                                 <!-- AOSP untranslatable -->
-        <skip-string type="string" name="control_set_alarm_with_existing"/>                    <!-- AOSP untranslatable -->
+    <!-- android_packages_apps_Bluetooth -->
+    <project name="android_packages_apps_Bluetooth">
+        <skip-string type="string" name="bluetooth_share_file_name"/>                          <!-- AOSP untranslatable -->
+        <skip-string type="string" name="sharedUserId"/>                                       <!-- AOSP untranslatable -->
+        <skip-string type="string" name="process"/>                                            <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Dialer -->
     <project name="android_packages_apps_Dialer">
         <skip-file name="donottranslate_config.xml"/>                                          <!-- AOSP untranslatable -->
+        <skip-string type="string" name="call_log_activity_title_font_family"/>                <!-- AOSP untranslatable -->
+        <skip-string type="string" name="show_all_contacts_title_font_family"/>                <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_star_number"/>                                <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_pound_number"/>                               <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_0_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_1_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_2_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_3_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_4_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_5_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_6_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_7_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_8_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_9_letters"/>                                  <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_star_letters"/>                               <!-- AOSP untranslatable -->
+        <skip-string type="string" name="dialpad_pound_letters"/>                              <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email">
@@ -185,8 +97,6 @@
         <skip-string type="string" name="aspectOriginal_effect"/>                              <!-- AOSP untranslatable -->
         <skip-string type="string" name="history_original"/>                                   <!-- AOSP untranslatable -->
         <skip-string type="string" name="original_picture_text"/>                              <!-- AOSP untranslatable -->
-        <skip-string type="string" name="filtershow_undo_toast"/>                              <!-- CM hint translatable -->
-        <skip-string type="string" name="filtershow_redo_toast"/>                              <!-- CM hint translatable -->
         <skip-string type="string" name="crop"/>                                               <!-- AOSP duplicated -->
         <skip-string type="string" name="rotate"/>                                             <!-- AOSP duplicated -->
         <skip-string type="string" name="saturation"/>                                         <!-- AOSP duplicated -->
@@ -202,14 +112,10 @@
         <skip-string type="string-array" name="pref_camera_scenemode_labels"/>                 <!-- AOSP duplicated -->
         <skip-string type="string-array" name="pref_camera_countdown_labels"/>                 <!-- AOSP duplicated -->
     </project>
-    <!-- android_packages_apps_Launcher3 -->
-    <project name="android_packages_apps_Launcher3">
-        <skip-string type="string" name="debug_memory_activity"/>                              <!-- AOSP untranslatable -->
+    <!-- android_packages_apps_Launcher2 -->
+    <project name="android_packages_apps_Launcher2">
         <skip-string type="string" name="dummy_custom_cling_error_message"/>                   <!-- AOSP untranslatable -->
-    </project>
-    <!-- android_packages_apps_Nfc -->
-    <project name="android_packages_apps_Nfc">
-        <skip-string type="string-array" name="provisioning_mime_types"/>                      <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="extra_wallpapers">                              <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone">
@@ -255,14 +161,6 @@
         <skip-string type="string" name="wifi_security_wpa"/>                                  <!-- AOSP untranslatable -->
         <skip-string type="string" name="wifi_security_wpa2"/>                                 <!-- AOSP untranslatable -->
         <skip-string type="string" name="wifi_security_wpa_wpa2"/>                             <!-- AOSP untranslatable -->
-    </project>
-    <!-- android_packages_apps_SoundRecorder -->
-    <project name="android_packages_apps_SoundRecorder">
-        <skip-string type="string" name="audio_db_title_format"/>                              <!-- AOSP untranslatable -->
-    </project>
-    <!-- android_packages_apps_Torch -->
-    <project name="android_packages_apps_Torch">
-        <skip-file name="config.xml"/>                                                         <!-- AOSP untranslatable -->
     </project>
     <!-- android_packages_inputmethods_LatinIME -->
     <project name="android_packages_inputmethods_LatinIME">
