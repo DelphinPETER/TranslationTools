@@ -48,6 +48,8 @@
     <project name="android_packages_apps_VideoEditor" resourceID="packages/apps/VideoEditor/res/values"/>
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values"/>
     <project name="android_packages_apps_VoicePlus" resourceID="packages/apps/VoicePlus/res/values"/>
+    <project name="android_external_whispersystems_TextSecure" resourceID="external/whispersystems/TextSecure/res/values"/>
+    <project name="android_external_whispersystems_WhisperPush" resourceID="external/whispersystems/WhisperPush/res/values"/>
     <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values"/>
     <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values"/>
     <project name="android_packages_screensavers_Basic" resourceID="packages/screensavers/Basic/res/values"/>
