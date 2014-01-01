@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+    <string name="label_language">Language:</string>
+    <string name="scan_button">Scan</string>
+    <string name="label_progress">Progress:</string>
+    <string name="column_title_apps_name">Apps name</string>
+    <string name="column_title_untranslated">Untranslated</string>
+    <string name="unused">unused</string>
+    <string name="good_works">No translation needed, Good Work!</string>
+    <string name="information_title">Informations:</string>
+    <string name="information_line_number_title">Line:</string>
+    <string name="information_file_path_title">File:</string>
+    <string name="information_type_title">Type:</string>
+    <string name="information_source_text_title">Source text:</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_options">Options</string>
+    <string name="editor_command">Editor command:</string>
+    <string name="tips_options">Use %1 for the path file and %2 for the line (for example : gedit +%2 %1)</string>
+    <string name="error_no_source_file_title">No XML files found</string>
+    <string name="error_no_source_file_text">No xml files are found. Make sure you launch TranslationTool in source folder or that your custom configuration is correct.</string>
+    <string name="error_no_file_title">File not found</string>
+    <string name="error_no_language_text">The file language.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct.</string>
+    <string name="error_no_project_text">The file project.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct.</string>
+</translation>
