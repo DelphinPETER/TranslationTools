@@ -401,7 +401,7 @@ void MainWindow::load_TranslationFile(QString sourcePath, QString filename, QStr
     {
         type = parentItem.tagName();
         if (type == "string" || type == "plurals" || type == "string-array") {
-            if( parentItem.hasAttribute("name") && parentItem.attribute("translatable") != "false") {
+            if( parentItem.hasAttribute("name") && parentItem.attribute("translatable") != "false" && parentItem.attribute("translate") != "false") {
                 QString NameID;
                 //Define string ID
                 if(parentItem.hasAttribute("product")) {
