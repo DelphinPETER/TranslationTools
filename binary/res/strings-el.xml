@@ -11,7 +11,6 @@
     <string name="information_line_number_title">Αριθμός γραμμής :</string>
     <string name="information_file_path_title">Αρχείο :</string>
     <string name="information_type_title">Τύπος :</string>
-    <string name="button_save_list">Αποθήκευση τρέχουσας λίστας</string>
     <string name="menu_tools">Εργαλεία</string>
     <string name="menu_options">Επιλογές</string>
     <string name="editor_command">Εντολή προγράμματος επεξεργασίας :</string>

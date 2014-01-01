@@ -12,7 +12,6 @@
     <string name="information_file_path_title">Fichier :</string>
     <string name="information_type_title">Type :</string>
     <string name="information_source_text_title">Texte source :</string>
-    <string name="button_save_list">Enregistrer la liste</string>
     <string name="menu_tools">Outil</string>
     <string name="menu_options">Options</string>
     <string name="editor_command">Commande de l'éditeur :</string>

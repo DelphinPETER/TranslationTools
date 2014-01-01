@@ -11,7 +11,6 @@
     <string name="information_line_number_title">Číslo riadku:</string>
     <string name="information_file_path_title">Súbor:</string>
     <string name="information_type_title">Typ:</string>
-    <string name="button_save_list">Uložiť aktuálny zoznam</string>
     <string name="menu_tools">Nástroje</string>
     <string name="menu_options">Voľby</string>
     <string name="editor_command">Príkaz editora:</string>

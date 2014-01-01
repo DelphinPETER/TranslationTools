@@ -11,7 +11,6 @@
     <string name="information_line_number_title">Número de línea :</string>
     <string name="information_file_path_title">Archivo :</string>
     <string name="information_type_title">Tipo :</string>
-    <string name="button_save_list">Guardar lista actual</string>
     <string name="menu_tools">Herramientas</string>
     <string name="menu_options">Opciones</string>
     <string name="editor_command">Comando del editor :</string>
