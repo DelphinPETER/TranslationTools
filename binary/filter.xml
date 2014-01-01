@@ -182,17 +182,6 @@
         <skip-file name="donottranslate_config.xml"/>                                          <!-- AOSP untranslatable -->
         <skip-string type="string" name="call_log_activity_title_font_family"/>                <!-- CAF -->
         <skip-string type="string" name="show_all_contacts_title_font_family"/>                <!-- CAF -->
-        <skip-string type="string" name="dialpad_0_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_1_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_2_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_3_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_4_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_5_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_6_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_7_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_8_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_9_number"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_0_number"/>                                   <!-- CAF -->
         <skip-string type="string" name="dialpad_star_number"/>                                <!-- CAF -->
         <skip-string type="string" name="dialpad_pound_number"/>                               <!-- CAF -->
         <skip-string type="string" name="dialpad_0_letters"/>                                   <!-- CAF -->
