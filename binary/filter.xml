@@ -194,7 +194,6 @@
         <skip-string type="string" name="dialpad_7_letters"/>                                   <!-- CAF -->
         <skip-string type="string" name="dialpad_8_letters"/>                                   <!-- CAF -->
         <skip-string type="string" name="dialpad_9_letters"/>                                   <!-- CAF -->
-        <skip-string type="string" name="dialpad_0_letters"/>                                   <!-- CAF -->
         <skip-string type="string" name="dialpad_star_letters"/>                                <!-- CAF -->
         <skip-string type="string" name="dialpad_pound_letters"/>                               <!-- CAF -->
     </project>
