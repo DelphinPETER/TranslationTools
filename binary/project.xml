@@ -6,6 +6,8 @@
 ***********************************************************************
 ********************************************************************-->
     <project name="Superuser" resourceID="external/koush/Superuser/Superuser/res/values"/>
+    <project name="android_external_whispersystems_TextSecure" resourceID="external/whispersystems/TextSecure/res/values" />
+    <project name="android_external_whispersystems_WhisperPush" resourceID="external/whispersystems/WhisperPush/res/values" />
     <project name="android_frameworks_base/Core" resourceID="frameworks/base/core/res/res/values">
         <skip-file name="config.xml"/>
         <skip-file name="donottranslate.xml"/>
@@ -113,11 +115,14 @@
     </project>
     <project name="android_frameworks_base/SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values">
         <skip-file name="donottranslate.xml"/>
+        <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
     </project>
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values"/>
     <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values"/>
     <project name="android_packages_apps_BasicSmsReceiver" resourceID="packages/apps/BasicSmsReceiver/res/values"/>
-    <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values"/>
+    <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values">
+        <skip-string type="string" name="format_progress_text"/>
+    </project>
     <project name="android_packages_apps_BluetoothExt" resourceID="packages/apps/BluetoothExt/res/values"/>
     <project name="android_packages_apps_Browser" resourceID="packages/apps/Browser/res/values">
         <skip-file name="donottranslate-search_engines.xml"/>
@@ -161,6 +166,17 @@
         <skip-string type="string" name="preferences_home_tz_default"/>
         <skip-string type="string" name="tardis"/>
     </project>
+    <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
+        <skip-string type="string" name="pref_camera_timer_sound_default"/>
+        <skip-string type="string" name="pref_camera_hdr_default"/>
+        <skip-string type="string" name="pref_camera_hdr_plus_default"/>
+        <skip-string type="string" name="pref_video_quality_entry_high"/>
+        <skip-string type="string" name="pref_video_quality_entry_low"/>
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
+        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
+        <skip-string type="string-array" name="pref_camera_countdown_labels"/>
+    </project>
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
         <skip-file name="donottranslate_config.xml"/>
         <skip-string type="string" name="from_account_format"/>
@@ -175,6 +191,22 @@
     </project>
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
         <skip-file name="donottranslate_config.xml"/>
+        <skip-string type="string" name="call_log_activity_title_font_family"/>
+        <skip-string type="string" name="show_all_contacts_title_font_family"/>
+        <skip-string type="string" name="dialpad_star_number"/>
+        <skip-string type="string" name="dialpad_pound_number"/>
+        <skip-string type="string" name="dialpad_0_letters"/>
+        <skip-string type="string" name="dialpad_1_letters"/>
+        <skip-string type="string" name="dialpad_2_letters"/>
+        <skip-string type="string" name="dialpad_3_letters"/>
+        <skip-string type="string" name="dialpad_4_letters"/>
+        <skip-string type="string" name="dialpad_5_letters"/>
+        <skip-string type="string" name="dialpad_6_letters"/>
+        <skip-string type="string" name="dialpad_7_letters"/>
+        <skip-string type="string" name="dialpad_8_letters"/>
+        <skip-string type="string" name="dialpad_9_letters"/>
+        <skip-string type="string" name="dialpad_star_letters"/>
+        <skip-string type="string" name="dialpad_pound_letters"/>
     </project>
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values"/>
     <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
@@ -278,6 +310,7 @@
     <project name="android_packages_apps_Torch" resourceID="packages/apps/Torch/res/values">
         <skip-file name="config.xml"/>
     </project>
+    <project name="android_packages_apps_Trebuchet" resourceID="packages/apps/Trebuchet/res/values" />
     <project name="android_packages_apps_VideoEditor" resourceID="packages/apps/VideoEditor/res/values"/>
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values"/>
     <project name="android_packages_apps_VoicePlus" resourceID="packages/apps/VoicePlus/res/values"/>
