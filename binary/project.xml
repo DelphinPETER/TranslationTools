@@ -170,8 +170,6 @@
         <skip-string type="string" name="pref_camera_timer_sound_default"/>
         <skip-string type="string" name="pref_camera_hdr_default"/>
         <skip-string type="string" name="pref_camera_hdr_plus_default"/>
-        <skip-string type="string" name="pref_camera_hdr_default"/>
-        <skip-string type="string" name="pref_camera_hdr_plus_default"/>
         <skip-string type="string" name="pref_video_quality_entry_high"/>
         <skip-string type="string" name="pref_video_quality_entry_low"/>
         <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
