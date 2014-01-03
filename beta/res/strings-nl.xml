@@ -2,22 +2,23 @@
 <translation>
     <string name="label_language">Taal:</string>
     <string name="scan_button">Scannen</string>
-    <string name="label_progress">Voortgang:</string>
     <string name="column_title_apps_name">App-naam</string>
     <string name="column_title_untranslated">Niet vertaald</string>
-    <string name="unused">ongebruikt</string>
-    <string name="good_works">U hoeft niet te vertalen. Goed gedaan!</string>
+    <string name="button_save_list">Huidige lijst opslaan</string>
     <string name="information_title">Eigenschappen</string>
-    <string name="information_line_number_title">Regelnummer:</string>
-    <string name="information_file_path_title">Bestand:</string>
     <string name="information_type_title">Type:</string>
+    <string name="information_file_path_title">Bestand:</string>
+    <string name="information_line_number_title">Regelnummer:</string>
     <string name="menu_tools">Hulpmiddelen</string>
     <string name="menu_options">Instellingen</string>
-    <string name="editor_command">Opdrachtregel teksteditor:</string>
-    <string name="tips_options">Gebruik %1 voor het pad naar het bestand en %2 voor de regel (bijv.: gedit +%2 %1)</string>
     <string name="text_error_no_source_file_title">Geen XML-bestanden gevonden</string>
     <string name="text_error_no_source_file_text">Er zijn geen XML-bestanden gevonden. Weet u zeker dat u het CyanogenMod-vertaalhulpmiddel vanuit de broncodemap heeft gestart of dat uw aangepastie configuratie correct is?</string>
+    <string name="unused">ongebruikt</string>
+    <string name="good_works">U hoeft niet te vertalen. Goed gedaan!</string>
+    <string name="label_progress">Voortgang:</string>
     <string name="error_no_file_title">Bestand niet gevonden</string>
     <string name="error_no_language_text">Het bestand language.xml is niet gevonden. Weet u zeker dat u het CyanogenMod-vertaalhulpmiddel vanuit de broncodemap heeft gestart of dat uw aangepastie configuratie correct is?</string>
     <string name="error_no_project_text">Het bestand project.xml is niet gevonden. Weet u zeker dat u het CyanogenMod-vertaalhulpmiddel vanuit de broncodemap heeft gestart of dat uw aangepastie configuratie correct is?</string>
+    <string name="editor_command">Opdrachtregel teksteditor:</string>
+    <string name="tips_options">Gebruik %1 voor het pad naar het bestand en %2 voor de regel (bijv.: gedit +%2 %1)</string>
 </translation>
