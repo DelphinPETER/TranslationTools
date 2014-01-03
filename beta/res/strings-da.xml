@@ -11,6 +11,7 @@
     <string name="information_type_title">Type :</string>
     <string name="information_file_path_title">Fil :</string>
     <string name="information_line_number_title">Linjenummer :</string>
+    <string name="button_save_list">Gem liste</string>
     <string name="menu_tools">Værktøjer</string>    
     <string name="menu_options">Indstillinger</string>
     <string name="editor_command">Editorkommando :</string>

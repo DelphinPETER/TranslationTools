@@ -12,7 +12,10 @@
     <string name="information_file_path_title">Fichier :</string>
     <string name="information_type_title">Type :</string>
     <string name="information_source_text_title">Texte source :</string>
+    <string name="button_save_list">Enregistrer la liste</string>
     <string name="menu_tools">Outil</string>
+    <string name="menu_display">Affichage</string>
+    <string name="option_show_unused_string">Afficher les "strings" non traduites</string>
     <string name="menu_options">Options</string>
     <string name="editor_command">Commande de l'éditeur :</string>
     <string name="tips_options">Utiliser %1 pour le chemin du fichier et %2 pour la ligne (Par exemple : gedit +%2 %1)</string>
