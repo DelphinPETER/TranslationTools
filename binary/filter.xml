@@ -152,6 +152,18 @@
         <skip-string type="string" name="preferences_home_tz_default"/>                        <!-- AOSP untranslatable -->
         <skip-string type="string" name="tardis"/>                                             <!-- AOSP untranslatable -->
     </project>
+    <!-- android_packages_apps_Camera2 -->
+    <project name="android_packages_apps_Camera2">
+        <skip-string type="string" name="pref_camera_timer_sound_default"/>                    <!-- AOSP untranslatable -->
+        <skip-string type="string" name="pref_camera_hdr_default"/>                            <!-- AOSP untranslatable -->
+        <skip-string type="string" name="pref_camera_hdr_plus_default"/>                       <!-- AOSP untranslatable -->
+        <skip-string type="string" name="pref_video_quality_entry_high"/>                      <!-- AOSP untranslatable -->
+        <skip-string type="string" name="pref_video_quality_entry_low"/>                       <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/> <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>   <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>                 <!-- AOSP untranslatable -->
+        <skip-string type="string-array" name="pref_camera_countdown_labels"/>                 <!-- AOSP untranslatable -->
+    </project>
     <!-- android_packages_apps_CellBroadcastReceiver -->
     <project name="android_packages_apps_CellBroadcastReceiver">
         <skip-string type="string" name="alert_reminder_interval_summary"/>                    <!-- CAF untranslatable -->
