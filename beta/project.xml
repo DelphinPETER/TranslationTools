@@ -318,6 +318,7 @@
         <skip-file name="donottranslate.xml"/>
     </project>
     <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values"/>
+    <project name="android_packages_services_Telephony" resourceID="packages/services/Telephony/res/values"/>
     <project name="android_packages_screensavers_Basic" resourceID="packages/screensavers/Basic/res/values"/>
     <project name="android_packages_screensavers_PhotoTable" resourceID="packages/screensavers/PhotoTable/res/values"/>
     <project name="android_packages_wallpapers_Basic" resourceID="packages/wallpapers/Basic/res/values"/>
