@@ -170,8 +170,6 @@
         <skip-string type="string" name="pref_camera_timer_sound_default"/>
         <skip-string type="string" name="pref_camera_hdr_default"/>
         <skip-string type="string" name="pref_camera_hdr_plus_default"/>
-        <skip-string type="string" name="pref_video_quality_entry_high"/>
-        <skip-string type="string" name="pref_video_quality_entry_low"/>
         <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
         <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
         <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
@@ -280,6 +278,10 @@
         <skip-string type="string" name="debug_intent_sender_label"/>
         <skip-string type="string" name="default_date_format"/>
         <skip-string type="string" name="font_size_preview_text"/>
+        <skip-string type="string" name="lock_pattern_size_3"/>
+        <skip-string type="string" name="lock_pattern_size_4"/>
+        <skip-string type="string" name="lock_pattern_size_5"/>
+        <skip-string type="string" name="lock_pattern_size_6"/>
         <skip-string type="string" name="lockpattern_need_to_unlock_footer"/>
         <skip-string type="string" name="lockpattern_need_to_unlock_wrong_footer"/>
         <skip-string type="string" name="percentage"/>
@@ -318,6 +320,12 @@
         <skip-file name="donottranslate.xml"/>
     </project>
     <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values"/>
+    <project name="android_packages_services_Telephony" resourceID="packages/services/Telephony/res/values">
+        <skip-string type="string-array" name="sip_call_options_entries"/>
+        <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
+        <skip-string type="string-array" name="sip_send_keepalive_options"/>
+        <skip-string type="string" name="call_settings_title_font_family"/>
+    </project>
     <project name="android_packages_screensavers_Basic" resourceID="packages/screensavers/Basic/res/values"/>
     <project name="android_packages_screensavers_PhotoTable" resourceID="packages/screensavers/PhotoTable/res/values"/>
     <project name="android_packages_wallpapers_Basic" resourceID="packages/wallpapers/Basic/res/values"/>
