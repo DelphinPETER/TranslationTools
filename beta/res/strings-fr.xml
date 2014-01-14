@@ -15,9 +15,12 @@
     <string name="button_save_list">Enregistrer la liste</string>
     <string name="menu_tools">Outil</string>
     <string name="menu_display">Affichage</string>
-    <string name="option_show_unused_string">Afficher les "strings" non traduites</string>
+    <string name="option_show_unused_string">Afficher les "strings" non utilisées</string>
     <string name="menu_options">Options</string>
     <string name="editor_command">Commande de l'éditeur :</string>
+    <string name="use_custom_source">Utiliser un dossier source personnalisé</string>
+    <string name="custom_source_title">Dossier source :</string>
+    <string name="button_open_text">Ouvrir</string>
     <string name="tips_options">Utiliser %1 pour le chemin du fichier et %2 pour la ligne (Par exemple : gedit +%2 %1)</string>
     <string name="error_no_source_file_title">Aucun fichier source trouvés</string>
     <string name="error_no_source_file_text">Aucun fichier source trouvés. Assurez-vous que TranslationTool est bien executé dans le dossier source ou que votre fichier personnalisé est valide.</string>

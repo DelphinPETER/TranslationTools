@@ -18,6 +18,9 @@
     <string name="option_show_unused_string">Show unused string</string>
     <string name="menu_options">Options</string>
     <string name="editor_command">Editor command:</string>
+    <string name="use_custom_source">Use a custom source folder</string>
+    <string name="custom_source_title">Custom folder:</string>
+    <string name="button_open_text">Open</string>
     <string name="tips_options">Use %1 for the path file and %2 for the line (for example : gedit +%2 %1)</string>
     <string name="error_no_source_file_title">No XML files found</string>
     <string name="error_no_source_file_text">No xml files are found. Make sure you launch TranslationTool in source folder or that your custom configuration is correct.</string>
