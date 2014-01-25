@@ -322,7 +322,11 @@
     <project name="android_packages_apps_Torch" resourceID="packages/apps/Torch/res/values">
         <skip-file name="config.xml"/>
     </project>
-    <project name="android_packages_apps_Trebuchet" resourceID="packages/apps/Trebuchet/res/values" />
+    <project name="android_packages_apps_Trebuchet" resourceID="packages/apps/Trebuchet/res/values">
+        <skip-file name="preferences_defaults.xml"/>
+        <skip-string type="string" name="debug_memory_activity"/>
+        <skip-string type="string" name="dummy_custom_cling_error_message"/>
+    </project>
     <project name="android_packages_apps_VideoEditor" resourceID="packages/apps/VideoEditor/res/values"/>
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values"/>
     <project name="android_packages_apps_VoicePlus" resourceID="packages/apps/VoicePlus/res/values"/>
