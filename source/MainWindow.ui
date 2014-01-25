@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>CyanogenMod Translation Tool - Debug</string>
+   <string>Translation Tool - 0.2.4</string>
   </property>
   <property name="windowIcon">
    <iconset resource="icon.qrc">
-    <normaloff>:/progIcon/icon-dev-cyanogenmod.png</normaloff>:/progIcon/icon-dev-cyanogenmod.png</iconset>
+    <normaloff>:/progIcon/TTools-icons.png</normaloff>:/progIcon/TTools-icons.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -32,7 +32,14 @@
        <widget class="QComboBox" name="combo_Language"/>
       </item>
       <item>
-       <widget class="QLabel" name="label_ProgressionTranslated">
+       <widget class="QLabel" name="label_Progression">
+        <property name="text">
+         <string>Progress:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_progressCounter">
         <property name="text">
          <string/>
         </property>
@@ -92,33 +99,6 @@
      </widget>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="Bottom">
-      <item>
-       <widget class="QPushButton" name="pushButton_saveCurrentList">
-        <property name="enabled">
-         <bool>false</bool>
-        </property>
-        <property name="text">
-         <string>Save current list</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_bottom">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-     </layout>
-    </item>
-    <item>
      <widget class="QGroupBox" name="groupBox_Information">
       <property name="title">
        <string>Information :</string>
@@ -129,7 +109,7 @@
          <item>
           <widget class="QLabel" name="label_InfoTypeTitle">
            <property name="text">
-            <string>Type :</string>
+            <string>Type:</string>
            </property>
           </widget>
          </item>
@@ -184,7 +164,7 @@
             <locale language="English" country="UnitedStates"/>
            </property>
            <property name="text">
-            <string>File :</string>
+            <string>File:</string>
            </property>
           </widget>
          </item>
@@ -211,11 +191,42 @@
         </layout>
        </item>
        <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_sourceTextTitle">
+           <property name="text">
+            <string>Source text: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_sourceTextText">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
         <layout class="QHBoxLayout" name="horizontalLayout_LineNumber">
          <item>
           <widget class="QLabel" name="label_LineNumberTitle">
            <property name="text">
-            <string>Line number :</string>
+            <string>Line number:</string>
            </property>
           </widget>
          </item>
@@ -274,7 +285,14 @@
     </property>
     <addaction name="actionOptions"/>
    </widget>
+   <widget class="QMenu" name="menuDisplay">
+    <property name="title">
+     <string>Display</string>
+    </property>
+    <addaction name="actionShow_unused_string"/>
+   </widget>
    <addaction name="menuOption"/>
+   <addaction name="menuDisplay"/>
   </widget>
   <widget class="QStatusBar" name="statusbar">
    <property name="mouseTracking">
@@ -284,6 +302,14 @@
   <action name="actionOptions">
    <property name="text">
     <string>Options</string>
+   </property>
+  </action>
+  <action name="actionShow_unused_string">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show unused string</string>
    </property>
   </action>
  </widget>

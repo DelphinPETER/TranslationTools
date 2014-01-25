@@ -21,22 +21,13 @@
 #include "ui_MainWindow.h"
 #include "QDateTime"
 
+using namespace std;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     uiOpenWindow(new Ui::MainWindow)
 {
     uiOpenWindow->setupUi(this);
-
-    //Fix column width/hidden
-    uiOpenWindow->treeApps->setColumnWidth(0, 400);
-    uiOpenWindow->treeApps->setColumnWidth(1, 200);
-    uiOpenWindow->treeApps->setColumnHidden(2, true);
-
-    //Text selectable
-    uiOpenWindow->label_FilePathText->setTextInteractionFlags(Qt::TextSelectableByMouse);
-    uiOpenWindow->label_InfoTypeText->setTextInteractionFlags(Qt::TextSelectableByMouse);
-    uiOpenWindow->label_LineNumberText->setTextInteractionFlags(Qt::TextSelectableByMouse);
-
 }
 
 MainWindow::~MainWindow()
@@ -44,22 +35,57 @@ MainWindow::~MainWindow()
     delete uiOpenWindow;
 }
 
+
+void MainWindow::noui(QStringList argument)
+{
+    QString language;
+    QStringListIterator itrArgument(argument);
+    while(itrArgument.hasNext()) {
+        language = itrArgument.next();
+        if(language == "lang:all") {
+            QVectorIterator<QString> itrLanguage(m_languageList);
+            while(itrLanguage.hasNext()) {
+                m_language = itrLanguage.next();
+                on_pushButton_Scan_clicked();
+            }
+        } else if (language.contains("lang:")) {
+            m_language = language;
+            on_pushButton_Scan_clicked();
+        }
+    }
+
+    exit(0);
+}
+
 void MainWindow::on_pushButton_Scan_clicked()
 {
+
+    cleanValue();
+    int appNumber = 0;
+
+    load_ProjectXMLFile();
+    load_LanguageXMLFile();
+
+    if (m_customMode) {
+        m_rootDir = m_customSourcePath;
+    } else {
+        m_rootDir = QCoreApplication::applicationDirPath().section("/", 0, -4);
+    }
+
     //Save user configuration
     save_PersonalConfig();
 
-    //Clear application window and value
-    m_resourceID_sourceString.clear();
-    m_resourceID_translationString.clear();
-    m_resourceID_untranslatedString.clear();
-    m_translatableCounter = 0;
-    int appNumber = 0;
-    uiOpenWindow->treeApps->clear();
-    uiOpenWindow->progressBar_scan->setValue(0);
-    uiOpenWindow->label_FilePathText->clear();
-    uiOpenWindow->label_InfoTypeText->clear();
-    uiOpenWindow->label_LineNumberText->clear();
+    if(m_stringID_stringName.isEmpty()){
+        m_translatableCounter = 0;
+        QMapIterator<QString, QString> itrSourceApps(m_resourceID_Name);
+        while(itrSourceApps.hasNext()) {
+            itrSourceApps.next();
+
+            //Scan source file
+            scan_TranslationPath(itrSourceApps.key(), "source");
+        }
+    }
+
 
     //Scan application list
     QMapIterator<QString, QString> itrApps(m_resourceID_Name);
@@ -67,26 +93,23 @@ void MainWindow::on_pushButton_Scan_clicked()
         itrApps.next();
         appNumber++;
 
-        //Scan source file
-        scan_SourcePath(itrApps.key());
-
         //Scan translation file
         scan_TranslationPath(itrApps.key(), m_language);
 
-        if(m_language_subst.contains(m_language)){
+        if(m_language_subst.contains(m_language)) {
             scan_TranslationPath(itrApps.key(), m_language_subst.value(m_language));
         }
-
-        //Compare source and translation strings
-        compare_SourceTranslation(itrApps.key());
 
         //Define current value of progress bar
         uiOpenWindow->progressBar_scan->setValue(appNumber);
 
     }
 
+    //Compare source and translation strings
+    compare_SourceTranslation();
+
     if(m_stringID_stringName.isEmpty()){
-        QMessageBox::warning(this, tr("No XML files found"), tr("No xml files are found. Make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
+        QMessageBox::warning(this, m_text_error_no_source_file_title, m_text_error_no_source_file_text, QMessageBox::Ok);
         qDebug() << "ERROR: No files found";
         return;
     }
@@ -96,37 +119,70 @@ void MainWindow::on_pushButton_Scan_clicked()
 
 }
 
-void MainWindow::compare_SourceTranslation(QString resourceID)
+void MainWindow::cleanValue()
 {
-    QVector<QString> sourceStringList = m_resourceID_sourceString.value(resourceID);
-    QVector<QString> translateStringList = m_resourceID_translationString.value(resourceID);
-    QVector<QString> skipStringList = m_resourceID_skipStringList.value(resourceID);
+    //Clear application window and value
+
+    m_untranslatedString.clear();
+    m_unUsedString.clear();
+    QMapIterator<QString, QString> itrStringID(m_stringID_stringName);
+    while(itrStringID.hasNext()){
+        QString stringID = itrStringID.next().key();
+        if(!stringID.contains("@source@")) {
+            m_stringID_stringName.remove(stringID);
+            m_stringID_lineNumber.remove(stringID);
+            m_stringID_file.remove(stringID);
+            m_stringID_text.remove(stringID);
+            m_stringID_type.remove(stringID);
+        }
+    }
+
+    uiOpenWindow->treeApps->clear();
+    uiOpenWindow->progressBar_scan->setValue(0);
+    uiOpenWindow->label_FilePathText->clear();
+    uiOpenWindow->label_InfoTypeText->clear();
+    uiOpenWindow->label_LineNumberText->clear();
+    uiOpenWindow->label_progressCounter->clear();
+
+}
+
+void MainWindow::compare_SourceTranslation()
+{
+    m_untranslatedString.clear();
+    m_unUsedString.clear();
+
+    QVector<QString> sourceStringList;
+    QVector<QString> translationStringList;
+
+    QMapIterator<QString, QString> itrStringsList(m_stringID_stringName);
+    while(itrStringsList.hasNext()){
+        itrStringsList.next();
+        QString item = itrStringsList.key();
+        if ( item.contains("@source@")){
+            sourceStringList.push_back(item);
+        } else if (item.contains("@"+m_language+"@")){
+            translationStringList.push_back(item);
+        }
+    }
 
     //Lists untranslated strings
-    QVector<QString> untranslatedStringList;
     QVectorIterator<QString> itrSourceString(sourceStringList);
     while(itrSourceString.hasNext()) {
         QString sourceString = itrSourceString.next();
-        if(!skipStringList.contains(sourceString)) {
-            if(!translateStringList.contains(sourceString)) {
-                untranslatedStringList.push_back(sourceString);
-            }
+        if(!translationStringList.contains(sourceString.replace("@source@","@" + m_language + "@"))) {
+            m_untranslatedString.push_back(sourceString);
         }
     }
-    m_resourceID_untranslatedString[resourceID] = untranslatedStringList;
 
-    //List unused strings
-    QVector<QString> unusedStringList;
-    QVectorIterator<QString> itrTranslationString(translateStringList);
-    while(itrTranslationString.hasNext()) {
-        QString translationString = itrTranslationString.next();
-        if(!skipStringList.contains(translationString)) {
-            if(!sourceStringList.contains(translationString)) {
-                unusedStringList.push_back(translationString);
-            }
+    //Lists unused strings
+    QVectorIterator<QString> itrUnusedString(translationStringList);
+    while (itrUnusedString.hasNext()){
+        QString unusedString = itrUnusedString.next();
+        QString testString = unusedString;
+        if(!sourceStringList.contains(testString.replace("@"+m_language+"@","@source@"))){
+            m_unUsedString.push_back(unusedString);
         }
     }
-    m_resourceID_unusedString[resourceID] = unusedStringList;
 
 }
 
@@ -136,75 +192,80 @@ void MainWindow::set_TreeProject()
     int untranslatedCounterFull = 0;
     int untranslatedCounterApp = 0;
 
-    QMapIterator<QString, QVector<QString> > itr(m_resourceID_untranslatedString);
-    while(itr.hasNext()) {
-        itr.next();
+    QMapIterator<QString, QString> itrProjectList(m_resourceID_Name);
+    while(itrProjectList.hasNext()) {
+        itrProjectList.next();
         untranslatedCounterApp = 0;
-        QTreeWidgetItem* item = new QTreeWidgetItem;
+        QString project = itrProjectList.key();
 
-        item->setText(0,m_resourceID_Name.value(itr.key()));
-        item->setText(2, itr.key());
+        QTreeWidgetItem* itemProject = new QTreeWidgetItem;
 
-        //Add item of string UNTRANSLATED
-        QVector<QString> untranslatedList = itr.value();
-        QVectorIterator<QString> itrUntranslatedList(untranslatedList);
-        while (itrUntranslatedList.hasNext()) {
-            QString stringName = itrUntranslatedList.next();
-            QTreeWidgetItem* untransItem = new QTreeWidgetItem;
-            untransItem->setText(0, m_stringID_stringName.value(stringName));
-            untransItem->setText(2, stringName);
-            item->addChild(untransItem);
-            untranslatedCounterApp++;
-        }
-
-        //Add item of string UNUSED
-        QVector<QString> unusedStringList = m_resourceID_unusedString.value(itr.key());
-        if(!unusedStringList.isEmpty()) {
-            QVectorIterator<QString> itrUnusedList(unusedStringList);
-            while (itrUnusedList.hasNext()) {
-                QString unUsedStringName = itrUnusedList.next();
-                QTreeWidgetItem* unusedItem = new QTreeWidgetItem;
-                unusedItem->setText(0, m_stringID_stringName.value(unUsedStringName));
-                unusedItem->setTextColor(0, Qt::red);
-                unusedItem->setText(1, tr("unused"));
-                unusedItem->setTextColor(1, Qt::red);
-                unusedItem->setText(2, unUsedStringName);
-                unusedItem->setTextColor(0, Qt::red);
-                item->setTextColor(0, Qt::red);
-                item->addChild(unusedItem);
+        //Display the untranslated strings
+        QVectorIterator<QString> itrUntranslatedString(m_untranslatedString);
+        while(itrUntranslatedString.hasNext()){
+            QString untranslatedString = itrUntranslatedString.next();
+            if(untranslatedString.contains(project)){
+                QTreeWidgetItem* untranslatedItem = new QTreeWidgetItem;
+                QString sourceItem = untranslatedString;
+                sourceItem = sourceItem.replace("@"+m_language+"@","@source@");
+                if(!m_filterString.contains(sourceItem.section("-",0,0))){
+                    untranslatedItem->setText(0, m_stringID_stringName.value(sourceItem));
+                    untranslatedItem->setText(2, sourceItem);
+                    itemProject->addChild(untranslatedItem);
+                    untranslatedCounterApp++;
+                    QString message = project + " - " + m_language + " - " + m_stringID_stringName.value(sourceItem);
+                    QTextStream(stdout) << ( message + "\n" );
+                    qDebug() << message;
+                }
             }
         }
 
-        item->setText(1,QString::number(untranslatedCounterApp));
-
-
-        untranslatedCounterFull += untranslatedCounterApp;
-
-        if(untranslatedCounterApp > 0) {
-            uiOpenWindow->treeApps->addTopLevelItem(item);
-        } else if (!unusedStringList.isEmpty()) {
-            uiOpenWindow->treeApps->addTopLevelItem(item);
+        //Display the uunused strings
+        if(uiOpenWindow->actionShow_unused_string->isChecked()) {
+            QVectorIterator<QString> itrUnusedString(m_unUsedString);
+            while(itrUnusedString.hasNext()){
+                QString unusedString =itrUnusedString.next();
+                if(unusedString.contains(project)){
+                    QTreeWidgetItem* unusedItem = new QTreeWidgetItem;
+                    QString sourceUnusedItem = unusedString;
+                    if(!m_filterString.contains(sourceUnusedItem.section("-",0,0))){
+                        unusedItem->setText(0, m_stringID_stringName.value(sourceUnusedItem));
+                        unusedItem->setText(2, unusedString);
+                        itemProject->addChild(unusedItem);
+                        unusedItem->setTextColor(0, Qt::red);
+                        unusedItem->setText(1, m_text_unused);
+                        unusedItem->setTextColor(1, Qt::red);
+                        unusedItem->setText(2, sourceUnusedItem);
+                        unusedItem->setTextColor(0, Qt::red);
+                        itemProject->setTextColor(0, Qt::red);
+                    }
+                }
+            }
         }
 
-    }
+        untranslatedCounterFull += untranslatedCounterApp;
+        itemProject->setText(1,QString::number(untranslatedCounterApp));
 
-    //No translation find, good work !!!
-    if(uiOpenWindow->treeApps->topLevelItemCount() == 0) {
-        QTreeWidgetItem* item = new QTreeWidgetItem;
-        item->setText(0,tr("No translation needed, good work!"));
-        uiOpenWindow->treeApps->addTopLevelItem(item);
-        uiOpenWindow->pushButton_saveCurrentList->setEnabled(false);
-    } else {
-        uiOpenWindow->pushButton_saveCurrentList->setEnabled(true);
+        itemProject->setText(0, m_resourceID_Name.value(project));
+        if(itemProject->childCount() >0){
+            uiOpenWindow->treeApps->addTopLevelItem(itemProject);
+        }
+
     }
 
     //Add statistics
     int pourcent(((m_translatableCounter - untranslatedCounterFull)*100) / m_translatableCounter );
-    uiOpenWindow->label_ProgressionTranslated->setText(tr("Progress:") + QString::number(pourcent) + "%");
-    QStringList columnTitle;
-    columnTitle << tr("Apps name") << (tr("Untranslated") + " (" + QString::number(untranslatedCounterFull) + "/" +QString::number(m_translatableCounter) + ")" );
-    uiOpenWindow->treeApps->setHeaderLabels(columnTitle);
-    uiOpenWindow->treeApps->resizeColumnToContents(1);
+    uiOpenWindow->label_progressCounter->setText(" " + QString::number(pourcent) + "% (" + QString::number(untranslatedCounterFull) + "/" + QString::number(m_translatableCounter) + ")");
+    uiOpenWindow->label_Progression->setVisible(true);
+
+    //No translation find, good work !!!
+    if(uiOpenWindow->treeApps->topLevelItemCount() == 0) {
+        QTreeWidgetItem* item = new QTreeWidgetItem;
+        item->setText(0,m_text_goodWorks);
+        uiOpenWindow->treeApps->addTopLevelItem(item);
+        qDebug() << "Language:" + m_language + " have no translation needed";
+        cout << "Language:" + m_language.toStdString() + " have no translation needed\n";
+    }
 }
 
 void MainWindow::on_combo_Language_currentIndexChanged(const QString &arg1)
@@ -224,9 +285,10 @@ void MainWindow::on_treeApps_itemSelectionChanged()
         resourceID = item->parent()->text(2);
 
         uiOpenWindow->label_InfoTypeText->setText(m_stringID_type.value(stringID) );
+        uiOpenWindow->label_sourceTextText->setText(m_stringID_text.value(stringID));
 
         if(m_stringID_file.contains(stringID)) {
-            uiOpenWindow->label_FilePathText->setText(resourceID + "/" + m_stringID_file.value(stringID) );
+            uiOpenWindow->label_FilePathText->setText(m_stringID_file.value(stringID) );
         } else {
             uiOpenWindow->label_FilePathText->clear();
         }
@@ -242,6 +304,7 @@ void MainWindow::on_treeApps_itemSelectionChanged()
         uiOpenWindow->label_InfoTypeText->clear();
         uiOpenWindow->label_FilePathText->setText(item->text(2) );
         uiOpenWindow->label_LineNumberText->clear();
+        uiOpenWindow->label_sourceTextText->clear();
     }
 
 }
@@ -252,112 +315,55 @@ void MainWindow::on_treeApps_itemDoubleClicked()
 
     //If the item is a string we open the editor
     if(uiOpenWindow->treeApps->indexOfTopLevelItem(item) == -1) {
-        QString resourceID = item->parent()->text(2);
         QProcess process;
 
         //Open the translation file
         QString openTransaltionFile = m_editor;
-        //Replace file path
-        openTransaltionFile.replace( "%1", m_rootDir + "/" + resourceID + "-" + m_language + "/" + m_stringID_file.value(item->text(2)) );
-        //replace line number
-        openTransaltionFile.replace( "%2", QString::number(1) );
-        //launch command
-        process.startDetached(openTransaltionFile);
 
-        //Open the source file
-        QString openSourceFile = m_editor;
-        //Replace file path
-        openSourceFile.replace( "%1", m_rootDir + "/" + resourceID + "/" + m_stringID_file.value(item->text(2)) );
-        //replace line number
-        openSourceFile.replace( "%2", QString::number(m_stringID_lineNumber.value(item->text(2))) );
-        //launch command
-        process.startDetached(openSourceFile);
+        if(!m_unUsedString.contains(item->text(2))){
+            //Replace file path
+            QString translateFolder = m_stringID_file.value(item->text(2));
+            translateFolder = translateFolder.replace("values", "values-"+m_language);
+            openTransaltionFile.replace( "%1", translateFolder );
+            //replace line number
+            openTransaltionFile.replace( "%2", QString::number(1) );
+            //launch command
+            process.startDetached(openTransaltionFile);
 
-    }
+            //Open the source file
+            QString openSourceFile = m_editor;
+            //Replace file path
+            openSourceFile.replace( "%1", m_stringID_file.value(item->text(2)) );
+            //replace line number
+            openSourceFile.replace( "%2", QString::number(m_stringID_lineNumber.value(item->text(2))) );
+            //launch command
+            process.startDetached(openSourceFile);
 
-}
-
-void MainWindow::scan_SourcePath(QString sourcePath)
-{
-    //Lists files in source folder
-    QStringList fileList = get_FileList(sourcePath);
-
-    QStringListIterator itrListFile(fileList);
-    while(itrListFile.hasNext()) {
-        QString filename = itrListFile.next();
-        QVector<QString> skipFileList = m_resourceID_skipFileList.value(sourcePath);
-        if(!skipFileList.contains(filename)) {
-            load_SourceFile(sourcePath, filename);
-        }
-    }
-
-}
-
-void MainWindow::load_SourceFile(QString sourcePath, QString filename)
-{
-    QFile fileToParse(m_rootDir + "/" + sourcePath + "/" + filename);
-    if( !fileToParse.open( QIODevice::ReadOnly ) ) {
-        qDebug() << "ERROR: " + m_rootDir + "/" + sourcePath + "/" + filename + "<===== file not found";
-    }
-
-    QDomDocument xmlFile( "Ficher de Traduction" );
-    if( !xmlFile.setContent( &fileToParse ) )
-    {
-        qDebug() << "ERROR: " + m_rootDir + "/" + sourcePath + "/" + filename + "<===== file not loading";
-        fileToParse.close();
-    }
-    fileToParse.close();
-
-    //Define root
-    QDomElement root = xmlFile.documentElement();
-    if( root.tagName() != "resources" ) {
-        qDebug() << "ERROR: " + m_rootDir + "/" + sourcePath + "/" + filename + "<===== file corrupt";
-    }
-
-    QDomElement parentItem = root.firstChildElement();
-
-    QString type;
-    QVector<QString> stringFound;
-
-    while( !parentItem.isNull() )
-    {
-        type = parentItem.tagName();
-        if (type == "string" || type == "plurals" || type == "string-array") {
-            if( parentItem.hasAttribute("name") && parentItem.attribute("translatable") != "false") {
-                QString NameID;
-                //Define the ID
-                if(parentItem.hasAttribute("product")) {
-                    NameID = sourcePath + "@" + parentItem.tagName() + "@" + parentItem.attribute("name") + "-" + parentItem.attribute("product");
-                    m_stringID_stringName[NameID] = parentItem.attribute("name") + "-" + parentItem.attribute("product");
-                } else {
-                    NameID = sourcePath + "@" + parentItem.tagName() + "@" + parentItem.attribute("name");
-                    m_stringID_stringName[NameID] = parentItem.attribute("name");
-                }
-                stringFound.push_back(NameID);
-                m_stringID_lineNumber[NameID] = parentItem.lineNumber();
-                m_stringID_file[NameID] = filename;
-                m_stringID_type[NameID] = parentItem.tagName();
-
-                m_translatableCounter++;
-
-            }
+        } else {
+            //Replace file path
+            QString translateFolder = m_stringID_file.value(item->text(2));
+            //translateFolder = translateFolder.replace("values", "values-"+m_language);
+            openTransaltionFile.replace( "%1", translateFolder );
+            //replace line number
+            openTransaltionFile.replace( "%2", QString::number(m_stringID_lineNumber.value(item->text(2)))  );
+            //launch command
+            process.startDetached(openTransaltionFile);
 
         }
-        parentItem = parentItem.nextSiblingElement();
-    }
 
-    if( !m_resourceID_sourceString.value(sourcePath).empty() ) {
-        stringFound += m_resourceID_sourceString.value(sourcePath);
     }
-
-    m_resourceID_sourceString[sourcePath] = stringFound;
 
 }
 
 void MainWindow::scan_TranslationPath(QString translationPath, QString language)
 {
-    //Lists files in translation folder
-    QStringList fileList = get_FileList(translationPath + "-" + language);
+    //Lists files in folder
+    QStringList fileList;
+    if (language == "source"){
+        fileList = get_FileList(translationPath);
+    } else {
+        fileList = get_FileList(translationPath + "-" + language);
+    }
 
     QStringListIterator itrListFile(fileList);
     while(itrListFile.hasNext()) {
@@ -373,15 +379,23 @@ void MainWindow::scan_TranslationPath(QString translationPath, QString language)
 void MainWindow::load_TranslationFile(QString sourcePath, QString filename, QString language)
 {
 
-    QFile fileToParse(m_rootDir + "/" + sourcePath + "-" + language + "/" + filename);
+    QString directory;
+    if(language == "source") {
+        directory =  m_rootDir + "/" + sourcePath + "/" + filename;
+    } else {
+        directory =  m_rootDir + "/" + sourcePath + "-" + language + "/" + filename;
+    }
+
+
+    QFile fileToParse(directory);
     if( !fileToParse.open( QIODevice::ReadOnly ) ) {
-        qDebug() << "ERROR: " + m_rootDir + "/" + sourcePath + "-" + language + "/" + filename + "<===== file not found";
+        qDebug() << "ERROR: " + directory + "<===== file not found";
     }
 
     QDomDocument xmlFile( "Translation_file" );
     if( !xmlFile.setContent( &fileToParse ) )
     {
-        qDebug() << "ERROR: " + m_rootDir + "/" + sourcePath + "-" + language + "/" + filename + "<===== file not loading";
+        qDebug() << "ERROR: " + directory + "<===== file not loading";
         fileToParse.close();
     }
     fileToParse.close();
@@ -389,51 +403,74 @@ void MainWindow::load_TranslationFile(QString sourcePath, QString filename, QStr
     //Define root
     QDomElement root = xmlFile.documentElement();
     if( root.tagName() != "resources" ) {
-        qDebug() << "ERROR: " + m_rootDir + "/" + sourcePath + "-" + language + "/" + filename + "<===== file corrupt";
+        qDebug() << "ERROR: " + directory + "<===== file corrupt";
     }
 
     QDomElement parentItem = root.firstChildElement();
-
-    QString type;
-    QVector<QString> stringFound;
+    //QVector<QString> stringFound;
 
     while( !parentItem.isNull() )
     {
-        type = parentItem.tagName();
-        if (type == "string" || type == "plurals" || type == "string-array") {
-            if( parentItem.hasAttribute("name") && parentItem.attribute("translatable") != "false") {
+
+        if (parentItem.attribute("translatable") != "false" && parentItem.attribute("translate") != "false"){
+
+            if (parentItem.tagName() == "string"){
                 QString NameID;
                 //Define string ID
                 if(parentItem.hasAttribute("product")) {
-                    NameID = sourcePath + "@" + parentItem.tagName() + "@" + parentItem.attribute("name") + "-" + parentItem.attribute("product");
-                    if(!m_stringID_stringName.contains(NameID)) {
-                        m_stringID_stringName[NameID] = parentItem.attribute("name") + "-" + parentItem.attribute("product");
-                    }
+                    NameID = sourcePath + "@" + language + "@" + parentItem.attribute("name") + "-" + parentItem.attribute("product");
+                    m_stringID_stringName[NameID] = parentItem.attribute("name") + "-" + parentItem.attribute("product");
+
                 } else {
-                    NameID = sourcePath + "@" + parentItem.tagName() + "@" + parentItem.attribute("name");
+                    NameID = sourcePath + "@" + language + "@" + parentItem.attribute("name");
+                    m_stringID_stringName[NameID] = parentItem.attribute("name");
+                }
+
+                m_stringID_file[NameID] = directory;
+                m_stringID_lineNumber[NameID] = parentItem.lineNumber();
+                m_stringID_type[NameID] = "string";
+                m_stringID_text[NameID] = parentItem.text();
+
+            } else if (parentItem.tagName() == "plurals"){
+                QDomElement pluralItem = parentItem.firstChildElement();
+                while (!pluralItem.isNull()){
+                    //Define plural ID
+                    QString  NameID = sourcePath + "@" + language + "@" + parentItem.attribute("name");
                     if(!m_stringID_stringName.contains(NameID)) {
-                        m_stringID_stringName[NameID] = parentItem.attribute("name");
+                        m_stringID_stringName[NameID] = parentItem.attribute("name") + "-" + pluralItem.attribute("quantity");
+                        m_stringID_file[NameID] = directory;
+                        m_stringID_lineNumber[NameID] = pluralItem.lineNumber();
+                        m_stringID_type[NameID] = "plurals";
+                        m_stringID_text[NameID] = pluralItem.text();
                     }
-                }
-                stringFound.push_back(NameID);
-
-                if(!m_stringID_type.contains(NameID)) {
-                    m_stringID_type[NameID] = parentItem.tagName();
+                    pluralItem = pluralItem.nextSiblingElement();
                 }
 
+            } else if (parentItem.tagName() == "string-array"){
+                QDomElement arrayItem = parentItem.firstChildElement();
+                int arrayNumber = 1;
+                while (!arrayItem.isNull()){
+                    //Define array ID
+                    QString  NameID = sourcePath + "@" + language + "@" + parentItem.attribute("name") + "-" + QString::number(arrayNumber);
+                    if(!m_stringID_stringName.contains(NameID)) {
+                        m_stringID_stringName[NameID] = parentItem.attribute("name") + "-" + QString::number(arrayNumber);
+                        m_stringID_file[NameID] = directory;
+                        m_stringID_lineNumber[NameID] = arrayItem.lineNumber();
+                        m_stringID_type[NameID] = "string-array";
+                        m_stringID_text[NameID] = arrayItem.text();
+                    }
+                    arrayItem = arrayItem.nextSiblingElement();
+                    ++arrayNumber;
+                }
+            }
+            if(language == "source") {
+                m_translatableCounter ++;
             }
 
         }
         parentItem = parentItem.nextSiblingElement();
+
     }
-
-
-    if( !m_resourceID_translationString.value(sourcePath).empty() ) {
-        stringFound += m_resourceID_translationString.value(sourcePath);
-    }
-
-    m_resourceID_translationString[sourcePath] = stringFound;
-
 }
 
 QStringList MainWindow::get_FileList(QString filepath)
@@ -449,72 +486,152 @@ QStringList MainWindow::get_FileList(QString filepath)
     return dir.entryList();
 }
 
-void MainWindow::load_ApplicationXMLFile()
-{
-    load_ProjectXMLFile();
-
+void MainWindow::load_ApplicationFile()
+{    
+    load_UITranslation();
     load_LanguageXMLFile();
-
-    load_FilterXMLFile();
-
 }
 
-void MainWindow::load_FilterXMLFile()
+void MainWindow::load_UITranslation()
 {
-    QFile globalFilterFile(QCoreApplication::applicationDirPath() + "/filter.xml");
-    if( !globalFilterFile.open( QIODevice::ReadOnly ) ) {
-        QMessageBox::warning(this, tr("File not found"), tr("The file filter.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
-        qDebug() << "ERROR: filter.xml file not found";
-        exit(0);
+
+    //Fix column width/hidden
+    uiOpenWindow->treeApps->setColumnWidth(0, 400);
+    uiOpenWindow->treeApps->setColumnWidth(1, 200);
+    uiOpenWindow->treeApps->setColumnHidden(2, true);
+
+    //Text selectable
+    uiOpenWindow->label_FilePathText->setTextInteractionFlags(Qt::TextSelectableByMouse);
+    uiOpenWindow->label_InfoTypeText->setTextInteractionFlags(Qt::TextSelectableByMouse);
+    uiOpenWindow->label_LineNumberText->setTextInteractionFlags(Qt::TextSelectableByMouse);
+
+    uiOpenWindow->label_Progression->hide();
+
+
+    QString language = QLocale::system().name().section('_', 0, 0);
+
+    QFile uiTranslationFile(QCoreApplication::applicationDirPath() + "/res/strings-" + language  + ".xml");
+
+    if(!uiTranslationFile.exists()){
+        uiTranslationFile.setFileName(QCoreApplication::applicationDirPath() + "/res/strings.xml");
     }
 
-    QDomDocument globalFilterDocument( "Global_Filter" );
-    if( !globalFilterDocument.setContent( &globalFilterFile ) )
-    {
-        qDebug() << "ERROR: filter.xml file not found";
-        globalFilterFile.close();
-    }
-    globalFilterFile.close();
+    if( uiTranslationFile.open( QIODevice::ReadOnly ) ) {
 
-    //Define xml element
-    QDomElement globalFilterRoot = globalFilterDocument.documentElement();
-    QDomElement projectItem = globalFilterRoot.firstChildElement();
+        QDomDocument uiTranslationDocument;
+        uiTranslationDocument.setContent( &uiTranslationFile);
 
-    QVector<QString> skipFileList;
-    QVector<QString> skipStringList;
+        //Define xml element
+        QDomElement uiTranslationRoot = uiTranslationDocument.documentElement();
+        QDomElement stringsItem = uiTranslationRoot.firstChildElement();
 
-    while( !projectItem.isNull() ) {
+        QString column_title_apps_name;
+        QString column_title_untranslated;
 
-        QDomElement skipItem = projectItem.firstChildElement();
+        while (!stringsItem.isNull()){
 
-        while(!skipItem.isNull())
-        {
-            if(skipItem.tagName() == "skip-file") {
-                skipFileList.push_back(skipItem.attribute("name"));
+            if (stringsItem.attribute("name") == "label_language") {
+                uiOpenWindow->label_Language->setText( stringsItem.text() );
             }
-            else if (skipItem.tagName() == "skip-string") {
-                skipStringList.push_back(m_resourceID_Name.key(projectItem.attribute("name")) + "@" + skipItem.attribute("type") + "@" + skipItem.attribute("name"));
+
+            if (stringsItem.attribute("name") == "scan_button") {
+                uiOpenWindow->pushButton_Scan->setText( stringsItem.text() );
             }
-            skipItem = skipItem.nextSiblingElement();
+
+            if (stringsItem.attribute("name") == "column_title_apps_name") {
+                column_title_apps_name = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "column_title_untranslated") {
+                column_title_untranslated = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "label_progress") {
+                uiOpenWindow->label_Progression->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "unused") {
+                m_text_unused = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "good_works") {
+                m_text_goodWorks = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "information_title") {
+                uiOpenWindow->groupBox_Information->setTitle(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "information_line_number_title") {
+                uiOpenWindow->label_LineNumberTitle->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "information_file_path_title") {
+                uiOpenWindow->label_FilePathTitle->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "information_type_title") {
+                uiOpenWindow->label_InfoTypeTitle->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "information_source_text_title") {
+                uiOpenWindow->label_sourceTextTitle->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "menu_tools") {
+                uiOpenWindow->menuOption->setTitle(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "menu_display") {
+                uiOpenWindow->menuDisplay->setTitle(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "option_show_unused_string") {
+                uiOpenWindow->actionShow_unused_string->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "menu_options") {
+                uiOpenWindow->actionOptions->setText(stringsItem.text());
+            }
+
+            if (stringsItem.attribute("name") == "error_no_source_file_title") {
+                m_text_error_no_source_file_title = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "error_no_source_file_text") {
+                m_text_error_no_source_file_text = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "error_no_file_title") {
+                m_text_error_no_file_title = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "error_no_project_text") {
+                m_text_error_no_project_text = stringsItem.text();
+            }
+
+            if (stringsItem.attribute("name") == "error_no_language_text") {
+                m_text_error_no_language_text = stringsItem.text();
+            }
+
+            stringsItem = stringsItem.nextSiblingElement();
         }
 
-        m_resourceID_skipStringList[m_resourceID_Name.key(projectItem.attribute("name"))] = skipStringList;
-        m_resourceID_skipFileList[m_resourceID_Name.key(projectItem.attribute("name"))] = skipFileList;
-
-        //Init
-        skipStringList.clear();
-        skipFileList.clear();
-
-        projectItem = projectItem.nextSiblingElement();
+        QStringList columnTitle;
+        columnTitle << column_title_apps_name << column_title_untranslated;
+        uiOpenWindow->treeApps->setHeaderLabels(columnTitle);
+        uiOpenWindow->treeApps->resizeColumnToContents(1);
     }
-
 }
 
 void MainWindow::load_LanguageXMLFile()
 {
+
+    m_languageList.clear();
+
     QFile languageFile(QCoreApplication::applicationDirPath() + "/language.xml");
     if( !languageFile.open( QIODevice::ReadOnly ) ) {
-        QMessageBox::warning(this, tr("File not found"), tr("The file language.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
+        QMessageBox::warning(this, m_text_error_no_file_title, m_text_error_no_language_text, QMessageBox::Ok);
         qDebug() << "ERROR: language.xml file not found";
         exit(0);
     }
@@ -551,9 +668,14 @@ void MainWindow::load_LanguageXMLFile()
 
 void MainWindow::load_ProjectXMLFile()
 {
+
+    m_resourceID_Name.clear();
+    m_filterString.clear();
+    m_resourceID_skipFileList.clear();
+
     QFile projectFile(QCoreApplication::applicationDirPath() + "/project.xml");
     if( !projectFile.open( QIODevice::ReadOnly ) ) {
-        QMessageBox::warning(this, tr("File not found"), tr("The file project.xml was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct."), QMessageBox::Ok);
+        QMessageBox::warning(this, m_text_error_no_file_title, m_text_error_no_project_text , QMessageBox::Ok);
         qDebug() << "ERROR: project.xml file not found";
         exit(0);
     }
@@ -574,6 +696,30 @@ void MainWindow::load_ProjectXMLFile()
     while( !projectItem.isNull() )
     {
         m_resourceID_Name[projectItem.attribute("resourceID")] = projectItem.attribute("name");
+
+        if(projectItem.hasChildNodes()){
+
+            QVector<QString> skipFileList;
+
+            QDomElement skipItem = projectItem.firstChildElement();
+
+            while(!skipItem.isNull())
+            {
+                if(skipItem.tagName() == "skip-file") {
+                    skipFileList.push_back(skipItem.attribute("name"));
+                }
+                else if (skipItem.tagName() == "skip-string") {
+                    m_filterString.push_back(projectItem.attribute("resourceID") + "@" + "source" + "@" + skipItem.attribute("name"));
+                }
+                skipItem = skipItem.nextSiblingElement();
+            }
+
+            m_resourceID_skipFileList[m_resourceID_Name.key(projectItem.attribute("name"))] = skipFileList;
+
+            //Init
+            skipFileList.clear();
+        }
+
         projectItem = projectItem.nextSiblingElement();
         appNumber++;
     }
@@ -584,6 +730,7 @@ void MainWindow::load_ProjectXMLFile()
 
 void MainWindow::load_PersonalConfig()
 {
+
     //Loading file in personal folder
     QFile parameterFile(QDir::homePath() + "/.config/translation-tools/translation-tools-config.xml");
     if( !parameterFile.open( QIODevice::ReadOnly ) ) {
@@ -632,18 +779,21 @@ void MainWindow::load_PersonalConfig()
             }
         }
 
+        //Define status of show_unused_string
+        if(itemSetting.attribute("name") == "show_unused_string") {
+            if (itemSetting.attribute("value") == "true") {
+                uiOpenWindow->actionShow_unused_string->setChecked(true);
+            } else {
+                uiOpenWindow->actionShow_unused_string->setChecked(false);
+            }
+        }
+
         //Define custom_source_path
         if(itemSetting.attribute("name") == "custom_source_path") {
             m_customSourcePath = itemSetting.text();
         }
 
         itemSetting = itemSetting.nextSiblingElement();
-    }
-
-    if (m_customMode) {
-        m_rootDir = m_customSourcePath;
-    } else {
-        m_rootDir = QCoreApplication::applicationDirPath().remove("/tools/TranslationTools/binary");
     }
 
 }
@@ -683,6 +833,16 @@ void MainWindow::save_PersonalConfig()
     itemCustomMode.setAttribute("name", "custom_mode");
     globalSettings.appendChild(itemCustomMode);
 
+    //Define item : show_unused_string
+    QDomElement itemShowUnusedString = writeXML.createElement("setting");
+    if(uiOpenWindow->actionShow_unused_string->isChecked()) {
+        itemShowUnusedString.setAttribute("value", "true");
+    } else {
+        itemShowUnusedString.setAttribute("value", "false");
+    }
+    itemShowUnusedString.setAttribute("name", "show_unused_string");
+    globalSettings.appendChild(itemShowUnusedString);
+
     //Define item : custom_source_path
     QDomElement itemCustomSourcePath = writeXML.createElement("setting");
     itemCustomSourcePath.setAttribute("name", "custom_source_path");
@@ -714,70 +874,19 @@ void MainWindow::on_actionOptions_triggered()
 {
     OptionWindow newWindow;
     newWindow.set_Editor(m_editor);
+    newWindow.set_customMode(m_customMode);
+    newWindow.set_customSourcePath(m_customSourcePath);
     newWindow.exec();
-    m_editor = newWindow.get_New();
+    m_editor = newWindow.get_Editor();
+    m_customMode = newWindow.get_customMode();
+    m_customSourcePath = newWindow.get_customSourcePath();
     save_PersonalConfig();
 }
 
-void MainWindow::on_pushButton_saveCurrentList_clicked()
+void MainWindow::on_actionShow_unused_string_triggered()
 {
-    QString filename = QFileDialog::getSaveFileName(this, tr("Save current list"), QDir::homePath());
-
-    //Define head of xml file
-    QDomDocument writeXML;
-    QDomNode xmlNode = writeXML.createProcessingInstruction("xml","version=\"1.0\" encoding=\"UTF-8\"");
-    writeXML.insertBefore(xmlNode, writeXML.firstChild());
-
-    //Add comment header
-    QString commentHeader;
-    commentHeader.push_back("\nTranslation Tools export\n");
-    commentHeader.push_back(QDateTime::currentDateTime().toString() + "\n\n");
-    commentHeader.push_back("Source directory = " + m_rootDir + "\n");
-    commentHeader.push_back("Language = " + m_language + "\n");
-    writeXML.appendChild(writeXML.createComment(commentHeader));
-    writeXML.appendChild(writeXML.createTextNode("\n"));
-
-    //Define item : root
-    QDomElement globalExport = writeXML.createElement("export");
-    writeXML.appendChild(globalExport);
-
-    QMapIterator<QString, QVector<QString> > itr(m_resourceID_untranslatedString);
-    while(itr.hasNext()) {
-        itr.next();
-
-        //Define item : project
-        QDomElement itemProject = writeXML.createElement("project");
-        itemProject.setAttribute("name", itr.key());
-
-        QVectorIterator<QString> itrUntranslatedList = itr.value();
-        if(itrUntranslatedList.hasNext()) {
-            while (itrUntranslatedList.hasNext()) {
-
-                //Define item : string
-                QString StringID = itrUntranslatedList.next();
-                QDomElement itemString = writeXML.createElement("item");
-                itemString.setAttribute("type", m_stringID_type.value(StringID));
-                QDomText string = writeXML.createTextNode(m_stringID_stringName.value(StringID));
-                itemString.appendChild(string);
-                itemProject.appendChild(itemString);
-            }
-        }
-
-        if(itemProject.hasChildNodes()) {
-            globalExport.appendChild(itemProject);
-        }
+    if(uiOpenWindow->treeApps->topLevelItemCount() != 0) {
+        set_TreeProject();
     }
-
-    //Open the file for write
-    QFile writeFile(filename);
-    if (!writeFile.open(QIODevice::WriteOnly)) {
-        qDebug() << "ERROR: unable to open file for writing";
-        return;
-    }
-
-    //Save the flux in the file
-    QTextStream flux(&writeFile);
-    writeXML.save(flux, 4);
-    writeFile.close();
-
+    save_PersonalConfig();
 }

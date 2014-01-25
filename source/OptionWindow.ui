@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>650</width>
-    <height>103</height>
+    <height>181</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -21,6 +21,10 @@
   </property>
   <property name="windowTitle">
    <string>Options</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/progIcon/TTools-icons.png</normaloff>:/progIcon/TTools-icons.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -42,10 +46,42 @@
     </layout>
    </item>
    <item>
-    <widget class="QLabel" name="label_Tips">
+    <widget class="QLabel" name="label_TipsOptions">
      <property name="text">
-      <string>Use %1 for the path file and %2 for the line (for example : &quot;gedit +%2 %1&quot;)</string>
+      <string>Use %1 for the path file and %2 for the line (for example : gedit +%2 %1)</string>
      </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_customSource">
+     <property name="title">
+      <string>Use custom source folder</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_optionCustomSourceTitle">
+        <property name="text">
+         <string>Custom source :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_optionCustomSourceValue"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_OpenFolder">
+        <property name="text">
+         <string>Open</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
    <item>
@@ -60,7 +96,9 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonBox</sender>

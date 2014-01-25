@@ -21,6 +21,9 @@
 #define OPTIONWINDOW_H
 
 #include <QDialog>
+#include <QFile>
+#include <QFileDialog>
+#include <QDomDocument>
 
 namespace Ui {
 class OptionWindow;
@@ -34,14 +37,21 @@ public:
     explicit OptionWindow(QWidget *parent = 0);
     ~OptionWindow();
     void set_Editor(QString editor);
-    QString get_New();
+    void set_customMode(bool customMode);
+    void set_customSourcePath(QString customSourcePath);
+    QString get_Editor();
+    QString get_customSourcePath();
+    bool get_customMode();
     
 private slots:
     void on_buttonBox_accepted();
+    void on_pushButton_OpenFolder_clicked();
 
 private:
-    Ui::OptionWindow *ui;
+    Ui::OptionWindow *uiOptionWindow;
     QString m_editor;
+    bool m_customMode;
+    QString m_customSourcePath;
 };
 
 #endif

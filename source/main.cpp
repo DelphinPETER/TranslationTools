@@ -27,27 +27,34 @@ int main(int argc, char *argv[])
 {
     QApplication application(argc, argv);
 
-    //internationalization support
-    QString locale = QLocale::system().name().section('_', 0, 0);
-    QTranslator translator;
-    translator.load(QString("translation/language_") + locale);
-    application.installTranslator(&translator);
-
     //UTF-8 support
     QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForTr(QTextCodec::codecForName("UTF-8"));
     QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
 
-    MainWindow openWindow;
+    MainWindow newWindow;
 
     //Loading application XML file
-    openWindow.load_ApplicationXMLFile();
+    newWindow.load_ApplicationFile();
 
     //Loading user configuration
-    openWindow.load_PersonalConfig();
+    newWindow.load_PersonalConfig();
 
-    //Display the window
-    openWindow.show();
+    bool lang = false;
+
+    QStringListIterator itrArgument(QCoreApplication::arguments());
+    while(itrArgument.hasNext()) {
+        QString arguments = itrArgument.next();
+        if(arguments.contains("lang")) {
+            lang = true;
+        }
+    }
+
+    if(lang) {
+        newWindow.noui(QCoreApplication::arguments());
+    } else {
+        newWindow.show();
+    }
 
     return application.exec();
 }
