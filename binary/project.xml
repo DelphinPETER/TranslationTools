@@ -7,35 +7,262 @@
 ===================================================================
 -->
 <resources>
+    <!-- android_frameworks_base-core-->
     <project name="android_frameworks_base/Core" resourceID="frameworks/base/core/res/res/values">
+        <skip-file name="config.xml"/>
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="donottranslate-cldr.xml"/>
+        <skip-file name="donottranslate-maps.xml"/>
+        <skip-file name="donottranslate-names.xml"/>
+        <skip-string type="string" name="alternate_eri_file"/>
+        <skip-string type="string" name="autofill_address_line_1_label_re"/>
+        <skip-string type="string" name="autofill_address_line_1_re"/>
+        <skip-string type="string" name="autofill_address_line_2_re"/>
+        <skip-string type="string" name="autofill_address_line_3_re"/>
+        <skip-string type="string" name="autofill_address_type_same_as_re"/>
+        <skip-string type="string" name="autofill_address_type_use_my_re"/>
+        <skip-string type="string" name="autofill_area_code_notext_re"/>
+        <skip-string type="string" name="autofill_area_code_re"/>
+        <skip-string type="string" name="autofill_attention_ignored_re"/>
+        <skip-string type="string" name="autofill_billing_designator_re"/>
+        <skip-string type="string" name="autofill_card_cvc_re"/>
+        <skip-string type="string" name="autofill_card_ignored_re"/>
+        <skip-string type="string" name="autofill_card_number_re"/>
+        <skip-string type="string" name="autofill_city_re"/>
+        <skip-string type="string" name="autofill_company_re"/>
+        <skip-string type="string" name="autofill_country_code_re"/>
+        <skip-string type="string" name="autofill_country_re"/>
+        <skip-string type="string" name="autofill_email_re"/>
+        <skip-string type="string" name="autofill_expiration_date_re"/>
+        <skip-string type="string" name="autofill_expiration_month_re"/>
+        <skip-string type="string" name="autofill_fax_re"/>
+        <skip-string type="string" name="autofill_first_name_re"/>
+        <skip-string type="string" name="autofill_last_name_re"/>
+        <skip-string type="string" name="autofill_middle_initial_re"/>
+        <skip-string type="string" name="autofill_middle_name_re"/>
+        <skip-string type="string" name="autofill_name_on_card_contextual_re"/>
+        <skip-string type="string" name="autofill_name_on_card_re"/>
+        <skip-string type="string" name="autofill_name_re"/>
+        <skip-string type="string" name="autofill_name_specific_re"/>
+        <skip-string type="string" name="autofill_phone_extension_re"/>
+        <skip-string type="string" name="autofill_phone_prefix_re"/>
+        <skip-string type="string" name="autofill_phone_prefix_separator_re"/>
+        <skip-string type="string" name="autofill_phone_re"/>
+        <skip-string type="string" name="autofill_phone_suffix_re"/>
+        <skip-string type="string" name="autofill_phone_suffix_separator_re"/>
+        <skip-string type="string" name="autofill_region_ignored_re"/>
+        <skip-string type="string" name="autofill_shipping_designator_re"/>
+        <skip-string type="string" name="autofill_state_re"/>
+        <skip-string type="string" name="autofill_username_re"/>
+        <skip-string type="string" name="autofill_zip_4_re"/>
+        <skip-string type="string" name="autofill_zip_code_re"/>
+        <skip-string type="string" name="locale_replacement"/>
+        <skip-string type="string" name="network_available_sign_in_detailed"/>
+        <skip-string type="string" name="imProtocolGoogleTalk"/>
+    </project>
+    <!-- android_frameworks_base-DocumentsUI-->
     <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
+    </project>
+    <!-- android_frameworks_base-SystemUI-->
     <project name="android_frameworks_base/SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="custom_donottranslate.xml"/>
+        <skip-string type="string" name="accessibility_data_connection_HP"/>
+        <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
+    </project>
+    <!-- android_frameworks_base-InputDevices-->
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
+    </project>
+    <!-- android_packages_apps_Apollo -->
     <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values">
+    </project>
+    <!-- android_packages_apps_Browser -->
+    <project name="android_packages_apps_Browser" resourceID="packages/apps/Browser/res/values">
+    </project>
+    <!-- android_packages_apps_Bluetooth -->
     <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values">
+        <skip-file name="strings_map.xml"/>
+        <skip-string type="string" name="bluetooth_share_file_name"/>
+        <skip-string type="string" name="sharedUserId"/>
+        <skip-string type="string" name="process"/>
+        <skip-string type="string" name="format_progress_text"/>
+    </project>
+    <!-- android_packages_apps_Camera2 -->
     <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
+        <skip-string type="string" name="pref_camera_timer_sound_default"/>
+        <skip-string type="string" name="pref_camera_hdr_default"/>
+        <skip-string type="string" name="pref_camera_hdr_plus_default"/>
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
+        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
+        <skip-string type="string-array" name="pref_camera_countdown_labels"/>
+    </project>
+    <!-- android_packages_apps_DashClock -->
     <project name="android_packages_apps_DashClock" resourceID="packages/apps/DashClock/main/src/main/res/values">
+        <skip-file name="d.xml"/>
+        <skip-string type="string" name="d"/>
+    </project>
+    <!-- android_packages_apps_DeskClock -->
+    <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-string type="string" name="control_set_alarm_with_existing"/>
+    </project>
+    <!-- android_packages_apps_Dialer -->
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
+        <skip-file name="donottranslate_config.xml"/>
+        <skip-string type="string" name="call_log_activity_title_font_family"/>
+        <skip-string type="string" name="show_all_contacts_title_font_family"/>
+        <skip-string type="string" name="dialpad_star_number"/>
+        <skip-string type="string" name="dialpad_pound_number"/>
+        <skip-string type="string" name="dialpad_0_letters"/>
+        <skip-string type="string" name="dialpad_1_letters"/>
+        <skip-string type="string" name="dialpad_2_letters"/>
+        <skip-string type="string" name="dialpad_3_letters"/>
+        <skip-string type="string" name="dialpad_4_letters"/>
+        <skip-string type="string" name="dialpad_5_letters"/>
+        <skip-string type="string" name="dialpad_6_letters"/>
+        <skip-string type="string" name="dialpad_7_letters"/>
+        <skip-string type="string" name="dialpad_8_letters"/>
+        <skip-string type="string" name="dialpad_9_letters"/>
+        <skip-string type="string" name="dialpad_star_letters"/>
+        <skip-string type="string" name="dialpad_pound_letters"/>
+    </project>
+    <!-- android_packages_apps_DSPManager -->
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values">
+    </project>
+    <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
+        <skip-file name="arrays.xml"/>
+    </project>
+    <!-- android_packages_apps_Gallery2 -->
     <project name="android_packages_apps_Gallery2" resourceID="packages/apps/Gallery2/res/values">
+        <skip-string type="string" name="aspectOriginal_effect"/>
+        <skip-string type="string" name="history_original"/>
+        <skip-string type="string" name="original_picture_text"/>
+        <skip-string type="string" name="crop"/>
+        <skip-string type="string" name="rotate"/>
+        <skip-string type="string" name="saturation"/>
+        <skip-string type="string" name="straighten"/>
+        <skip-string type="string" name="vignette"/>
+        <skip-string type="string" name="done"/>
+        <skip-string type="string" name="save"/>
+        <skip-string type="string" name="redeye"/>
+        <skip-string type="string" name="pref_camera_timer_sound_default"/>
+        <skip-string type="string" name="pref_camera_hdr_default"/>
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
+        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
+        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
+        <skip-string type="string-array" name="pref_camera_countdown_labels"/>
+    </project>
+    <!-- android_packages_apps_InCallUI -->
     <project name="android_packages_apps_InCallUI" resourceID="packages/apps/InCallUI/res/values">
+        <skip-string type="string" name="inCallLabel"/>
+        <skip-string type="string-array" name="sip_call_options_entries"/>
+        <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
+        <skip-string type="string-array" name="sip_send_keepalive_options"/>
+    </project>
+    <!-- android_packages_apps_Launcher2 -->
     <project name="android_packages_apps_Launcher2" resourceID="packages/apps/Launcher2/res/values">
+        <skip-string type="string" name="dummy_custom_cling_error_message"/>
+        <skip-string type="string-array" name="extra_wallpapers"/>
+    </project>
+    <!-- android_packages_apps_Launcher3 -->
     <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
+        <skip-string type="string" name="dummy_custom_cling_error_message"/>
+        <skip-string type="string" name="debug_memory_activity"/>
+    </project>
+    <!-- android_packages_apps_Mms -->
     <project name="android_packages_apps_Mms" resourceID="packages/apps/Mms/res/values">
+    </project>
+    <!-- android_packages_apps_MonthCalendarWidget -->
     <project name="android_packages_apps_MonthCalendarWidget" resourceID="packages/apps/MonthCalendarWidget/res/values">
+    </project>
+    <!-- android_packages_apps_Nfc -->
     <project name="android_packages_apps_Nfc" resourceID="packages/apps/Nfc/res/values">
+        <skip-string type="string-array" name="provisioning_mime_types"/>
+    </project>
+    <!-- android_packages_apps_OmniGears -->
     <project name="android_packages_apps_OmniGears" resourceID="packages/apps/OmniGears/res/values">
+    </project>
+    <!-- android_packages_apps_OmniTorch -->
     <project name="android_packages_apps_OmniTorch" resourceID="packages/apps/OmniTorch/res/values">
+    </project>
+    <!-- android_packages_apps_OpenDelta -->
     <project name="android_packages_apps_OpenDelta" resourceID="packages/apps/OpenDelta/res/values">
+        <skip-file name="config.xml"/>
+    </project>
+    <!-- android_packages_apps_PackageInstaller -->
     <project name="android_packages_apps_PackageInstaller" resourceID="packages/apps/PackageInstaller/res/values">
+    </project>
+    <!-- android_packages_apps_PerformanceControl -->
     <project name="android_packages_apps_PerformanceControl" resourceID="packages/apps/PerformanceControl/res/values">
+    </project>
+    <!-- android_packages_apps_Phone -->
     <project name="android_packages_apps_Phone" resourceID="packages/apps/Phone/res/values">
+        <skip-file name="config.xml"/>
+        <skip-string type="string-array" name="sip_call_options_entries"/>
+        <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
+        <skip-string type="string-array" name="sip_send_keepalive_options"/>
+    </project>
+    <!-- android_packages_apps_Settings -->
     <project name="android_packages_apps_Settings" resourceID="packages/apps/Settings/res/values">
+        <skip-file name="analytics.xml"/>
+        <skip-file name="donottranslate.xml"/>
+        <skip-string type="string-array" name="emergency_tone_values"/>
+        <skip-string type="string-array" name="tts_pitch_values"/>
+        <skip-string type="string-array" name="tts_rate_values"/>
+        <skip-string type="string-array" name="wifi_frequency_band_values"/>
+        <skip-string type="string-array" name="wifi_security"/>
+        <skip-string type="string-array" name="wifi_security_no_eap"/>
+        <skip-string type="string-array" name="wifi_sleep_policy_values"/>
+        <skip-string type="string-array" name="wifi_ap_security"/>
+        <skip-string type="string" name="battery_stats_last_duration"/>
+        <skip-string type="string" name="debug_intent_sender_label"/>
+        <skip-string type="string" name="default_date_format"/>
+        <skip-string type="string" name="font_size_preview_text"/>
+        <skip-string type="string" name="lockpattern_need_to_unlock_footer"/>
+        <skip-string type="string" name="lockpattern_need_to_unlock_wrong_footer"/>
+        <skip-string type="string" name="percentage"/>
+        <skip-string type="string" name="service_client_name"/>
+        <skip-string type="string" name="service_process_name"/>
+        <skip-string type="string" name="status_imei"/>
+        <skip-string type="string" name="status_imei_sv"/>
+        <skip-string type="string" name="sync_item_title"/>
+        <skip-string type="string" name="testing_sim_toolkit"/>
+        <skip-string type="string" name="wifi_security_eap"/>
+        <skip-string type="string" name="wifi_security_psk_generic"/>
+        <skip-string type="string" name="wifi_security_short_eap"/>
+        <skip-string type="string" name="wifi_security_short_psk_generic"/>
+        <skip-string type="string" name="wifi_security_short_wep"/>
+        <skip-string type="string" name="wifi_security_short_wpa"/>
+        <skip-string type="string" name="wifi_security_short_wpa2"/>
+        <skip-string type="string" name="wifi_security_short_wpa_wpa2"/>
+        <skip-string type="string" name="wifi_security_wep"/>
+        <skip-string type="string" name="wifi_security_wpa"/>
+        <skip-string type="string" name="wifi_security_wpa2"/>
+        <skip-string type="string" name="wifi_security_wpa_wpa2"/>
+    </project>
+    <!-- android_packages_inputmethods_LatinIME -->
     <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/res/values">
+        <skip-file name="donottranslate.xml"/>
+    </project>
+    <!-- android_packages_services_MediaProvider -->
     <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
+    </project>
+    <!-- android_packages_services_TelephonyProvider -->
     <project name="android_packages_providers_TelephonyProvider" resourceID="packages/providers/TelephonyProvider/res/values">
+    </project>
+    <!-- android_packages_services_Telephony -->
     <project name="android_packages_services_Telephony" resourceID="packages/services/Telephony/res/values">
+        <skip-string type="string" name="call_settings_title_font_family"/>
+        <skip-string type="string-array" name="sip_call_options_entries"/>
+        <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
+        <skip-string type="string-array" name="sip_send_keepalive_options"/>
+    </project>
+    <!-- android_packages_wallpapers_Basic -->
     <project name="android_packages_wallpapers_Basic" resourceID="packages/wallpapers/Basic/res/values">
+    </project>
+    <!-- android_packages_wallpapers_PhaseBeam -->
     <project name="android_packages_wallpapers_PhaseBeam" resourceID="packages/wallpapers/PhaseBeam/res/values">
+    </project>
 </resources>
