@@ -130,9 +130,6 @@
     <!-- android_packages_apps_DSPManager -->
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values">
     </project>
-    <!-- android_packages_apps_Dialer -->
-    <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
-    </project>
     <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
         <skip-file name="arrays.xml"/>
