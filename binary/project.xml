@@ -76,9 +76,6 @@
     <!-- android_packages_apps_Apollo -->
     <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values">
     </project>
-    <!-- android_packages_apps_Browser -->
-    <project name="android_packages_apps_Browser" resourceID="packages/apps/Browser/res/values">
-    </project>
     <!-- android_packages_apps_Bluetooth -->
     <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values">
         <skip-file name="strings_map.xml"/>
@@ -86,6 +83,9 @@
         <skip-string type="string" name="sharedUserId"/>
         <skip-string type="string" name="process"/>
         <skip-string type="string" name="format_progress_text"/>
+    </project>
+    <!-- android_packages_apps_Browser -->
+    <project name="android_packages_apps_Browser" resourceID="packages/apps/Browser/res/values">
     </project>
     <!-- android_packages_apps_Camera2 -->
     <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
@@ -129,6 +129,9 @@
     </project>
     <!-- android_packages_apps_DSPManager -->
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values">
+    </project>
+    <!-- android_packages_apps_Dialer -->
+    <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
     </project>
     <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
@@ -265,4 +268,36 @@
     <!-- android_packages_wallpapers_PhaseBeam -->
     <project name="android_packages_wallpapers_PhaseBeam" resourceID="packages/wallpapers/PhaseBeam/res/values">
     </project>
+
+<!--
+===================================================================
+|                                                                 |
+|                         DEVICES PROJECT                         |
+|                                                                 |
+===================================================================
+-->
+    <project name="android_device_asus_me301t" resourceID="device/asus/me301t/AutoParts/res/values">
+    </project>
+    <project name="android_device_asus_tf300t" resourceID="device/asus/tf300t/AutoParts/res/values">
+    </project>
+    <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values">
+    </project>
+    <project name="android_device_htc_m7-common" resourceID="device/htc/m7-common/DeviceSettings/res/values">
+        <skip-file name="config.xml"/>
+    </project>
+    <project name="android_device_oppo_n1" resourceID="device/oppo/n1/N1Parts/res/values">
+    </project>
+    <project name="android_device_oppo_find5" resourceID="device/oppo/find5/Find5Parts/res/values">
+    </project>
+    <project name="samsung_aries-common" resourceID="device/samsung/aries-common/AriesParts/res/values">
+    </project>
+    <project name="android_device_samsung_i9103" resourceID="device/samsung/i9103/DeviceSettings/res/values">
+    </project>
+    <project name="android_device_samsung_i9100g" resourceID="device/samsung/i9100g/DeviceSettings/res/values">
+    </project>
+    <project name="android_device_samsung_msm8960-common" resourceID="device/samsung/msm8960-common/DeviceSettings/res/values">
+    </project>
+    <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values">
+    </project>
+    <project name="android_device_samsung_smdk4412-common" resourceID="device/samsung/smdk4412-common/DeviceSettings/res/values">
 </resources>
