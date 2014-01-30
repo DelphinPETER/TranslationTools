@@ -297,4 +297,5 @@
     <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values">
     </project>
     <project name="android_device_samsung_smdk4412-common" resourceID="device/samsung/smdk4412-common/DeviceSettings/res/values">
+    </project>
 </resources>
