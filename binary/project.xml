@@ -187,6 +187,9 @@
     <!-- android_packages_apps_OmniTorch -->
     <project name="android_packages_apps_OmniTorch" resourceID="packages/apps/OmniTorch/res/values">
     </project>
+    <!-- android_packages_apps_OmniSwitch -->
+    <project name="android_packages_apps_OmniSwitch" resourceID="packages/apps/OmniSwitch/res/values">
+    </project>
     <!-- android_packages_apps_OpenDelta -->
     <project name="android_packages_apps_OpenDelta" resourceID="packages/apps/OpenDelta/res/values">
         <skip-file name="config.xml"/>
