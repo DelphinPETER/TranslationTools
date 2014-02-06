@@ -344,13 +344,15 @@
 **                            Device parts                           **
 ***********************************************************************
 ********************************************************************-->
+    <project name="android_device_amazon_otter-common" resourceID="device/amazon/otter-common/OtterParts/res/values"/>
     <project name="android_device_asus_tf300t" resourceID="device/asus/tf300t/AutoParts/res/values"/>
     <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values"/>
+    <project name="android_device_bn_acclaim" resourceID="device/bn/acclaim/TFF/res/values"/>
+    <project name="android_device_bn_common" resourceID="device/bn/common/USBHostSwitcher/res/values"/>
+    <project name="android_device_motorola_xt897" resourceID="device/motorola/xt897/AsantiKeypad/res/values"/>
+    <project name="android_device_oppo_apq8064-common" resourceID="device/oppo/apq8064-common/configpanel/res/values"/>
+    <project name="android_device_samsung_apexqtmo" resourceID="device/samsung/apexqtmo/ApexQKeypad/res/values"/>
     <project name="android_device_samsung_aries-common" resourceID="device/samsung/aries-common/AriesParts/res/values"/>
     <project name="android_device_samsung_galaxys2-common" resourceID="device/samsung/galaxys2-common/AdvancedDisplay/res/values"/>
-    <project name="android_device_samsung_msm8960-common" resourceID="device/samsung/msm8960-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_p1-common" resourceID="device/samsung/p1-common/P1Parts/res/values"/>
-    <project name="android_device_lge_g2-common" resourceID="device/lge/g2-common/GestureSettings/res/values"/>
-    <project name="android_device_sony_pollux-common" resourceID="device/sony/pollux-common/GestureSettings/res/values"/>
 </resources>
