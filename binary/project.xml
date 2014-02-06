@@ -246,21 +246,6 @@
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
     </project>
     <project name="android_packages_apps_KeyChain" resourceID="packages/apps/KeyChain/res/values"/>
-    <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
-        <skip-string type="string" name="debug_memory_activity"/>
-        <skip-string type="string" name="dummy_custom_cling_error_message"/>
-        <skip-string type="string" name="chooser_wallpaper"/>
-        <skip-string type="string" name="folder_cling_move_item"/>
-        <skip-string type="string" name="group_wallpapers"/>
-        <skip-string type="string" name="menu_add"/>
-        <skip-string type="string" name="menu_help"/>
-        <skip-string type="string" name="menu_manage_apps"/>
-        <skip-string type="string" name="menu_notifications"/>
-        <skip-string type="string" name="menu_search"/>
-        <skip-string type="string" name="menu_settings"/>
-        <skip-string type="string" name="menu_wallpaper"/>
-        <skip-string type="string" name="workspace_cling_open_all_apps"/>
-    </project>
     <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values"/>
     <project name="android_packages_apps_Mms" resourceID="packages/apps/Mms/res/values"/>
     <project name="android_packages_apps_Nfc" resourceID="packages/apps/Nfc/res/values">
