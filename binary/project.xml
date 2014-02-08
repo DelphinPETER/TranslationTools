@@ -124,6 +124,8 @@
         <skip-file name="donottranslate.xml"/>
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
     </project>
+    <project name="android_hardware_qcom_fm/fmapp2" resourceID="hardware/qcom/fm/fmapp2/res/values"/>
+    <project name="android_hardware_qcom_fm/FMRecord" resourceID="hardware/qcom/fm/FMRecord/res/values"/>
     <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values"/>
     <project name="android_packages_apps_BasicSmsReceiver" resourceID="packages/apps/BasicSmsReceiver/res/values"/>
     <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values">
@@ -246,21 +248,6 @@
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
     </project>
     <project name="android_packages_apps_KeyChain" resourceID="packages/apps/KeyChain/res/values"/>
-    <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
-        <skip-string type="string" name="debug_memory_activity"/>
-        <skip-string type="string" name="dummy_custom_cling_error_message"/>
-        <skip-string type="string" name="chooser_wallpaper"/>
-        <skip-string type="string" name="folder_cling_move_item"/>
-        <skip-string type="string" name="group_wallpapers"/>
-        <skip-string type="string" name="menu_add"/>
-        <skip-string type="string" name="menu_help"/>
-        <skip-string type="string" name="menu_manage_apps"/>
-        <skip-string type="string" name="menu_notifications"/>
-        <skip-string type="string" name="menu_search"/>
-        <skip-string type="string" name="menu_settings"/>
-        <skip-string type="string" name="menu_wallpaper"/>
-        <skip-string type="string" name="workspace_cling_open_all_apps"/>
-    </project>
     <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values"/>
     <project name="android_packages_apps_Mms" resourceID="packages/apps/Mms/res/values"/>
     <project name="android_packages_apps_Nfc" resourceID="packages/apps/Nfc/res/values">
@@ -359,13 +346,15 @@
 **                            Device parts                           **
 ***********************************************************************
 ********************************************************************-->
+    <project name="android_device_amazon_otter-common" resourceID="device/amazon/otter-common/OtterParts/res/values"/>
     <project name="android_device_asus_tf300t" resourceID="device/asus/tf300t/AutoParts/res/values"/>
     <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values"/>
+    <project name="android_device_bn_acclaim" resourceID="device/bn/acclaim/TFF/res/values"/>
+    <project name="android_device_bn_common" resourceID="device/bn/common/USBHostSwitcher/res/values"/>
+    <project name="android_device_motorola_xt897" resourceID="device/motorola/xt897/AsantiKeypad/res/values"/>
+    <project name="android_device_oppo_apq8064-common" resourceID="device/oppo/apq8064-common/configpanel/res/values"/>
+    <project name="android_device_samsung_apexqtmo" resourceID="device/samsung/apexqtmo/ApexQKeypad/res/values"/>
     <project name="android_device_samsung_aries-common" resourceID="device/samsung/aries-common/AriesParts/res/values"/>
     <project name="android_device_samsung_galaxys2-common" resourceID="device/samsung/galaxys2-common/AdvancedDisplay/res/values"/>
-    <project name="android_device_samsung_msm8960-common" resourceID="device/samsung/msm8960-common/DeviceSettings/res/values"/>
-    <project name="android_device_samsung_n80xx-common" resourceID="device/samsung/n80xx-common/DeviceSettings/res/values"/>
     <project name="android_device_samsung_p1-common" resourceID="device/samsung/p1-common/P1Parts/res/values"/>
-    <project name="android_device_lge_g2-common" resourceID="device/lge/g2-common/GestureSettings/res/values"/>
-    <project name="android_device_sony_pollux-common" resourceID="device/sony/pollux-common/GestureSettings/res/values"/>
 </resources>
