@@ -161,11 +161,6 @@
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
     </project>
-    <!-- android_packages_apps_Launcher2 -->
-    <project name="android_packages_apps_Launcher2" resourceID="packages/apps/Launcher2/res/values">
-        <skip-string type="string" name="dummy_custom_cling_error_message"/>
-        <skip-string type="string-array" name="extra_wallpapers"/>
-    </project>
     <!-- android_packages_apps_Launcher3 -->
     <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
         <skip-string type="string" name="dummy_custom_cling_error_message"/>
@@ -199,13 +194,6 @@
     </project>
     <!-- android_packages_apps_PerformanceControl -->
     <project name="android_packages_apps_PerformanceControl" resourceID="packages/apps/PerformanceControl/res/values">
-    </project>
-    <!-- android_packages_apps_Phone -->
-    <project name="android_packages_apps_Phone" resourceID="packages/apps/Phone/res/values">
-        <skip-file name="config.xml"/>
-        <skip-string type="string-array" name="sip_call_options_entries"/>
-        <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
-        <skip-string type="string-array" name="sip_send_keepalive_options"/>
     </project>
     <!-- android_packages_apps_Settings -->
     <project name="android_packages_apps_Settings" resourceID="packages/apps/Settings/res/values">
