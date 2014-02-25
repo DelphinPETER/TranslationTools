@@ -198,6 +198,7 @@
         <skip-string type="string" name="import_from_sim"/>
     </project>
     <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values">
+        <skip-file name="cm_extra.xml"/>
         <skip-file name="donottranslate.xml"/>
         <skip-string type="string" name="control_set_alarm_with_existing"/>
     </project>
