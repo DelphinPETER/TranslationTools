@@ -327,6 +327,11 @@
         <skip-string type="string" name="debug_memory_activity"/>
         <skip-string type="string" name="dummy_custom_cling_error_message"/>
     </project>
+    <project name="android_packages_apps_UnifiedEmail" resourceID="packages/apps/UnifiedEmail/res/values">
+        <skip-string type="string" name="load_attachment"/>
+        <skip-string type="string" name="num_selected"/>
+        <skip-string type="string" name="search_results_loaded"/>
+    </project>
     <project name="android_packages_apps_VideoEditor" resourceID="packages/apps/VideoEditor/res/values"/>
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values"/>
     <project name="android_packages_apps_VoicePlus" resourceID="packages/apps/VoicePlus/res/values"/>
