@@ -367,8 +367,8 @@
     <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values"/>
     <project name="android_device_bn_acclaim" resourceID="device/bn/acclaim/TFF/res/values"/>
     <project name="android_device_bn_common" resourceID="device/bn/common/USBHostSwitcher/res/values"/>
-    <project name="android_device_motorola_xt897" resourceID="device/motorola/xt897/AsantiKeypad/res/values"/>
-    <project name="android_device_oppo_apq8064-common" resourceID="device/oppo/apq8064-common/configpanel/res/values"/>
+    <project name="android_device_motorola_moto_msm8960" resourceID="device/motorola/moto_msm8960/AsantiKeypad/res/values"/>
+    <project name="android_device_oppo_common" resourceID="device/oppo/common/configpanel/res/values"/>
     <project name="android_device_samsung_apexqtmo" resourceID="device/samsung/apexqtmo/ApexQKeypad/res/values"/>
     <project name="android_device_samsung_aries-common" resourceID="device/samsung/aries-common/AriesParts/res/values"/>
     <project name="android_device_samsung_galaxys2-common" resourceID="device/samsung/galaxys2-common/AdvancedDisplay/res/values"/>
