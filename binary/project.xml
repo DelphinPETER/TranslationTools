@@ -59,59 +59,6 @@
         <skip-string type="string" name="locale_replacement"/>
         <skip-string type="string" name="network_available_sign_in_detailed"/>
         <skip-string type="string" name="imProtocolGoogleTalk"/>
-        <skip-string type="string" name="symbol_picker_A"/>
-        <skip-string type="string" name="symbol_picker_C"/>
-        <skip-string type="string" name="symbol_picker_D"/>
-        <skip-string type="string" name="symbol_picker_E"/>
-        <skip-string type="string" name="symbol_picker_G"/>
-        <skip-string type="string" name="symbol_picker_L"/>
-        <skip-string type="string" name="symbol_picker_I"/>
-        <skip-string type="string" name="symbol_picker_N"/>
-        <skip-string type="string" name="symbol_picker_O"/>
-        <skip-string type="string" name="symbol_picker_R"/>
-        <skip-string type="string" name="symbol_picker_S"/>
-        <skip-string type="string" name="symbol_picker_T"/>
-        <skip-string type="string" name="symbol_picker_U"/>
-        <skip-string type="string" name="symbol_picker_Y"/>
-        <skip-string type="string" name="symbol_picker_Z"/>
-        <skip-string type="string" name="symbol_picker_a"/>
-        <skip-string type="string" name="symbol_picker_c"/>
-        <skip-string type="string" name="symbol_picker_d"/>
-        <skip-string type="string" name="symbol_picker_e"/>
-        <skip-string type="string" name="symbol_picker_g"/>
-        <skip-string type="string" name="symbol_picker_i"/>
-        <skip-string type="string" name="symbol_picker_l"/>
-        <skip-string type="string" name="symbol_picker_n"/>
-        <skip-string type="string" name="symbol_picker_o"/>
-        <skip-string type="string" name="symbol_picker_r"/>
-        <skip-string type="string" name="symbol_picker_s"/>
-        <skip-string type="string" name="symbol_picker_t"/>
-        <skip-string type="string" name="symbol_picker_u"/>
-        <skip-string type="string" name="symbol_picker_y"/>
-        <skip-string type="string" name="symbol_picker_z"/>
-        <skip-string type="string" name="symbol_picker_sym"/>
-        <skip-string type="string" name="symbol_picker_slash"/>
-        <skip-string type="string" name="symbol_picker_1"/>
-        <skip-string type="string" name="symbol_picker_2"/>
-        <skip-string type="string" name="symbol_picker_3"/>
-        <skip-string type="string" name="symbol_picker_4"/>
-        <skip-string type="string" name="symbol_picker_5"/>
-        <skip-string type="string" name="symbol_picker_7"/>
-        <skip-string type="string" name="symbol_picker_0"/>
-        <skip-string type="string" name="symbol_picker_dollar"/>
-        <skip-string type="string" name="symbol_picker_percent"/>
-        <skip-string type="string" name="symbol_picker_star"/>
-        <skip-string type="string" name="symbol_picker_minus"/>
-        <skip-string type="string" name="symbol_picker_plus"/>
-        <skip-string type="string" name="symbol_picker_opening_parenthesis"/>
-        <skip-string type="string" name="symbol_picker_closing_parenthesis"/>
-        <skip-string type="string" name="symbol_picker_exclamation"/>
-        <skip-string type="string" name="symbol_picker_quote"/>
-        <skip-string type="string" name="symbol_picker_question"/>
-        <skip-string type="string" name="symbol_picker_comma"/>
-        <skip-string type="string" name="symbol_picker_equal"/>
-        <skip-string type="string" name="symbol_picker_lt"/>
-        <skip-string type="string" name="symbol_picker_gt"/>
     </project>
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values"/>
     <project name="android_frameworks_base/Keyguard"  resourceID="frameworks/base/packages/Keyguard/res/values">
@@ -269,7 +216,6 @@
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
     </project>
-    <project name="android_packages_apps_QuickSearchBox" resourceID="packages/apps/QuickSearchBox/res/values"/>
     <project name="android_packages_apps_SamsungServiceMode" resourceID="packages/apps/SamsungServiceMode/res/values"/>
     <project name="android_packages_apps_Settings" resourceID="packages/apps/Settings/res/values">
         <skip-file name="analytics.xml"/>
@@ -361,7 +307,6 @@
 **                            Device parts                           **
 ***********************************************************************
 ********************************************************************-->
-    <project name="android_device_amazon_otter-common" resourceID="device/amazon/otter-common/OtterParts/res/values"/>
     <project name="android_device_asus_tf300t" resourceID="device/asus/tf300t/AutoParts/res/values"/>
     <project name="android_device_asus_tf700t" resourceID="device/asus/tf700t/AutoParts/res/values"/>
     <project name="android_device_bn_acclaim" resourceID="device/bn/acclaim/TFF/res/values"/>
