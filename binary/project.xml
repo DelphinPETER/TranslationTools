@@ -73,6 +73,7 @@
         <skip-file name="cm_extra.xml"/>
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
     </project>
+    <project name="android_frameworks_base/WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values"/>
     <project name="android_hardware_qcom_fm/fmapp2" resourceID="hardware/qcom/fm/fmapp2/res/values"/>
     <project name="android_hardware_qcom_fm/FMRecord" resourceID="hardware/qcom/fm/FMRecord/res/values"/>
     <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values"/>
