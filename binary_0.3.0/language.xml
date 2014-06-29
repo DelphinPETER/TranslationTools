@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-<!--*******************************************************************
-***********************************************************************
-**                        Languages supported                        **
-***********************************************************************
-********************************************************************-->
     <language value="af"/>
     <language value="am"/>
     <language value="ar"/>
@@ -25,17 +20,22 @@
     <language value="hi"/>
     <language value="hr"/>
     <language value="hu"/>
+    <language value="hy"/>
     <language value="in"/>
     <language value="it"/>
     <language value="iw"/>
     <language value="ja"/>
+    <language value="ka"/>
+    <language value="km"/>
     <language value="ko"/>
     <language value="ku"/>
+    <language value="lo"/>
     <language value="lt"/>
     <language value="lv"/>
     <language value="ml"/>
     <language value="ms"/>
     <language value="nb"/>
+    <language value="ne"/>
     <language value="nl"/>
     <language value="pa"/>
     <language value="pl"/>
@@ -45,6 +45,7 @@
     <language value="rm"/>
     <language value="ro"/>
     <language value="ru"/>
+    <language value="si"/>
     <language value="sk"/>
     <language value="sl"/>
     <language value="sr"/>
