@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation>
+    <string name="label_language">Language:</string>
+    <string name="scan_button">Scan</string>
+    <string name="label_progress">Progress:</string>
+    <string name="column_title_apps_name">Apps name</string>
+    <string name="column_title_untranslated">Untranslated</string>
+    <string name="column_title_line_number">Line</string>
+    <string name="column_title_filename">Filename</string>
+    <string name="column_title_type">Type</string>
+    <string name="unused">unused</string>
+    <string name="good_works">No translation needed, Good Work!</string>
+    <string name="information_title">Informations:</string>
+    <string name="information_source_text_title">Source text:</string>
+    <string name="button_save_list">Save list</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_display">Display</string>
+    <string name="option_show_unused_string">Show unused string</string>
+    <string name="menu_options">Options</string>
+    <string name="editor_command">Editor command:</string>
+    <string name="use_custom_source">Use a custom source folder</string>
+    <string name="custom_source_title">Custom folder:</string>
+    <string name="button_open_text">Open</string>
+    <string name="tips_options">Use %1 for the path file and %2 for the line (for example : gedit +%2 %1)</string>
+    <string name="error_no_source_file_title">No XML files found</string>
+    <string name="error_no_source_file_text">No xml files are found. Make sure you launch TranslationTool in source folder or that your custom configuration is correct.</string>
+    <string name="error_no_file_title">File not found</string>
+    <string name="error_no_file_text">The file %1 was not found, make sure you launch TranslationTool in source folder or that your custom configuration is correct.</string>
+    <string name="info_scan_translation_finished">Scan translation finished successfully</string>
+    <string name="info_project_XML_file_loaded">project.xml file was loaded successfully</string>
+    <string name="info_user_config_loaded">User configuration loaded successfully</string>
+    <string name="title_open_folder">Open folder</string>
+</translation>
