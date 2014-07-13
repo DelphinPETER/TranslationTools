@@ -27,19 +27,17 @@ Fedora 20 (x64):
 Installing
 ----------
 
-You can install Translation Tools by adding it to the local manifests of your local OmniRom repo. Execute the following in the root of your local repo:
+You can install Translation Tools by adding it to the local manifests of your local repo. Choose the right version of your android Rom, adapt the following and execute it in the root of your local repo:
 
-    curl https://raw.github.com/DelphinPETER/OmniRom_TranslatorRepo/android-4.4/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml
+    curl https://raw.github.com/DelphinPETER/TranslatorRepo/ANDROID_VERSION/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml
     repo sync
 
-After sync'ing, you can find Translation Tools under tools/TranslationTools/binary.
-
-There is a helper script available for launching Translation Tools, created by the German CyanogenMod translator Jacob Müller. You can find more information on [this page](https://github.com/jackmu95/tt).
+After sync'ing, you can find Translation Tools under tools/TranslationTools.
 
 Translating Translation Tools
 -----------------------------
 
-The interface of Translation Tools is translatable. Use source/language_fr.ts (or any other language) as your base; language_fr contains both French and English texts. Submit your translation by creating a pull request.
+The interface of Translation Tools is translatable. Use res/string.xml (or any other language) as your base. Submit your translation by creating a pull request.
 
 Uninstalling
 ------------
