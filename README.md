@@ -27,7 +27,7 @@ Fedora 20 (x64):
 Installing
 ----------
 
-You can install Translation Tools by adding it to the local manifests of your local repo. Choose the right version of your android Rom, adapt the following and execute it in the root of your local repo:
+You can install Translation Tools by adding it to the local manifests of your local repo. Choose the right version of your android Rom, adapt the following and execute it in the root of your local folder. Show the TranslatorRepo repository to find the correct link, https://github.com/DelphinPETER/TranslatorRepo
 
     curl https://raw.github.com/DelphinPETER/TranslatorRepo/ANDROID_VERSION/TranslationTools.xml > .repo/local_manifests/TranslationTools.xml
     repo sync
