@@ -1,7 +1,7 @@
 Translation Tools
 =================
 
-Translation Tools is a program, developed by the French OmniRom translator Delphin PETER, to assist OmniRom translators in translating OmniRom into their language.
+Translation Tools is a program, developed by the French Android ROM translator Delphin PETER, to assist translators in translating Android ROM into their language.
 
 Dependencies
 ------------
