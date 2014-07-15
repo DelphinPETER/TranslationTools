@@ -207,6 +207,7 @@
     </project>
     <project name="android_packages_apps_HTMLViewer" resourceID="packages/apps/HTMLViewer/res/values"/>
     <project name="android_packages_apps_InCallUI" resourceID="packages/apps/InCallUI/res/values">
+        <skip-file name="cm_extra.xml"/>
         <skip-string type="string" name="dialpad_0_letters"/>
         <skip-string type="string" name="dialpad_1_letters"/>
         <skip-string type="string" name="dialpad_2_letters"/>
