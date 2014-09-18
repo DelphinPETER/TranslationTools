@@ -283,6 +283,10 @@
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
     </project>
+    <!-- android_packages_apps_SoundRecorder -->
+    <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values/">
+        <skip-file name="arrays.xml"/>
+    </project>
     <!-- android_packages_apps_Terminal -->
     <project name="android_packages_apps_Terminal" resourceID="packages/apps/Terminal/res/values">
     </project>
