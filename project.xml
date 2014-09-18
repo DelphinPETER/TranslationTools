@@ -103,6 +103,7 @@
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
         <skip-file name="donottranslate_config.xml"/>
+        <skip-string type="string" name="from_account_format"/>
     </project>
     <!-- android_packages_apps_ContactsCommon -->
     <project name="android_packages_apps_ContactsCommon" resourceID="packages/apps/ContactsCommon/res/values">
