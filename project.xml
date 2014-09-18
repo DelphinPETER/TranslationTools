@@ -170,7 +170,6 @@
     <!-- android_packages_apps_DU_walls -->
     <project name="android_packages_apps_DU_walls" resourceID="packages/apps/DU_walls/res/values">
     </project>
-
     <!-- android_packages_apps_Email -->
     <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
         <skip-file name="arrays.xml"/>
@@ -290,7 +289,8 @@
     </project>
     <!-- android_packages_apps_Terminal -->
     <project name="android_packages_apps_Terminal" resourceID="packages/apps/Terminal/res/values">
-    <skip-file name="arraysNoLocalize.xml"/>
+        <skip-file name="defaults.xml"/>
+        <skip-file name="arraysNoLocalize.xml"/>
     </project>
     <!-- android_packages_apps_ThemeChooser -->
     <project name="android_packages_apps_ThemeChooser" resourceID="packages/apps/ThemeChooser/res/values">
