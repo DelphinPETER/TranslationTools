@@ -212,6 +212,8 @@
         <skip-string type="string-array" name="pref_camera_countdown_labels"/>
         <skip-string type="string" name="ingest_import"/>
         <skip-string type="string" name="ingest_import_complete"/>
+        <skip-string type="string" name="ingest_switch_photo_grid"/>
+        <skip-string type="string" name="ingest_switch_photo_fullscreen"/>
     </project>
     <!-- android_packages_apps_InCallUI -->
     <project name="android_packages_apps_InCallUI" resourceID="packages/apps/InCallUI/res/values">
