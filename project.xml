@@ -2,7 +2,7 @@
 <!--
 ===================================================================
 |                                                                 |
-|                     DIRTY UNICORNS 4.4.x                        |
+|                     DIRTY UNICORNS 5.x.x                        |
 |                                                                 |
 ===================================================================
 -->
@@ -13,6 +13,7 @@
         <skip-file name="donottranslate.xml"/>
         <skip-file name="donottranslate-cldr.xml"/>
         <skip-file name="donottranslate-maps.xml"/>
+        <skip-file name="donottranslate_material.xml"/>
         <skip-file name="donottranslate-names.xml"/>
         <skip-string type="string" name="alternate_eri_file"/>
         <skip-string type="string" name="autofill_address_line_1_label_re"/>
@@ -90,6 +91,7 @@
     </project>
     <!-- android_packages_apps_Calculator -->
     <project name="android_packages_apps_Calculator" resourceID="packages/apps/Calculator/res/values">
+        <skip-file name="donottranslate_strings.xml"/>
     </project>
     <!-- android_packages_apps_Camera2 -->
     <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
