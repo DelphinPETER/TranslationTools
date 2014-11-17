@@ -60,6 +60,10 @@
         <skip-string type="string" name="locale_replacement"/>
         <skip-string type="string" name="network_available_sign_in_detailed"/>
         <skip-string type="string" name="imProtocolGoogleTalk"/>
+        <skip-string type="string" name="time_placeholder"/>
+        <skip-string type="string" name="radial_numbers_typeface"/>
+        <skip-string type="string" name="sans_serif"/>
+        <skip-string type="string" name="day_of_week_label_typeface"/>
     </project>
     <!-- android_frameworks_base-DocumentsUI-->
     <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
@@ -69,6 +73,7 @@
         <skip-file name="donottranslate.xml"/>
         <skip-file name="arrays.xml"/>
         <skip-file name="custom_donottranslate.xml"/>
+        <skip-file name="lland_strings.xml"/>
         <skip-string type="string" name="accessibility_data_connection_HP"/>
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
     </project>
