@@ -7,12 +7,12 @@
 ===================================================================
 -->
 <resources>
-    <!-- android_frameworks_base-core-->
     <project name="android_frameworks_base/Core" resourceID="frameworks/base/core/res/res/values">
         <skip-file name="config.xml"/>
         <skip-file name="donottranslate.xml"/>
         <skip-file name="donottranslate-cldr.xml"/>
         <skip-file name="donottranslate-maps.xml"/>
+        <skip-file name="donottranslate_material.xml"/>
         <skip-file name="donottranslate-names.xml"/>
         <skip-string type="string" name="alternate_eri_file"/>
         <skip-string type="string" name="autofill_address_line_1_label_re"/>
@@ -59,6 +59,10 @@
         <skip-string type="string" name="locale_replacement"/>
         <skip-string type="string" name="network_available_sign_in_detailed"/>
         <skip-string type="string" name="imProtocolGoogleTalk"/>
+        <skip-string type="string" name="time_placeholder"/>
+        <skip-string type="string" name="radial_numbers_typeface"/>
+        <skip-string type="string" name="sans_serif"/>
+        <skip-string type="string" name="day_of_week_label_typeface"/>
     </project>
     <!-- android_frameworks_base-DocumentsUI-->
     <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
@@ -68,6 +72,7 @@
         <skip-file name="donottranslate.xml"/>
         <skip-file name="arrays.xml"/>
         <skip-file name="custom_donottranslate.xml"/>
+        <skip-file name="lland_strings.xml"/>
         <skip-string type="string" name="accessibility_data_connection_HP"/>
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
     </project>
@@ -90,6 +95,7 @@
     </project>
     <!-- android_packages_apps_Calculator -->
     <project name="android_packages_apps_Calculator" resourceID="packages/apps/Calculator/res/values">
+        <skip-file name="donottranslate_strings.xml"/>
     </project>
     <!-- android_packages_apps_Camera2 -->
     <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
@@ -100,6 +106,11 @@
         <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
         <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
         <skip-string type="string-array" name="pref_camera_countdown_labels"/>
+        <skip-string type="string-array" name="pref_camera_jpeg_quality_entryvalues"/>
+        <skip-string type="string-array" name="pref_camera_gridlines_entryvalues"/>
+        <skip-string type="string-array" name="pref_camera_pano_orientation_entryvalues"/>
+        <skip-string type="string-array" name="camera_mode_text"/>
+        <skip-string type="string-array" name="camera_mode_content_description"/>
     </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
@@ -108,6 +119,9 @@
     </project>
     <!-- android_packages_apps_ContactsCommon -->
     <project name="android_packages_apps_ContactsCommon" resourceID="packages/apps/ContactsCommon/res/values">
+        <skip-string type="string" name="tab_font_family"/>
+        <skip-string type="string" name="letter_tile_letter_font_family"/>
+        <skip-string type="string" name="search_font_family"/>
     </project>
     <!-- android_packages_apps_DashClock -->
     <project name="android_packages_apps_DashClock" resourceID="packages/apps/DashClock/main/src/main/res/values">
@@ -152,6 +166,7 @@
         <skip-string type="string" name="favorites_menu_all_contacts_font_family"/>
         <skip-string type="string" name="call_log_empty_geocode"/>
         <skip-string type="string" name="call_log_empty_gecode"/>
+        <skip-string type="string" name="view_full_call_history_font_family"/>
     </project>
     <!-- android_packages_apps_DSPManager -->
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values">
@@ -194,6 +209,10 @@
         <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
         <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
         <skip-string type="string-array" name="pref_camera_countdown_labels"/>
+        <skip-string type="string" name="ingest_import"/>
+        <skip-string type="string" name="ingest_import_complete"/>
+        <skip-string type="string" name="ingest_switch_photo_grid"/>
+        <skip-string type="string" name="ingest_switch_photo_fullscreen"/>
     </project>
     <!-- android_packages_apps_InCallUI -->
     <project name="android_packages_apps_InCallUI" resourceID="packages/apps/InCallUI/res/values">
@@ -287,6 +306,7 @@
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
         <skip-file name="arrays.xml"/>
+        <skip-string type="string" name="audio_db_title_format"/>
     </project>
     <!-- android_packages_apps_Terminal -->
     <project name="android_packages_apps_Terminal" resourceID="packages/apps/Terminal/res/values">
