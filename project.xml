@@ -345,5 +345,6 @@
       <skip-string type="string-array" name="clock_date_style_entries"/>
       <skip-string type="string-array" name="clock_date_format_entries_values"/>
       <skip-string type="string-array" name="recents_clear_all_location_entries"/>
+      <skip-string type="string-array" name="heads_up_time_out_entries"/>
     </project>
 </resources>
