@@ -76,6 +76,7 @@
         <skip-string type="string" name="accessibility_data_connection_HP"/>
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
 	<skip-string type="string" name="status_bar_expanded_header_weather_format"/>
+	<skip-string type="string" name="accessibility_casting"/>
     </project>
     <!-- android_frameworks_base-InputDevices-->
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
@@ -330,6 +331,9 @@
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
     <skip-file name="config.xml"/>
+    </project>
+    <!-- android_packages_wallpapers_Basic -->
+    <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values">
     </project>
     <!-- android_packages_wallpapers_Basic -->
     <project name="android_packages_wallpapers_Basic" resourceID="packages/wallpapers/Basic/res/values">
