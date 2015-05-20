@@ -175,6 +175,36 @@
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
+        <skip-string type="string" name="alex_devices"/>
+        <skip-string type="string" name="bosko_devices"/>
+        <skip-string type="string" name="bret_devices"/>
+        <skip-string type="string" name="daniel_devices"/>
+        <skip-string type="string" name="edwin_devices"/>
+        <skip-string type="string" name="josh1_devices"/>
+        <skip-string type="string" name="josh2_devices"/>
+        <skip-string type="string" name="josh3_devices"/>
+        <skip-string type="string" name="mark_devices"/>
+        <skip-string type="string" name="paul_devices"/>
+        <skip-string type="string" name="susan_devices"/>
+        <skip-string type="string" name="nick_devices"/>
+        <skip-string type="string" name="alex_url"/>
+        <skip-string type="string" name="barry_url"/>
+        <skip-string type="string" name="bosko_url"/>
+        <skip-string type="string" name="bret_url"/>
+        <skip-string type="string" name="daniel_url"/>
+        <skip-string type="string" name="dorian_url"/>
+        <skip-string type="string" name="edwin_url"/>
+        <skip-string type="string" name="james_url"/>
+        <skip-string type="string" name="josh1_url"/>
+        <skip-string type="string" name="josh2_url"/>
+        <skip-string type="string" name="josh3_url"/>
+        <skip-string type="string" name="josip_url"/>
+        <skip-string type="string" name="mark_url"/>
+        <skip-string type="string" name="mat_url"/>
+        <skip-string type="string" name="mike_url"/>
+        <skip-string type="string" name="paul_url"/>
+        <skip-string type="string" name="susan_url"/>
+        <skip-string type="string" name="nick_url"/>
     </project>
     <!-- android_packages_apps_DU_changelog -->
     <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
