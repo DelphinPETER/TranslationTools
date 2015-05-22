@@ -383,6 +383,10 @@
       <skip-string type="string-array" name="icon_types"/>
       <skip-string type="string-array" name="shortcut_icon_picker_labels"/>
       <skip-string type="string-array" name="shortcut_action_entries"/>
+      <skip-string type="string-array" name="listview_animation_entries"/>
+      <skip-string type="string-array" name="listview_animation_values"/>
+      <skip-string type="string-array" name="listview_interpolator_entries"/>
+      <skip-string type="string-array" name="listview_interpolator_values"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
