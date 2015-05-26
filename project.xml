@@ -77,6 +77,7 @@
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
 	<skip-string type="string" name="status_bar_expanded_header_weather_format"/>
 	<skip-string type="string" name="accessibility_casting"/>
+	<skip-string type="string" name="battery_level_template"/>
     </project>
     <!-- android_frameworks_base-InputDevices-->
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
@@ -360,6 +361,9 @@
         <skip-string type="string-array" name="sip_call_options_entries"/>
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
+        <skip-string type="string" name="voicemail_notification_ringtone_key"/>
+        <skip-string type="string" name="voicemail_notification_vibrate_key"/>
+        <skip-string type="string" name="tty_mode_key"/>
     <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_VoiceDialer -->
