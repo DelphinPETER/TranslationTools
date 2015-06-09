@@ -338,6 +338,7 @@
 	<skip-string type="string-array" name="volume_key_cursor_control_entries"/>
 	<skip-string type="string-array" name="media_scanner_on_boot_entries"/>
 	<skip-string type="string-array" name="less_notification_sounds_entries"/>
+	<skip-string type="string-array" name="lock_numpad_random_entries"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
