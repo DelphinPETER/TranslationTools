@@ -391,7 +391,8 @@
       <skip-string type="string-array" name="listview_animation_entries"/>
       <skip-string type="string-array" name="listview_animation_values"/>
       <skip-string type="string-array" name="listview_interpolator_entries"/>
-      <skip-string type="string-array" name="listview_interpolator_values"/>
+      <skip-string type="string-array" name="listview_interpolator_values"/>      
+      <skip-string type="string-array" name="recent_panel_expanded_mode_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
