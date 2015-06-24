@@ -394,6 +394,10 @@
       <skip-string type="string-array" name="listview_interpolator_values"/>
       <skip-string type="string-array" name="recent_panel_expanded_mode_entries"/>
       <skip-string type="string-array" name="torch_screen_off_delay_entries"/>
+      <skip-string type="string-array" name="icon_color_mode_entries"/>
+      <skip-string type="string-array" name="pref_navigation_menu_entries"/>
+      <skip-string type="string-array" name="pref_menu_display_entries"/>
+      <skip-string type="string-array" name="shortcut_action_screen_off_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
