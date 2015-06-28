@@ -369,6 +369,7 @@
         <skip-string type="string" name="voicemail_notification_ringtone_key"/>
         <skip-string type="string" name="voicemail_notification_vibrate_key"/>
         <skip-string type="string" name="tty_mode_key"/>
+        <skip-string type="string" name="wifi_calling_settings_key"/>
     <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_VoiceDialer -->
