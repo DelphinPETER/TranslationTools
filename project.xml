@@ -409,4 +409,6 @@
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
         <skip-string type="string-array" name="updateFrequencyValues"/>
     </project>
+    <!-- android_packages_apps_LockClock -->
+    <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values/">
 </resources>
