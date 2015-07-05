@@ -336,13 +336,13 @@
         <skip-string type="string" name="wifi_security_wpa"/>
         <skip-string type="string" name="wifi_security_wpa2"/>
         <skip-string type="string" name="wifi_security_wpa_wpa2"/>
-	<skip-string type="string" name="call_manager_summary"/>
-	<skip-string type="string-array" name="root_access_entries"/>
-	<skip-string type="string-array" name="root_access_values"/>
-	<skip-string type="string-array" name="volume_key_cursor_control_entries"/>
-	<skip-string type="string-array" name="media_scanner_on_boot_entries"/>
-	<skip-string type="string-array" name="less_notification_sounds_entries"/>
-	<skip-string type="string-array" name="lock_numpad_random_entries"/>
+        <skip-string type="string" name="call_manager_summary"/>
+        <skip-string type="string-array" name="root_access_entries"/>
+        <skip-string type="string-array" name="root_access_values"/>
+        <skip-string type="string-array" name="volume_key_cursor_control_entries"/>
+        <skip-string type="string-array" name="media_scanner_on_boot_entries"/>
+        <skip-string type="string-array" name="less_notification_sounds_entries"/>
+        <skip-string type="string-array" name="lock_numpad_random_entries"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
@@ -370,7 +370,7 @@
         <skip-string type="string" name="voicemail_notification_vibrate_key"/>
         <skip-string type="string" name="tty_mode_key"/>
         <skip-string type="string" name="wifi_calling_settings_key"/>
-    <skip-file name="config.xml"/>
+        <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_VoiceDialer -->
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values">
@@ -408,5 +408,18 @@
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
         <skip-string type="string-array" name="updateFrequencyValues"/>
+    </project>
+    <!-- android_packages_apps_LockClock -->
+    <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values">
+        <skip-file name="donottranslate.xml"/>
+    </project>
+    <!-- android_packages_inputmethods_LatinIME -->
+    <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="strings-emoji-descriptions.xml"/>
+        <skip-file name="donottranslate-config-spacing-and-punctuations.xml"/>
+        <skip-file name="donottranslate-debug-settings.xml"/>
+        <skip-file name="customize.xml"/>
+        <skip-file name="donottranslate.xml"/>
     </project>
 </resources>
