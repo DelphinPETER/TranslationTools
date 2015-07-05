@@ -370,7 +370,7 @@
         <skip-string type="string" name="voicemail_notification_vibrate_key"/>
         <skip-string type="string" name="tty_mode_key"/>
         <skip-string type="string" name="wifi_calling_settings_key"/>
-    <skip-file name="config.xml"/>
+        <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_VoiceDialer -->
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values">
@@ -383,27 +383,27 @@
     </project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
-      <skip-string type="string-array" name="advanced_reboot_entries"/>
-      <skip-string type="string-array" name="entries_status_bar_am_pm"/>
-      <skip-string type="string-array" name="clock_date_display_entries"/>
-      <skip-string type="string-array" name="clock_date_style_entries"/>
-      <skip-string type="string-array" name="clock_date_format_entries_values"/>
-      <skip-string type="string-array" name="recents_clear_all_location_entries"/>
-      <skip-string type="string-array" name="heads_up_time_out_entries"/>
-      <skip-string type="string-array" name="icon_types"/>
-      <skip-string type="string-array" name="shortcut_icon_picker_labels"/>
-      <skip-string type="string-array" name="shortcut_action_entries"/>
-      <skip-string type="string-array" name="listview_animation_entries"/>
-      <skip-string type="string-array" name="listview_animation_values"/>
-      <skip-string type="string-array" name="listview_interpolator_entries"/>
-      <skip-string type="string-array" name="listview_interpolator_values"/>
-      <skip-string type="string-array" name="recent_panel_expanded_mode_entries"/>
-      <skip-string type="string-array" name="torch_screen_off_delay_entries"/>
-      <skip-string type="string-array" name="icon_color_mode_entries"/>
-      <skip-string type="string-array" name="pref_navigation_menu_entries"/>
-      <skip-string type="string-array" name="pref_menu_display_entries"/>
-      <skip-string type="string-array" name="shortcut_action_screen_off_entries"/>
-      <skip-string type="string-array" name="weather_condition_icon_entries"/>
+        <skip-string type="string-array" name="advanced_reboot_entries"/>
+        <skip-string type="string-array" name="entries_status_bar_am_pm"/>
+        <skip-string type="string-array" name="clock_date_display_entries"/>
+        <skip-string type="string-array" name="clock_date_style_entries"/>
+        <skip-string type="string-array" name="clock_date_format_entries_values"/>
+        <skip-string type="string-array" name="recents_clear_all_location_entries"/>
+        <skip-string type="string-array" name="heads_up_time_out_entries"/>
+        <skip-string type="string-array" name="icon_types"/>
+        <skip-string type="string-array" name="shortcut_icon_picker_labels"/>
+        <skip-string type="string-array" name="shortcut_action_entries"/>
+        <skip-string type="string-array" name="listview_animation_entries"/>
+        <skip-string type="string-array" name="listview_animation_values"/>
+        <skip-string type="string-array" name="listview_interpolator_entries"/>
+        <skip-string type="string-array" name="listview_interpolator_values"/>
+        <skip-string type="string-array" name="recent_panel_expanded_mode_entries"/>
+        <skip-string type="string-array" name="torch_screen_off_delay_entries"/>
+        <skip-string type="string-array" name="icon_color_mode_entries"/>
+        <skip-string type="string-array" name="pref_navigation_menu_entries"/>
+        <skip-string type="string-array" name="pref_menu_display_entries"/>
+        <skip-string type="string-array" name="shortcut_action_screen_off_entries"/>
+        <skip-string type="string-array" name="weather_condition_icon_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
@@ -411,6 +411,14 @@
     </project>
     <!-- android_packages_apps_LockClock -->
     <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values">
+        <skip-file name="donottranslate.xml"/>
+    </project><!-- android_packages_inputmethods_LatinIME -->
+    <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="strings-emoji-descriptions.xml"/>
+        <skip-file name="donottranslate-config-spacing-and-punctuations.xml"/>
+        <skip-file name="donottranslate-debug-settings.xml"/>
+        <skip-file name="customize.xml"/>
         <skip-file name="donottranslate.xml"/>
     </project>
 </resources>
