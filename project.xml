@@ -370,7 +370,7 @@
         <skip-string type="string" name="voicemail_notification_vibrate_key"/>
         <skip-string type="string" name="tty_mode_key"/>
         <skip-string type="string" name="wifi_calling_settings_key"/>
-    <skip-file name="config.xml"/>
+        <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_VoiceDialer -->
     <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values">
