@@ -279,6 +279,8 @@
     </project>
     <!-- android_packages_apps_Mms -->
     <project name="android_packages_apps_Mms" resourceID="packages/apps/Mms/res/values">
+        <skip-string type="string-array" name="pref_message_font_size_choices"/>
+        <skip-string type="string-array" name="pref_message_font_size_values"/>
     </project>
     <!-- android_packages_apps_MonthCalendarWidget -->
     <project name="android_packages_apps_MonthCalendarWidget" resourceID="packages/apps/MonthCalendarWidget/res/values">
