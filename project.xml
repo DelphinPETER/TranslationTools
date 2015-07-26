@@ -185,6 +185,7 @@
         <skip-string type="string" name="jason_devices"/>
         <skip-string type="string" name="josh2_devices"/>
         <skip-string type="string" name="josh3_devices"/>
+        <skip-string type="string" name="josip_devices"/>
         <skip-string type="string" name="mark_devices"/>
         <skip-string type="string" name="paul_devices"/>
         <skip-string type="string" name="susan_devices"/>
