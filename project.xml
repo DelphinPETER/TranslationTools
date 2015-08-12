@@ -415,7 +415,8 @@
     <!-- android_packages_apps_LockClock -->
     <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values">
         <skip-file name="donottranslate.xml"/>
-    </project><!-- android_packages_inputmethods_LatinIME -->
+    </project>
+    <!-- android_packages_inputmethods_LatinIME -->
     <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values">
         <skip-file name="donottranslate.xml"/>
         <skip-file name="strings-emoji-descriptions.xml"/>
@@ -424,4 +425,8 @@
         <skip-file name="customize.xml"/>
         <skip-file name="donottranslate.xml"/>
     </project>
+    <!-- android_frameworks_base_packages_WallpaperCropper -->
+    <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values/">
+    </project>
+    
 </resources>
