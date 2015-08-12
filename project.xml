@@ -426,7 +426,7 @@
         <skip-file name="donottranslate.xml"/>
     </project>
     <!-- android_frameworks_base_packages_WallpaperCropper -->
-    <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values/">
+    <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values">
     </project>
     
 </resources>
