@@ -407,6 +407,7 @@
         <skip-string type="string-array" name="pref_menu_display_entries"/>
         <skip-string type="string-array" name="shortcut_action_screen_off_entries"/>
         <skip-string type="string-array" name="weather_condition_icon_entries"/>
+        <skip-string type="string-array" name="shortcut_action_navring_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
