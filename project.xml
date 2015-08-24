@@ -211,6 +211,8 @@
         <skip-string type="string" name="susan_url"/>
         <skip-string type="string" name="nick_url"/>
         <skip-string type="string" name="nico_url"/>
+        <skip-string type="string" name="tony_devices"/>
+        <skip-string type="string" name="tony_url"/>
     </project>
     <!-- android_packages_apps_DU_changelog -->
     <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
