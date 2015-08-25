@@ -342,6 +342,9 @@
         <skip-string type="string" name="wifi_security_wpa2"/>
         <skip-string type="string" name="wifi_security_wpa_wpa2"/>
 	<skip-string type="string" name="call_manager_summary"/>
+	<skip-string type="string" name="lockgesture_need_to_unlock_footery"/>
+	<skip-string type="string" name="lockgesture_need_to_unlock_wrong_footer"/>
+	<skip-string type="string" name="lockgesture_need_to_unlock_footer"/>
 	<skip-string type="string-array" name="root_access_entries"/>
 	<skip-string type="string-array" name="root_access_values"/>
 	<skip-string type="string-array" name="volume_key_cursor_control_entries"/>
