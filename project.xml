@@ -414,6 +414,8 @@
         <skip-string type="string-array" name="weather_condition_icon_entries"/>
         <skip-string type="string-array" name="shortcut_action_navring_entries"/>
         <skip-string type="string-array" name="lcd_density_stock_entries"/>
+        <skip-string type="string-array" name="gapps_list"/>
+        <skip-string type="string-array" name="gapps_list_url"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
@@ -430,10 +432,15 @@
         <skip-file name="donottranslate-config-spacing-and-punctuations.xml"/>
         <skip-file name="donottranslate-debug-settings.xml"/>
         <skip-file name="customize.xml"/>
-        <skip-file name="donottranslate.xml"/>
     </project>
     <!-- android_frameworks_base_packages_WallpaperCropper -->
     <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values">
+    </project>
+    <!-- android_frameworks_base_packages_keyguard -->
+    <project name="android_frameworks_base_packages_keyguard" resourceID="frameworks/base/packages/Keyguard/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="config.xml"/>
+        <skip-string type="string" name="accessibility_ime_switch_button"/>
     </project>
     
 </resources>
