@@ -63,6 +63,10 @@
         <skip-string type="string" name="radial_numbers_typeface"/>
         <skip-string type="string" name="sans_serif"/>
         <skip-string type="string" name="day_of_week_label_typeface"/>
+        <skip-string type="string" name="date_picker_month_typeface"/>
+        <skip-string type="string" name="date_picker_day_of_week_typeface"/>
+        <skip-string type="string" name="date_picker_day_typeface"/>
+        <skip-string type="string" name="notification_inbox_ellipsis"/>
     </project>
     <!-- android_frameworks_base-DocumentsUI-->
     <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
@@ -72,12 +76,13 @@
         <skip-file name="donottranslate.xml"/>
         <skip-file name="arrays.xml"/>
         <skip-file name="custom_donottranslate.xml"/>
-        <skip-file name="lland_strings.xml"/>
+        <skip-file name="mland_strings.xml"/>
         <skip-string type="string" name="accessibility_data_connection_HP"/>
         <skip-string type="string" name="battery_meter_very_low_overlay_symbol"/>
         <skip-string type="string" name="status_bar_expanded_header_weather_format"/>
         <skip-string type="string" name="accessibility_casting"/>
         <skip-string type="string" name="battery_level_template"/>
+        <skip-string type="string" name="regrettable_lack_of_easter_egg"/>
     </project>
     <!-- android_frameworks_base-InputDevices-->
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
@@ -125,6 +130,7 @@
         <skip-string type="string" name="tab_font_family"/>
         <skip-string type="string" name="letter_tile_letter_font_family"/>
         <skip-string type="string" name="search_font_family"/>
+        <skip-file name="donottranslate_config.xml"/>
     </project>
     <!-- android_packages_apps_DashClock -->
     <project name="android_packages_apps_DashClock" resourceID="packages/apps/DashClock/main/src/main/res/values">
@@ -134,6 +140,7 @@
     <!-- android_packages_apps_DeskClock -->
     <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values">
         <skip-file name="donottranslate.xml"/>
+        <skip-file name="donottranslate_events.xml"/>
         <skip-string type="string" name="control_set_alarm_with_existing"/>
     </project>
     <!-- android_packages_apps_Dialer -->
@@ -352,6 +359,9 @@
         <skip-string type="string-array" name="less_notification_sounds_entries"/>
         <skip-string type="string-array" name="lock_numpad_random_entries"/>
         <skip-string type="string-array" name="volume_panel_time_out_entries"/>
+        <skip-string type="string-array" name="wifi_ap_band_config_full"/>
+        <skip-string type="string-array" name="wifi_ap_band_config_2G_only"/>
+        <skip-string type="string-array" name="usb_configuration_titles"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
@@ -363,6 +373,7 @@
     </project>
     <!-- android_packages_apps_Terminal -->
     <project name="android_packages_apps_Terminal" resourceID="packages/apps/Terminal/res/values">
+        <skip-string type="string" name="app_label"/>
         <skip-file name="defaults.xml"/>
         <skip-file name="arraysNoLocalize.xml"/>
     </project>
@@ -379,6 +390,7 @@
         <skip-string type="string" name="voicemail_notification_vibrate_key"/>
         <skip-string type="string" name="tty_mode_key"/>
         <skip-string type="string" name="wifi_calling_settings_key"/>
+        <skip-string type="string" name="voicemail_visual_voicemail_key"/>
         <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_VoiceDialer -->
