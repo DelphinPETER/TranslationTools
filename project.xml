@@ -362,6 +362,7 @@
         <skip-string type="string-array" name="wifi_ap_band_config_full"/>
         <skip-string type="string-array" name="wifi_ap_band_config_2G_only"/>
         <skip-string type="string-array" name="usb_configuration_titles"/>
+        <skip-string type="string" name="security_settings_fingerprint_preference_summary_none"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
