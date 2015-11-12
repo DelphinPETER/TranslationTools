@@ -430,6 +430,8 @@
         <skip-string type="string-array" name="lcd_density_stock_entries"/>
         <skip-string type="string-array" name="gapps_list"/>
         <skip-string type="string-array" name="gapps_list_url"/>
+        <skip-string type="string-array" name="toast_animation_entries"/>
+        <skip-string type="string-array" name="toast_animation_values"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
