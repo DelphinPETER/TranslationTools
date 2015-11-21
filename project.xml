@@ -433,6 +433,7 @@
         <skip-string type="string-array" name="toast_animation_entries"/>
         <skip-string type="string-array" name="toast_animation_values"/>
         <skip-string type="string-array" name="carrier_label_entries"/>
+        <skip-string type="string-array" name="media_scanner_on_boot_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
