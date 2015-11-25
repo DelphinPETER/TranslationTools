@@ -83,6 +83,7 @@
         <skip-string type="string" name="accessibility_casting"/>
         <skip-string type="string" name="battery_level_template"/>
         <skip-string type="string" name="regrettable_lack_of_easter_egg"/>
+        <skip-string type="string-array" name="telephony_data_type_sim"/>
     </project>
     <!-- android_frameworks_base-InputDevices-->
     <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
