@@ -447,6 +447,8 @@
         <skip-string type="string" name="action_value_recent_apps"/>
         <skip-string type="string" name="action_value_voice_search"/>
         <skip-string type="string" name="action_value_menu"/>
+        <skip-string type="string-array" name="tomahawk_list"/>
+        <skip-string type="string-array" name="tomahawk_list_url"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
