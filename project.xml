@@ -438,15 +438,6 @@
         <skip-string type="string-array" name="action_dialog_entries"/>
         <skip-string type="string-array" name="systemui_navbar_mode_entries"/>
         <skip-string type="string-array" name="systemui_navbar_mode_settings"/>
-        <skip-string type="string" name="action_value_custom_action"/>
-        <skip-string type="string" name="action_value_default_action"/>
-        <skip-string type="string" name="action_value_select_app"/>
-        <skip-string type="string" name="action_value_back"/>
-        <skip-string type="string" name="action_value_home"/>
-        <skip-string type="string" name="action_value_search_assist"/>
-        <skip-string type="string" name="action_value_recent_apps"/>
-        <skip-string type="string" name="action_value_voice_search"/>
-        <skip-string type="string" name="action_value_menu"/>
         <skip-string type="string-array" name="tomahawk_list"/>
         <skip-string type="string-array" name="tomahawk_list_url"/>
     </project>
