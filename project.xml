@@ -440,6 +440,8 @@
         <skip-string type="string-array" name="systemui_navbar_mode_settings"/>
         <skip-string type="string-array" name="tomahawk_list"/>
         <skip-string type="string-array" name="tomahawk_list_url"/>
+        <skip-string type="string-array" name="power_menu_animations_entries"/>
+        <skip-string type="string-array" name="lock_clock_fonts_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
