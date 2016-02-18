@@ -448,6 +448,7 @@
         <skip-string type="string-array" name="immersive_recents_entries"/>
         <skip-string type="string-array" name="action_dialog_no_default_entries"/>
         <skip-string type="string-array" name="smartbar_context_menu_side_entries"/>
+        <skip-string type="string-array" name="smartbar_button_animation_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
