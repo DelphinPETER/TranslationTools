@@ -365,6 +365,7 @@
         <skip-string type="string-array" name="usb_configuration_titles"/>
         <skip-string type="string" name="security_settings_fingerprint_preference_summary_none"/>
         <skip-string type="string-array" name="dashboard_columns_entries"/>
+        <skip-string type="string-array" name="dashboard_switches_entries"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
@@ -449,6 +450,7 @@
         <skip-string type="string-array" name="action_dialog_no_default_entries"/>
         <skip-string type="string-array" name="smartbar_context_menu_side_entries"/>
         <skip-string type="string-array" name="smartbar_button_animation_entries"/>
+        <skip-string type="string-array" name="ls_bouncer_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
