@@ -22,7 +22,7 @@
     <string name="custom_source_title">Dossier source :</string>
     <string name="button_open_text">Ouvrir</string>
     <string name="tips_options">Utiliser %1 pour le chemin du fichier et %2 pour la ligne (Par exemple : gedit +%2 %1)</string>
-    <string name="error_no_source_file_title">Aucun fichier source trouvés</string>
+    <string name="error_no_source_file_title">Aucun fichier source trouvé</string>
     <string name="error_no_source_file_text">Aucun fichier source trouvé. Assurez-vous que TranslationTool est bien exécuté dans le dossier source ou que votre fichier personnalisé est valide.</string>
     <string name="error_no_file_title">Fichier non trouvé</string>
     <string name="error_no_language_text">Le fichier %1 n'a pas été trouvés. Assurez-vous que TranslationTool est bien exécuté dans le dossier source ou que votre fichier personnalisé est valide.</string>
