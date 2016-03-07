@@ -494,5 +494,8 @@
         <skip-string type="string" name="wifi_security_eap"/>
         <skip-string type="string" name="wifi_security_passpoint"/>
     </project>
+    <!-- android_packages_apps_DUI -->
+    <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
+    </project>
     
 </resources>
