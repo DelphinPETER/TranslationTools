@@ -366,6 +366,9 @@
         <skip-string type="string" name="security_settings_fingerprint_preference_summary_none"/>
         <skip-string type="string-array" name="dashboard_columns_entries"/>
         <skip-string type="string-array" name="dashboard_switches_entries"/>
+        <skip-string type="string" name="doze_pulse_duration_visible_summary"/>
+        <skip-string type="string" name="doze_pulse_duration_out_summary"/>
+        <skip-string type="string" name="doze_pulse_duration_in_summary"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
