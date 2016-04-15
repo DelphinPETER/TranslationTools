@@ -455,6 +455,7 @@
         <skip-string type="string-array" name="smartbar_button_animation_entries"/>
         <skip-string type="string-array" name="ls_bouncer_entries"/>
         <skip-string type="string-array" name="smartbar_ime_action_entries"/>
+        <skip-string type="string-array" name="unit_percent"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
@@ -508,6 +509,28 @@
     </project>
     <!-- android_vendor_du (android_frameworks_base-SystemUI) -->
     <project name="android_vendor_du (SystemUI)" resourceID="vendor/du/overlay/common/frameworks/base/packages/SystemUI/res/values">
+    </project>
+    <!-- android_packages_apps_Messaging -->
+    <project name="android_packages_apps_Messaging" resourceID="packages/apps/Messaging/res/values">
+        <skip-string type="string" name="default_sms_app"/>
+    </project>
+    <!-- android_packages_apps_PhoneCommon -->
+    <project name="android_packages_apps_PhoneCommon" resourceID="packages/apps/PhoneCommon/res/values">
+    </project>
+    <!-- android_packages_apps_PhoneCommon -->
+    <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
+    </project>
+    <!-- android_packages_apps_PhoneCommon -->
+    <project name="android_packages_services_Telecomm" resourceID="packages/services/Telecomm/res/values">
+        <skip-string type="string" name="test_account_0_label"/>
+        <skip-string type="string" name="test_account_1_label"/>
+        <skip-string type="string" name="test_account_2_label"/>
+        <skip-string type="string" name="test_account_3_label"/>
+        <skip-string type="string" name="test_account_0_short_description"/>
+        <skip-string type="string" name="test_account_1_short_description"/>
+        <skip-string type="string" name="test_account_2_short_description"/>
+        <skip-string type="string" name="test_account_3_short_description"/>
+        <skip-string type="string" name="handle_restricted"/>
     </project>
     
 </resources>
