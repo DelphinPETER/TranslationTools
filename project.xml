@@ -143,6 +143,8 @@
         <skip-file name="donottranslate.xml"/>
         <skip-file name="donottranslate_events.xml"/>
         <skip-string type="string" name="control_set_alarm_with_existing"/>
+        <skip-string type="string" name="label_unlabeled"/>
+        <skip-string type="string" name="timer_alarm_custom_summary"/>
     </project>
     <!-- android_packages_apps_Dialer -->
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
@@ -261,6 +263,7 @@
         <skip-string type="string" name="ingest_import_complete"/>
         <skip-string type="string" name="ingest_switch_photo_grid"/>
         <skip-string type="string" name="ingest_switch_photo_fullscreen"/>
+        <skip-string type="string" name="website_for_more_image"/>
     </project>
     <!-- android_packages_apps_InCallUI -->
     <project name="android_packages_apps_InCallUI" resourceID="packages/apps/InCallUI/res/values">
@@ -282,6 +285,7 @@
         <skip-string type="string-array" name="sip_call_options_entries"/>
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
         <skip-string type="string-array" name="sip_send_keepalive_options"/>
+        <skip-string type="string-array" name="website_for_more_image"/>
     </project>
     <!-- android_packages_apps_Launcher3 -->
     <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
@@ -369,6 +373,17 @@
         <skip-string type="string" name="doze_pulse_duration_visible_summary"/>
         <skip-string type="string" name="doze_pulse_duration_out_summary"/>
         <skip-string type="string" name="doze_pulse_duration_in_summary"/>
+        <skip-string type="string" name="sd_mount_summary"/>
+        <skip-string type="string" name="bluetooth_error_title"/>
+        <skip-string type="string" name="dlg_error_unmount_title"/>
+        <skip-string type="string" name="bluetooth_unknown"/>
+        <skip-string type="string" name="error_title"/>
+        <skip-string type="string" name="app_not_found_dlg_title"/>
+        <skip-string type="string" name="move_app_failed_dlg_title"/>
+        <skip-string type="string" name="unlock_set_unlock_off_summary"/>
+        <skip-string type="string" name="credentials_unlock"/>
+        <skip-string type="string" name="backup_erase_dialog_title"/>
+        <skip-string type="string" name="regulatory_info_text"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
@@ -531,6 +546,7 @@
         <skip-string type="string" name="test_account_2_short_description"/>
         <skip-string type="string" name="test_account_3_short_description"/>
         <skip-string type="string" name="handle_restricted"/>
+        <skip-string type="string" name="respond_via_sms_setting_summary"/>
     </project>
     
 </resources>
