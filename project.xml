@@ -67,6 +67,12 @@
         <skip-string type="string" name="date_picker_day_of_week_typeface"/>
         <skip-string type="string" name="date_picker_day_typeface"/>
         <skip-string type="string" name="notification_inbox_ellipsis"/>
+        <skip-string type="string" name="wfcOperatorErrorAlertMessages"/>
+        <skip-string type="string" name="wfcOperatorErrorNotificationMessages"/>
+        <skip-string type="string" name="fingerprint_acquired_vendor"/>
+        <skip-string type="string" name="fingerprint_error_vendor"/>
+        <skip-string type="string" name="aerr_title"/>
+        <skip-string type="string" name="anr_title"/>
     </project>
     <!-- android_frameworks_base-DocumentsUI-->
     <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
