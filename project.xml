@@ -230,6 +230,7 @@
     </project>
     <!-- android_packages_apps_DU_changelog -->
     <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
+        <skip-string type="string" name="changelog_header_version"/>
     </project>
     <!-- android_packages_apps_DU_HFM -->
     <project name="android_packages_apps_DU_HFM" resourceID="packages/apps/DU_HFM/res/values">
@@ -389,6 +390,8 @@
         <skip-string type="string" name="app_label"/>
         <skip-file name="defaults.xml"/>
         <skip-file name="arraysNoLocalize.xml"/>
+        <skip-string type="string" name="menu_new_tab"/>
+        <skip-string type="string" name="menu_close_tab"/>
     </project>
     <!-- android_packages_apps_ThemeChooser -->
     <project name="android_packages_apps_ThemeChooser" resourceID="packages/apps/ThemeChooser/res/values">
@@ -462,6 +465,11 @@
         <skip-string type="string-array" name="ls_bouncer_entries"/>
         <skip-string type="string-array" name="smartbar_ime_action_entries"/>
         <skip-string type="string-array" name="unit_percent"/>
+        <skip-string type="string-array" name="pulse_custom_dimen_entries"/>
+        <skip-string type="string-array" name="pulse_custom_div_entries"/>
+        <skip-string type="string-array" name="pulse_filled_block_size_entries"/>
+        <skip-string type="string-array" name="pulse_empty_block_size_entries"/>
+        <skip-string type="string-array" name="pulse_custom_fudge_factor_entries"/>
     </project>
     <!-- android_packages_apps_DU-Updater -->
     <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
