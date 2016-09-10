@@ -7,7 +7,7 @@
 ===================================================================
 -->
 <resources>
-    <project name="android_frameworks_base/Core" resourceID="frameworks/base/core/res/res/values">
+    <project name="android_frameworks_base_Core" resourceID="frameworks/base/core/res/res/values">
         <skip-file name="config.xml"/>
         <skip-file name="donottranslate.xml"/>
         <skip-file name="donottranslate-cldr.xml"/>
@@ -73,6 +73,8 @@
         <skip-string type="string" name="fingerprint_error_vendor"/>
         <skip-string type="string" name="aerr_title"/>
         <skip-string type="string" name="anr_title"/>
+        <skip-string type="string" name="resolver_target_actions_pin"/>
+        <skip-string type="string" name="resolver_target_actions_unpin"/>
     </project>
     <!-- android_frameworks_base-DocumentsUI-->
     <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
@@ -111,6 +113,9 @@
     <!-- android_packages_apps_Calculator -->
     <project name="android_packages_apps_Calculator" resourceID="packages/apps/Calculator/res/values">
         <skip-file name="donottranslate_strings.xml"/>
+    </project>
+    <!-- android_packages_apps_Calendar -->
+    <project name="android_packages_apps_Calendar" resourceID="packages/apps/Calendar/res/values">
     </project>
     <!-- android_packages_apps_Camera2 -->
     <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
@@ -184,6 +189,9 @@
         <skip-string type="string" name="call_log_empty_geocode"/>
         <skip-string type="string" name="call_log_empty_gecode"/>
         <skip-string type="string" name="view_full_call_history_font_family"/>
+        <skip-string type="string" name="voicemailCallLogToday"/>
+        <skip-string type="string" name="handle_restricted"/>
+        <skip-string type="string" name="migrate_blocked_numbers_dialog_cancel_button"/>
     </project>
     <!-- android_packages_apps_DSPManager -->
     <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values">
@@ -376,6 +384,7 @@
         <skip-string type="string" name="doze_pulse_duration_visible_summary"/>
         <skip-string type="string" name="doze_pulse_duration_out_summary"/>
         <skip-string type="string" name="doze_pulse_duration_in_summary"/>
+        <skip-string type="string" name="status_iccid"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
@@ -511,6 +520,7 @@
         <skip-string type="string" name="wifi_security_psk_generic"/>
         <skip-string type="string" name="wifi_security_eap"/>
         <skip-string type="string" name="wifi_security_passpoint"/>
+        <skip-string type="string-array" name="tts_rate_values"/>
     </project>
     <!-- android_packages_apps_DUI -->
     <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
@@ -530,11 +540,25 @@
     </project>
     <!-- android_packages_apps_PhoneCommon -->
     <project name="android_packages_apps_PhoneCommon" resourceID="packages/apps/PhoneCommon/res/values">
+        <skip-string type="string" name="dialpad_star_number"/>
+        <skip-string type="string" name="dialpad_pound_number"/>
+        <skip-string type="string" name="dialpad_0_letters"/>
+        <skip-string type="string" name="dialpad_1_letters"/>
+        <skip-string type="string" name="dialpad_2_letters"/>
+        <skip-string type="string" name="dialpad_3_letters"/>
+        <skip-string type="string" name="dialpad_4_letters"/>
+        <skip-string type="string" name="dialpad_5_letters"/>
+        <skip-string type="string" name="dialpad_6_letters"/>
+        <skip-string type="string" name="dialpad_7_letters"/>
+        <skip-string type="string" name="dialpad_8_letters"/>
+        <skip-string type="string" name="dialpad_9_letters"/>
+        <skip-string type="string" name="dialpad_star_letters"/>
+        <skip-string type="string" name="dialpad_pound_letters"/>
     </project>
-    <!-- android_packages_apps_PhoneCommon -->
+    <!-- android_packages_providers_MediaProvider -->
     <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
     </project>
-    <!-- android_packages_apps_PhoneCommon -->
+    <!-- android_packages_services_Telecomm -->
     <project name="android_packages_services_Telecomm" resourceID="packages/services/Telecomm/res/values">
         <skip-string type="string" name="test_account_0_label"/>
         <skip-string type="string" name="test_account_1_label"/>
@@ -545,6 +569,11 @@
         <skip-string type="string" name="test_account_2_short_description"/>
         <skip-string type="string" name="test_account_3_short_description"/>
         <skip-string type="string" name="handle_restricted"/>
+    </project>
+    <!-- android_frameworks_base_packages_EasterEgg -->
+    <project name="android_frameworks_base_packages_EasterEgg" resourceID="frameworks/base/packages/EasterEgg/res/values">
+        <skip-string type="string-array" name="food_intervals"/>
+        <skip-string type="string-array" name="food_new_cat_prob"/>
     </project>
     
 </resources>
