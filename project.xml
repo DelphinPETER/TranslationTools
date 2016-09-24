@@ -385,6 +385,7 @@
         <skip-string type="string" name="doze_pulse_duration_out_summary"/>
         <skip-string type="string" name="doze_pulse_duration_in_summary"/>
         <skip-string type="string" name="status_iccid"/>
+        <skip-string type="string-array" name="display_rotation_entries"/>
     </project>
     <!-- android_packages_apps_SmartCardService -->
     <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
