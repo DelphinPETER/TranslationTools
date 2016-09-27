@@ -576,5 +576,9 @@
         <skip-string type="string-array" name="food_intervals"/>
         <skip-string type="string-array" name="food_new_cat_prob"/>
     </project>
+    <!-- android_packages_providers_DownloadProvider -->
+    <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values">
+        <skip-string type="string" name="download_speed"/>
+    </project>
     
 </resources>
