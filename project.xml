@@ -7,7 +7,9 @@
 ===================================================================
 -->
 <resources>
-    <project name="android_frameworks_base_Core" resourceID="frameworks/base/core/res/res/values">
+    <!-- android_frameworks_base -->
+    <!-- android_frameworks_base_core -->
+    <project name="android_frameworks_base_core" resourceID="frameworks/base/core/res/res/values">
         <skip-file name="config.xml"/>
         <skip-file name="donottranslate.xml"/>
         <skip-file name="donottranslate-cldr.xml"/>
@@ -76,10 +78,59 @@
         <skip-string type="string" name="resolver_target_actions_pin"/>
         <skip-string type="string" name="resolver_target_actions_unpin"/>
     </project>
-    <!-- android_frameworks_base-DocumentsUI-->
-    <project name="android_frameworks_base/DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
+    <!-- android_frameworks_base_packages_BackupRestoreConfirmation -->
+    <project name="android_frameworks_base_packages_BackupRestoreConfirmation" resourceID="frameworks/base/packages/BackupRestoreConfirmation/res/values">
     </project>
-    <!-- android_frameworks_base-SystemUI-->
+    <!-- android_frameworks_base_packages_CaptivePortalLogin -->
+    <project name="android_frameworks_base_packages_CaptivePortalLogin" resourceID="frameworks/base/packages/CaptivePortalLogin/res/values">
+    </project>
+    <!-- android_frameworks_base_packages_DefaultContainerService -->
+    <project name="android_frameworks_base_packages_DefaultContainerService" resourceID="frameworks/base/packages/DefaultContainerService/res/values">
+    </project>
+    <!-- android_frameworks_base_packages_DocumentsUI -->
+    <project name="android_frameworks_base_packages_DocumentsUI" resourceID="frameworks/base/packages/DocumentsUI/res/values">
+    </project>
+    <!-- android_frameworks_base_packages_EasterEgg -->
+    <project name="android_frameworks_base_packages_EasterEgg" resourceID="frameworks/base/packages/EasterEgg/res/values">
+        <skip-string type="string-array" name="food_intervals"/>
+        <skip-string type="string-array" name="food_new_cat_prob"/>
+    </project>
+    <!-- android_frameworks_base_packages_ExternalStorageProvider -->
+    <project name="android_frameworks_base_packages_ExternalStorageProvider" resourceID="frameworks/base/packages/ExternalStorageProvider/res/values">
+    </project>
+    <!-- android_frameworks_basepackages_InputDevices -->
+    <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
+    </project>
+    <!-- android_frameworks_base_packages_keyguard -->
+    <project name="android_frameworks_base_packages_keyguard" resourceID="frameworks/base/packages/Keyguard/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="config.xml"/>
+        <skip-string type="string" name="accessibility_ime_switch_button"/>
+    </project>
+    <!-- android_frameworks_base_packages_SettingsLib -->
+    <project name="android_frameworks_base_packages_SettingsLib" resourceID="frameworks/base/packages/SettingsLib/res/values">
+        <skip-string type="string" name="wifi_security_short_wep"/>
+        <skip-string type="string" name="wifi_security_short_wpa"/>
+        <skip-string type="string" name="wifi_security_short_wpa2"/>
+        <skip-string type="string" name="wifi_security_short_wpa_wpa2"/>
+        <skip-string type="string" name="wifi_security_short_psk_generic"/>
+        <skip-string type="string" name="wifi_security_short_eap"/>
+        <skip-string type="string" name="wifi_security_wep"/>
+        <skip-string type="string" name="wifi_security_wpa"/>
+        <skip-string type="string" name="wifi_security_wpa2"/>
+        <skip-string type="string" name="wifi_security_wpa_wpa2"/>
+        <skip-string type="string" name="wifi_security_psk_generic"/>
+        <skip-string type="string" name="wifi_security_eap"/>
+        <skip-string type="string" name="wifi_security_passpoint"/>
+        <skip-string type="string-array" name="tts_rate_values"/>
+    </project>
+    <!-- android_frameworks_base_packages_SettingsProvider -->
+    <project name="android_frameworks_base_SettingsProvider" resourceID="frameworks/base/packages/SettingsProvider/res/values">
+    </project>
+    <!-- android_frameworks_base_packages_Shell -->
+    <project name="android_frameworks_base_packages_Shell" resourceID="frameworks/base/packages/Shell/res/values">
+    </project>
+    <!-- android_frameworks_base-SystemUI -->
     <project name="android_frameworks_base/SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values">
         <skip-file name="donottranslate.xml"/>
         <skip-file name="arrays.xml"/>
@@ -93,11 +144,15 @@
         <skip-string type="string" name="regrettable_lack_of_easter_egg"/>
         <skip-string type="string-array" name="telephony_data_type_sim"/>
     </project>
-    <!-- android_frameworks_base-InputDevices-->
-    <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
+    <!-- android_frameworks_base_packages_VpnDialogs -->
+    <project name="android_frameworks_base_packages_VpnDialogs" resourceID="frameworks/base/packages/VpnDialogs/res/values">
     </project>
-    <!-- android_packages_apps_Apollo -->
-    <project name="android_packages_apps_Apollo" resourceID="packages/apps/Apollo/res/values">
+    <!-- android_frameworks_base_packages_WallpaperCropper -->
+    <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values">
+    </project>
+    <!-- android_packages_apps -->
+    <!-- android_packages_apps_BasicSmsReceiver -->
+    <project name="android_packages_apps_BasicSmsReceiver" resourceID="packages/apps/BasicSmsReceiver/res/values">
     </project>
     <!-- android_packages_apps_Bluetooth -->
     <project name="android_packages_apps_Bluetooth" resourceID="packages/apps/Bluetooth/res/values">
@@ -107,15 +162,15 @@
         <skip-string type="string" name="process"/>
         <skip-string type="string" name="format_progress_text"/>
     </project>
-    <!-- android_packages_apps_Browser -->
-    <project name="android_packages_apps_Browser" resourceID="packages/apps/Browser/res/values">
-    </project>
     <!-- android_packages_apps_Calculator -->
     <project name="android_packages_apps_Calculator" resourceID="packages/apps/Calculator/res/values">
         <skip-file name="donottranslate_strings.xml"/>
     </project>
     <!-- android_packages_apps_Calendar -->
     <project name="android_packages_apps_Calendar" resourceID="packages/apps/Calendar/res/values">
+    </project>
+    <!-- android_packages_apps_CalendarWidget -->
+    <project name="android_packages_apps_CalendarWidget" resourceID="packages/apps/CalendarWidget/res/values">
     </project>
     <!-- android_packages_apps_Camera2 -->
     <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
@@ -132,6 +187,16 @@
         <skip-string type="string-array" name="camera_mode_text"/>
         <skip-string type="string-array" name="camera_mode_content_description"/>
     </project>
+    <!-- android_packages_apps_CellBroadcastReceiver -->
+    <project name="android_packages_apps_CellBroadcastReceiver" resourceID="packages/apps/CellBroadcastReceiver/res/values">
+        <skip-string type="string-array" name="alert_sound_duration_values"/>
+        <skip-string type="string-array" name="alert_reminder_interval_values"/>
+        <skip-string type="string" name="alert_sound_duration_summary"/>
+        <skip-string type="string" name="alert_reminder_interval_summary"/>
+    </project>
+    <!-- android_packages_apps_CertInstaller -->
+    <project name="android_packages_apps_CertInstaller" resourceID="packages/apps/CertInstaller/res/values">
+    </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
         <skip-file name="donottranslate_config.xml"/>
@@ -143,11 +208,6 @@
         <skip-string type="string" name="letter_tile_letter_font_family"/>
         <skip-string type="string" name="search_font_family"/>
         <skip-file name="donottranslate_config.xml"/>
-    </project>
-    <!-- android_packages_apps_DashClock -->
-    <project name="android_packages_apps_DashClock" resourceID="packages/apps/DashClock/main/src/main/res/values">
-        <skip-file name="d.xml"/>
-        <skip-string type="string" name="d"/>
     </project>
     <!-- android_packages_apps_DeskClock -->
     <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values">
@@ -193,52 +253,62 @@
         <skip-string type="string" name="handle_restricted"/>
         <skip-string type="string" name="migrate_blocked_numbers_dialog_cancel_button"/>
     </project>
-    <!-- android_packages_apps_DSPManager -->
-    <project name="android_packages_apps_DSPManager" resourceID="packages/apps/DSPManager/res/values">
+    <!-- android_packages_apps_DU-Tweaks -->
+    <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
+        <skip-string type="string-array" name="advanced_reboot_entries"/>
+        <skip-string type="string-array" name="entries_status_bar_am_pm"/>
+        <skip-string type="string-array" name="clock_date_display_entries"/>
+        <skip-string type="string-array" name="clock_date_style_entries"/>
+        <skip-string type="string-array" name="clock_date_format_entries_values"/>
+        <skip-string type="string-array" name="recents_clear_all_location_entries"/>
+        <skip-string type="string-array" name="heads_up_time_out_entries"/>
+        <skip-string type="string-array" name="icon_types"/>
+        <skip-string type="string-array" name="shortcut_icon_picker_labels"/>
+        <skip-string type="string-array" name="shortcut_action_entries"/>
+        <skip-string type="string-array" name="listview_animation_entries"/>
+        <skip-string type="string-array" name="listview_animation_values"/>
+        <skip-string type="string-array" name="listview_interpolator_entries"/>
+        <skip-string type="string-array" name="listview_interpolator_values"/>
+        <skip-string type="string-array" name="recent_panel_expanded_mode_entries"/>
+        <skip-string type="string-array" name="torch_screen_off_delay_entries"/>
+        <skip-string type="string-array" name="icon_color_mode_entries"/>
+        <skip-string type="string-array" name="pref_navigation_menu_entries"/>
+        <skip-string type="string-array" name="pref_menu_display_entries"/>
+        <skip-string type="string-array" name="shortcut_action_screen_off_entries"/>
+        <skip-string type="string-array" name="weather_condition_icon_entries"/>
+        <skip-string type="string-array" name="shortcut_action_navring_entries"/>
+        <skip-string type="string-array" name="lcd_density_stock_entries"/>
+        <skip-string type="string-array" name="gapps_list"/>
+        <skip-string type="string-array" name="gapps_list_url"/>
+        <skip-string type="string-array" name="toast_animation_entries"/>
+        <skip-string type="string-array" name="toast_animation_values"/>
+        <skip-string type="string-array" name="carrier_label_entries"/>
+        <skip-string type="string-array" name="media_scanner_on_boot_entries"/>
+        <skip-string type="string-array" name="action_dialog_entries"/>
+        <skip-string type="string-array" name="systemui_navbar_mode_entries"/>
+        <skip-string type="string-array" name="systemui_navbar_mode_settings"/>
+        <skip-string type="string-array" name="tomahawk_list"/>
+        <skip-string type="string-array" name="tomahawk_list_url"/>
+        <skip-string type="string-array" name="power_menu_animations_entries"/>
+        <skip-string type="string-array" name="lock_clock_fonts_entries"/>
+        <skip-string type="string-array" name="immersive_recents_entries"/>
+        <skip-string type="string-array" name="action_dialog_no_default_entries"/>
+        <skip-string type="string-array" name="smartbar_context_menu_side_entries"/>
+        <skip-string type="string-array" name="smartbar_button_animation_entries"/>
+        <skip-string type="string-array" name="ls_bouncer_entries"/>
+        <skip-string type="string-array" name="smartbar_ime_action_entries"/>
+        <skip-string type="string-array" name="unit_percent"/>
+        <skip-string type="string-array" name="pulse_custom_dimen_entries"/>
+        <skip-string type="string-array" name="pulse_custom_div_entries"/>
+        <skip-string type="string-array" name="pulse_filled_block_size_entries"/>
+        <skip-string type="string-array" name="pulse_empty_block_size_entries"/>
+        <skip-string type="string-array" name="pulse_custom_fudge_factor_entries"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
-        <skip-string type="string" name="alex_devices"/>
-        <skip-string type="string" name="bosko_devices"/>
-        <skip-string type="string" name="bret_devices"/>
-        <skip-string type="string" name="daniel_devices"/>
-        <skip-string type="string" name="edwin_devices"/>
-        <skip-string type="string" name="josh1_devices"/>
-        <skip-string type="string" name="jason_devices"/>
-        <skip-string type="string" name="josh2_devices"/>
-        <skip-string type="string" name="josh3_devices"/>
-        <skip-string type="string" name="josip_devices"/>
-        <skip-string type="string" name="mark_devices"/>
-        <skip-string type="string" name="paul_devices"/>
-        <skip-string type="string" name="susan_devices"/>
-        <skip-string type="string" name="nick_devices"/>
-        <skip-string type="string" name="nico_devices"/>
-        <skip-string type="string" name="alex_url"/>
-        <skip-string type="string" name="barry_url"/>
-        <skip-string type="string" name="bosko_url"/>
-        <skip-string type="string" name="bret_url"/>
-        <skip-string type="string" name="daniel_url"/>
-        <skip-string type="string" name="dorian_url"/>
-        <skip-string type="string" name="edwin_url"/>
-        <skip-string type="string" name="james_url"/>
-        <skip-string type="string" name="jason_url"/>
-        <skip-string type="string" name="josh1_url"/>
-        <skip-string type="string" name="josh2_url"/>
-        <skip-string type="string" name="josh3_url"/>
-        <skip-string type="string" name="josip_url"/>
-        <skip-string type="string" name="mark_url"/>
-        <skip-string type="string" name="mat_url"/>
-        <skip-string type="string" name="mike_url"/>
-        <skip-string type="string" name="paul_url"/>
-        <skip-string type="string" name="susan_url"/>
-        <skip-string type="string" name="nick_url"/>
-        <skip-string type="string" name="nico_url"/>
-        <skip-string type="string" name="tony_devices"/>
-        <skip-string type="string" name="tony_url"/>
     </project>
     <!-- android_packages_apps_DU_changelog -->
     <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
-        <skip-string type="string" name="changelog_header_version"/>
     </project>
     <!-- android_packages_apps_DU_HFM -->
     <project name="android_packages_apps_DU_HFM" resourceID="packages/apps/DU_HFM/res/values">
@@ -249,9 +319,13 @@
     <!-- android_packages_apps_DU_walls -->
     <project name="android_packages_apps_DU_walls" resourceID="packages/apps/DU_walls/res/values">
     </project>
-    <!-- android_packages_apps_Email -->
-    <project name="android_packages_apps_Email" resourceID="packages/apps/Email/res/values">
-        <skip-file name="arrays.xml"/>
+    <!-- android_packages_apps_EmergencyInfo -->
+    <project name="android_packages_apps_EmergencyInfo" resourceID="packages/apps/EmergencyInfo/res/values">
+        <skip-string type="string-array" name="blood_type_entries"/>
+        <skip-string type="string-array" name="blood_type_values"/>
+        <skip-string type="string-array" name="blood_type_content_description"/>
+        <skip-string type="string-array" name="organ_donor_entries"/>
+        <skip-string type="string-array" name="organ_donor_values"/>
     </project>
     <!-- android_packages_apps_Gallery2 -->
     <project name="android_packages_apps_Gallery2" resourceID="packages/apps/Gallery2/res/values">
@@ -277,55 +351,63 @@
         <skip-string type="string" name="ingest_switch_photo_grid"/>
         <skip-string type="string" name="ingest_switch_photo_fullscreen"/>
     </project>
-    <!-- android_packages_apps_InCallUI -->
-    <project name="android_packages_apps_InCallUI" resourceID="packages/apps/InCallUI/res/values">
-        <skip-string type="string" name="inCallLabel"/>
-        <skip-string type="string" name="dialpad_star_number"/>
-        <skip-string type="string" name="dialpad_star_letters"/>
-        <skip-string type="string" name="dialpad_pound_number"/>
-        <skip-string type="string" name="dialpad_pound_letters"/>
-        <skip-string type="string" name="dialpad_9_letters"/>
-        <skip-string type="string" name="dialpad_8_letters"/>
-        <skip-string type="string" name="dialpad_7_letters"/>
-        <skip-string type="string" name="dialpad_6_letters"/>
-        <skip-string type="string" name="dialpad_5_letters"/>
-        <skip-string type="string" name="dialpad_4_letters"/>
-        <skip-string type="string" name="dialpad_3_letters"/>
-        <skip-string type="string" name="dialpad_2_letters"/>
-        <skip-string type="string" name="dialpad_1_letters"/>
-        <skip-string type="string" name="dialpad_0_letters"/>
-        <skip-string type="string-array" name="sip_call_options_entries"/>
-        <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
-        <skip-string type="string-array" name="sip_send_keepalive_options"/>
+    <!-- android_packages_apps_HTMLViewer -->
+    <project name="android_packages_apps_HTMLViewer" resourceID="packages/apps/HTMLViewer/res/values">
+    </project>
+    <!-- android_packages_apps_KeyChain -->
+    <project name="android_packages_apps_KeyChain" resourceID="packages/apps/KeyChain/res/values">
     </project>
     <!-- android_packages_apps_Launcher3 -->
     <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
         <skip-string type="string" name="dummy_custom_cling_error_message"/>
         <skip-string type="string" name="debug_memory_activity"/>
     </project>
-    <!-- android_packages_apps_Mms -->
-    <project name="android_packages_apps_Mms" resourceID="packages/apps/Mms/res/values">
-        <skip-string type="string-array" name="pref_message_font_size_choices"/>
-        <skip-string type="string-array" name="pref_message_font_size_values"/>
+    <!-- android_packages_apps_ManagedProvisioning -->
+    <project name="android_packages_apps_ManagedProvisioning" resourceID="packages/apps/ManagedProvisioning/res/values">
+        <skip-string type="string-array" name="disallowed_apps_managed_profile"/>
+        <skip-string type="string-array" name="disallowed_apps_managed_device"/>
+        <skip-string type="string-array" name="disallowed_apps_managed_user"/>
+        <skip-string type="string-array" name="vendor_disallowed_apps_managed_profile"/>
+        <skip-string type="string-array" name="vendor_disallowed_apps_managed_device"/>
+        <skip-string type="string-array" name="packages_to_delete_new_managed_profile"/>
+        <skip-string type="string-array" name="required_apps_managed_device"/>
+        <skip-string type="string-array" name="required_apps_managed_profile"/>
+        <skip-string type="string-array" name="required_apps_managed_user"/>
+        <skip-string type="string-array" name="vendor_disallowed_apps_managed_user"/>
+        <skip-string type="string-array" name="vendor_required_apps_managed_user"/>
+        <skip-string type="string-array" name="vendor_required_apps_managed_profile"/>
+        <skip-string type="string-array" name="vendor_required_apps_managed_device"/>
     </project>
-    <!-- android_packages_apps_MonthCalendarWidget -->
-    <project name="android_packages_apps_MonthCalendarWidget" resourceID="packages/apps/MonthCalendarWidget/res/values">
+    <!-- android_packages_apps_Messaging -->
+    <project name="android_packages_apps_Messaging" resourceID="packages/apps/Messaging/res/values">
+        <skip-string type="string" name="default_sms_app"/>
+    </project>
+    <!-- android_packages_MusicFX -->
+    <project name="android_packages_MusicFX" resourceID="packages/apps/MusicFX/res/values">
     </project>
     <!-- android_packages_apps_Nfc -->
     <project name="android_packages_apps_Nfc" resourceID="packages/apps/Nfc/res/values">
         <skip-string type="string-array" name="provisioning_mime_types"/>
     </project>
-    <!-- android_packages_apps_OmniSwitch -->
-    <project name="android_packages_apps_OmniSwitch" resourceID="packages/apps/OmniSwitch/res/values">
-    </project>
-    <!-- android_packages_apps_OmniTorch -->
-    <project name="android_packages_apps_OmniTorch" resourceID="packages/apps/OmniTorch/res/values">
-    </project>
     <!-- android_packages_apps_PackageInstaller -->
     <project name="android_packages_apps_PackageInstaller" resourceID="packages/apps/PackageInstaller/res/values">
     </project>
-    <!-- android_packages_apps_SamsungServiceMode -->
-    <project name="android_packages_apps_SamsungServiceMode" resourceID="packages/apps/SamsungServiceMode/res/values">
+    <!-- android_packages_apps_PhoneCommon -->
+    <project name="android_packages_apps_PhoneCommon" resourceID="packages/apps/PhoneCommon/res/values">
+        <skip-string type="string" name="dialpad_star_number"/>
+        <skip-string type="string" name="dialpad_pound_number"/>
+        <skip-string type="string" name="dialpad_0_letters"/>
+        <skip-string type="string" name="dialpad_1_letters"/>
+        <skip-string type="string" name="dialpad_2_letters"/>
+        <skip-string type="string" name="dialpad_3_letters"/>
+        <skip-string type="string" name="dialpad_4_letters"/>
+        <skip-string type="string" name="dialpad_5_letters"/>
+        <skip-string type="string" name="dialpad_6_letters"/>
+        <skip-string type="string" name="dialpad_7_letters"/>
+        <skip-string type="string" name="dialpad_8_letters"/>
+        <skip-string type="string" name="dialpad_9_letters"/>
+        <skip-string type="string" name="dialpad_star_letters"/>
+        <skip-string type="string" name="dialpad_pound_letters"/>
     </project>
     <!-- android_packages_apps_Settings -->
     <project name="android_packages_apps_Settings" resourceID="packages/apps/Settings/res/values">
@@ -387,13 +469,16 @@
         <skip-string type="string" name="status_iccid"/>
         <skip-string type="string-array" name="display_rotation_entries"/>
     </project>
-    <!-- android_packages_apps_SmartCardService -->
-    <project name="android_packages_apps_SmartCardService" resourceID="packages/apps/SmartCardService/res/values">
-    </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
         <skip-file name="arrays.xml"/>
         <skip-string type="string" name="audio_db_title_format"/>
+    </project>
+    <!-- android_packages_apps_Stk -->
+    <project name="android_packages_apps_Stk" resourceID="packages/apps/Stk/res/values">
+    </project>
+    <!-- android_packages_apps_Tag -->
+    <project name="android_packages_apps_Tag" resourceID="packages/apps/Tag/res/values">
     </project>
     <!-- android_packages_apps_Terminal -->
     <project name="android_packages_apps_Terminal" resourceID="packages/apps/Terminal/res/values">
@@ -403,8 +488,47 @@
         <skip-string type="string" name="menu_new_tab"/>
         <skip-string type="string" name="menu_close_tab"/>
     </project>
-    <!-- android_packages_apps_ThemeChooser -->
-    <project name="android_packages_apps_ThemeChooser" resourceID="packages/apps/ThemeChooser/res/values">
+    <!-- android_packages_inputmethods -->
+    <!-- android_packages_inputmethods_LatinIME -->
+    <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values">
+        <skip-file name="donottranslate.xml"/>
+        <skip-file name="strings-emoji-descriptions.xml"/>
+        <skip-file name="donottranslate-config-spacing-and-punctuations.xml"/>
+        <skip-file name="donottranslate-debug-settings.xml"/>
+        <skip-file name="customize.xml"/>
+    </project>
+    <!-- android_packages_providers -->
+    <!-- android_packages_providers_BlockedNumberProvider -->
+    <project name="android_packages_providers_BlockedNumberProvider" resourceID="packages/providers/BlockedNumberProvider/res/values">
+    </project>
+    <!-- android_packages_providers_CalendarProvider -->
+    <project name="android_packages_providers_CalendarProvider" resourceID="packages/providers/CalendarProvider/res/values">
+    </project>
+    <!-- android_packages_providers_ContactsProvider -->
+    <project name="android_packages_providers_ContactsProvider" resourceID="packages/providers/ContactsProvider/res/values">
+    </project>
+    <!-- android_packages_providers_DownloadProvider -->
+    <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values">
+        <skip-string type="string" name="download_speed"/>
+    </project>
+    <!-- android_packages_providers_MediaProvider -->
+    <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
+    </project>
+    <!-- android_packages_providers_TelephonyProvider -->
+    <project name="android_packages_providers_TelephonyProvider" resourceID="packages/providers/TelephonyProvider/res/values">
+    </project>
+    <!-- android_packages_services -->
+    <!-- android_packages_services_Telecomm -->
+    <project name="android_packages_services_Telecomm" resourceID="packages/services/Telecomm/res/values">
+        <skip-string type="string" name="test_account_0_label"/>
+        <skip-string type="string" name="test_account_1_label"/>
+        <skip-string type="string" name="test_account_2_label"/>
+        <skip-string type="string" name="test_account_3_label"/>
+        <skip-string type="string" name="test_account_0_short_description"/>
+        <skip-string type="string" name="test_account_1_short_description"/>
+        <skip-string type="string" name="test_account_2_short_description"/>
+        <skip-string type="string" name="test_account_3_short_description"/>
+        <skip-string type="string" name="handle_restricted"/>
     </project>
     <!-- android_packages_services_Telephony -->
     <project name="android_packages_services_Telephony" resourceID="packages/services/Telephony/res/values">
@@ -421,164 +545,9 @@
         <skip-string type="string-array" name="flip_action_summary_entries"/>
         <skip-file name="config.xml"/>
     </project>
-    <!-- android_packages_apps_VoiceDialer -->
-    <project name="android_packages_apps_VoiceDialer" resourceID="packages/apps/VoiceDialer/res/values">
+    <!-- android_packages_wallpapers -->
+    <!-- android_packages_wallpapers_LivePicker -->
+    <project name="android_packages_wallpapers_LivePicker" resourceID="packages/wallpapers/LivePicker/res/values">
+        <skip-string type="string-array" name="which_wallpaper_options"/>
     </project>
-    <!-- android_packages_wallpapers_Basic -->
-    <project name="android_packages_wallpapers_Basic" resourceID="packages/wallpapers/Basic/res/values">
-    </project>
-    <!-- android_packages_wallpapers_PhaseBeam -->
-    <project name="android_packages_wallpapers_PhaseBeam" resourceID="packages/wallpapers/PhaseBeam/res/values">
-    </project>
-    <!-- android_packages_apps_DU-Tweaks -->
-    <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
-        <skip-string type="string-array" name="advanced_reboot_entries"/>
-        <skip-string type="string-array" name="entries_status_bar_am_pm"/>
-        <skip-string type="string-array" name="clock_date_display_entries"/>
-        <skip-string type="string-array" name="clock_date_style_entries"/>
-        <skip-string type="string-array" name="clock_date_format_entries_values"/>
-        <skip-string type="string-array" name="recents_clear_all_location_entries"/>
-        <skip-string type="string-array" name="heads_up_time_out_entries"/>
-        <skip-string type="string-array" name="icon_types"/>
-        <skip-string type="string-array" name="shortcut_icon_picker_labels"/>
-        <skip-string type="string-array" name="shortcut_action_entries"/>
-        <skip-string type="string-array" name="listview_animation_entries"/>
-        <skip-string type="string-array" name="listview_animation_values"/>
-        <skip-string type="string-array" name="listview_interpolator_entries"/>
-        <skip-string type="string-array" name="listview_interpolator_values"/>
-        <skip-string type="string-array" name="recent_panel_expanded_mode_entries"/>
-        <skip-string type="string-array" name="torch_screen_off_delay_entries"/>
-        <skip-string type="string-array" name="icon_color_mode_entries"/>
-        <skip-string type="string-array" name="pref_navigation_menu_entries"/>
-        <skip-string type="string-array" name="pref_menu_display_entries"/>
-        <skip-string type="string-array" name="shortcut_action_screen_off_entries"/>
-        <skip-string type="string-array" name="weather_condition_icon_entries"/>
-        <skip-string type="string-array" name="shortcut_action_navring_entries"/>
-        <skip-string type="string-array" name="lcd_density_stock_entries"/>
-        <skip-string type="string-array" name="gapps_list"/>
-        <skip-string type="string-array" name="gapps_list_url"/>
-        <skip-string type="string-array" name="toast_animation_entries"/>
-        <skip-string type="string-array" name="toast_animation_values"/>
-        <skip-string type="string-array" name="carrier_label_entries"/>
-        <skip-string type="string-array" name="media_scanner_on_boot_entries"/>
-        <skip-string type="string-array" name="action_dialog_entries"/>
-        <skip-string type="string-array" name="systemui_navbar_mode_entries"/>
-        <skip-string type="string-array" name="systemui_navbar_mode_settings"/>
-        <skip-string type="string-array" name="tomahawk_list"/>
-        <skip-string type="string-array" name="tomahawk_list_url"/>
-        <skip-string type="string-array" name="power_menu_animations_entries"/>
-        <skip-string type="string-array" name="lock_clock_fonts_entries"/>
-        <skip-string type="string-array" name="immersive_recents_entries"/>
-        <skip-string type="string-array" name="action_dialog_no_default_entries"/>
-        <skip-string type="string-array" name="smartbar_context_menu_side_entries"/>
-        <skip-string type="string-array" name="smartbar_button_animation_entries"/>
-        <skip-string type="string-array" name="ls_bouncer_entries"/>
-        <skip-string type="string-array" name="smartbar_ime_action_entries"/>
-        <skip-string type="string-array" name="unit_percent"/>
-        <skip-string type="string-array" name="pulse_custom_dimen_entries"/>
-        <skip-string type="string-array" name="pulse_custom_div_entries"/>
-        <skip-string type="string-array" name="pulse_filled_block_size_entries"/>
-        <skip-string type="string-array" name="pulse_empty_block_size_entries"/>
-        <skip-string type="string-array" name="pulse_custom_fudge_factor_entries"/>
-    </project>
-    <!-- android_packages_apps_DU-Updater -->
-    <project name="android_packages_apps_DU-Updater" resourceID="packages/apps/DU-Updater/res/values">
-        <skip-string type="string-array" name="updateFrequencyValues"/>
-    </project>
-    <!-- android_packages_apps_LockClock -->
-    <project name="android_packages_apps_LockClock" resourceID="packages/apps/LockClock/res/values">
-        <skip-file name="donottranslate.xml"/>
-    </project>
-    <!-- android_packages_inputmethods_LatinIME -->
-    <project name="android_packages_inputmethods_LatinIME" resourceID="packages/inputmethods/LatinIME/java/res/values">
-        <skip-file name="donottranslate.xml"/>
-        <skip-file name="strings-emoji-descriptions.xml"/>
-        <skip-file name="donottranslate-config-spacing-and-punctuations.xml"/>
-        <skip-file name="donottranslate-debug-settings.xml"/>
-        <skip-file name="customize.xml"/>
-    </project>
-    <!-- android_frameworks_base_packages_WallpaperCropper -->
-    <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values">
-    </project>
-    <!-- android_frameworks_base_packages_keyguard -->
-    <project name="android_frameworks_base_packages_keyguard" resourceID="frameworks/base/packages/Keyguard/res/values">
-        <skip-file name="donottranslate.xml"/>
-        <skip-file name="config.xml"/>
-        <skip-string type="string" name="accessibility_ime_switch_button"/>
-    </project>
-    <!-- android_frameworks_base_packages_SettingsLib -->
-    <project name="android_frameworks_base_packages_SettingsLib" resourceID="frameworks/base/packages/SettingsLib/res/values">
-        <skip-string type="string" name="wifi_security_short_wep"/>
-        <skip-string type="string" name="wifi_security_short_wpa"/>
-        <skip-string type="string" name="wifi_security_short_wpa2"/>
-        <skip-string type="string" name="wifi_security_short_wpa_wpa2"/>
-        <skip-string type="string" name="wifi_security_short_psk_generic"/>
-        <skip-string type="string" name="wifi_security_short_eap"/>
-        <skip-string type="string" name="wifi_security_wep"/>
-        <skip-string type="string" name="wifi_security_wpa"/>
-        <skip-string type="string" name="wifi_security_wpa2"/>
-        <skip-string type="string" name="wifi_security_wpa_wpa2"/>
-        <skip-string type="string" name="wifi_security_psk_generic"/>
-        <skip-string type="string" name="wifi_security_eap"/>
-        <skip-string type="string" name="wifi_security_passpoint"/>
-        <skip-string type="string-array" name="tts_rate_values"/>
-    </project>
-    <!-- android_packages_apps_DUI -->
-    <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
-    </project>
-    <!-- android_vendor_du (android_packages_services_Telephony) -->
-    <project name="android_vendor_du (Telephony)" resourceID="vendor/du/overlay/common/packages/services/Telephony/res/values">
-    </project>
-    <!-- android_vendor_du (android_packages_apps_Settings) -->
-    <project name="android_vendor_du (Settings)" resourceID="vendor/du/overlay/common/packages/apps/Settings/res/values">
-    </project>
-    <!-- android_vendor_du (android_frameworks_base-SystemUI) -->
-    <project name="android_vendor_du (SystemUI)" resourceID="vendor/du/overlay/common/frameworks/base/packages/SystemUI/res/values">
-    </project>
-    <!-- android_packages_apps_Messaging -->
-    <project name="android_packages_apps_Messaging" resourceID="packages/apps/Messaging/res/values">
-        <skip-string type="string" name="default_sms_app"/>
-    </project>
-    <!-- android_packages_apps_PhoneCommon -->
-    <project name="android_packages_apps_PhoneCommon" resourceID="packages/apps/PhoneCommon/res/values">
-        <skip-string type="string" name="dialpad_star_number"/>
-        <skip-string type="string" name="dialpad_pound_number"/>
-        <skip-string type="string" name="dialpad_0_letters"/>
-        <skip-string type="string" name="dialpad_1_letters"/>
-        <skip-string type="string" name="dialpad_2_letters"/>
-        <skip-string type="string" name="dialpad_3_letters"/>
-        <skip-string type="string" name="dialpad_4_letters"/>
-        <skip-string type="string" name="dialpad_5_letters"/>
-        <skip-string type="string" name="dialpad_6_letters"/>
-        <skip-string type="string" name="dialpad_7_letters"/>
-        <skip-string type="string" name="dialpad_8_letters"/>
-        <skip-string type="string" name="dialpad_9_letters"/>
-        <skip-string type="string" name="dialpad_star_letters"/>
-        <skip-string type="string" name="dialpad_pound_letters"/>
-    </project>
-    <!-- android_packages_providers_MediaProvider -->
-    <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
-    </project>
-    <!-- android_packages_services_Telecomm -->
-    <project name="android_packages_services_Telecomm" resourceID="packages/services/Telecomm/res/values">
-        <skip-string type="string" name="test_account_0_label"/>
-        <skip-string type="string" name="test_account_1_label"/>
-        <skip-string type="string" name="test_account_2_label"/>
-        <skip-string type="string" name="test_account_3_label"/>
-        <skip-string type="string" name="test_account_0_short_description"/>
-        <skip-string type="string" name="test_account_1_short_description"/>
-        <skip-string type="string" name="test_account_2_short_description"/>
-        <skip-string type="string" name="test_account_3_short_description"/>
-        <skip-string type="string" name="handle_restricted"/>
-    </project>
-    <!-- android_frameworks_base_packages_EasterEgg -->
-    <project name="android_frameworks_base_packages_EasterEgg" resourceID="frameworks/base/packages/EasterEgg/res/values">
-        <skip-string type="string-array" name="food_intervals"/>
-        <skip-string type="string-array" name="food_new_cat_prob"/>
-    </project>
-    <!-- android_packages_providers_DownloadProvider -->
-    <project name="android_packages_providers_DownloadProvider" resourceID="packages/providers/DownloadProvider/res/values">
-        <skip-string type="string" name="download_speed"/>
-    </project>
-    
 </resources>
