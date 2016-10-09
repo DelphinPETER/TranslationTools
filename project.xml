@@ -514,6 +514,9 @@
     <!-- android_packages_providers_MediaProvider -->
     <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
     </project>
+    <!-- android_packages_apps_OmniSwitch -->
+    <project name="android_packages_apps_OmniSwitch" resourceID="packages/apps/OmniSwitch/res/values">
+    </project>
     <!-- android_packages_providers_TelephonyProvider -->
     <project name="android_packages_providers_TelephonyProvider" resourceID="packages/providers/TelephonyProvider/res/values">
     </project>
