@@ -303,6 +303,11 @@
         <skip-string type="string-array" name="pulse_filled_block_size_entries"/>
         <skip-string type="string-array" name="pulse_empty_block_size_entries"/>
         <skip-string type="string-array" name="pulse_custom_fudge_factor_entries"/>
+        <skip-string type="string-array" name="qs_rows_portrait_entries"/>
+        <skip-string type="string-array" name="qs_rows_landscape_entries"/>
+        <skip-string type="string-array" name="qs_columns_entries"/>
+        <skip-string type="string-array" name="sysui_qqs_count_entries"/>
+        <skip-string type="string-array" name="sysui_qqs_count_values"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
