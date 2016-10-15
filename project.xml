@@ -253,6 +253,9 @@
         <skip-string type="string" name="handle_restricted"/>
         <skip-string type="string" name="migrate_blocked_numbers_dialog_cancel_button"/>
     </project>
+    <!-- android_packages_apps_DUI -->
+    <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
+</project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
         <skip-string type="string-array" name="advanced_reboot_entries"/>
@@ -308,6 +311,10 @@
         <skip-string type="string-array" name="qs_columns_entries"/>
         <skip-string type="string-array" name="sysui_qqs_count_entries"/>
         <skip-string type="string-array" name="sysui_qqs_count_values"/>
+        <skip-string type="string-array" name="pulse_render_mode_entries"/>
+        <skip-string type="string" name="arrow_right"/>
+        <skip-string type="string" name="arrow_down"/>
+        <skip-string type="string" name="hex_hint"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
