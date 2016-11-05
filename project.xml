@@ -315,12 +315,14 @@
         <skip-string type="string" name="arrow_right"/>
         <skip-string type="string" name="arrow_down"/>
         <skip-string type="string" name="hex_hint"/>
+        <skip-string type="string-array" name="screenshot_type_entries"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
     </project>
     <!-- android_packages_apps_DU_changelog -->
     <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
+        <skip-string type="string" name="changelog_header_version"/>
     </project>
     <!-- android_packages_apps_DU_HFM -->
     <project name="android_packages_apps_DU_HFM" resourceID="packages/apps/DU_HFM/res/values">
