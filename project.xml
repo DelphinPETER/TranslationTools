@@ -2,7 +2,7 @@
 <!--
 ===================================================================
 |                                                                 |
-|                      DIRTY UNICORNS 7.0                         |
+|                      DIRTY UNICORNS n7x                         |
 |                                                                 |
 ===================================================================
 -->
@@ -123,6 +123,7 @@
         <skip-string type="string" name="wifi_security_eap"/>
         <skip-string type="string" name="wifi_security_passpoint"/>
         <skip-string type="string-array" name="tts_rate_values"/>
+        <skip-string type="string-array" name="config_hideWhenDisabled_packageNames"/>
     </project>
     <!-- android_frameworks_base_packages_SettingsProvider -->
     <project name="android_frameworks_base_SettingsProvider" resourceID="frameworks/base/packages/SettingsProvider/res/values">
@@ -193,6 +194,8 @@
         <skip-string type="string-array" name="alert_reminder_interval_values"/>
         <skip-string type="string" name="alert_sound_duration_summary"/>
         <skip-string type="string" name="alert_reminder_interval_summary"/>
+        <skip-string type="string" name="alert_reminder_interval_active_values"/>
+        <skip-string type="string" name="alert_reminder_interval_default_value"/>
     </project>
     <!-- android_packages_apps_CertInstaller -->
     <project name="android_packages_apps_CertInstaller" resourceID="packages/apps/CertInstaller/res/values">
@@ -560,6 +563,7 @@
         <skip-string type="string" name="voicemail_visual_voicemail_key"/>
         <skip-string type="string-array" name="flip_action_setting_entries"/>
         <skip-string type="string-array" name="flip_action_summary_entries"/>
+        <skip-string type="string" name="voicemail_change_pin_key"/>
         <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_wallpapers -->
