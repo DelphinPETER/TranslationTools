@@ -490,6 +490,7 @@
         <skip-string type="string" name="status_iccid"/>
         <skip-string type="string-array" name="display_rotation_entries"/>
         <skip-string type="string" name="wifi_calling_roaming_mode_summary"/>
+        <skip-string type="string" name="qs_night_brightness_value_entries"/>
     </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
