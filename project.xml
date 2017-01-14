@@ -144,6 +144,7 @@
         <skip-string type="string" name="battery_level_template"/>
         <skip-string type="string" name="regrettable_lack_of_easter_egg"/>
         <skip-string type="string-array" name="telephony_data_type_sim"/>
+        <skip-string type="string" name="accessibility_battery_level_charging"/>
     </project>
     <!-- android_frameworks_base_packages_VpnDialogs -->
     <project name="android_frameworks_base_packages_VpnDialogs" resourceID="frameworks/base/packages/VpnDialogs/res/values">
@@ -410,6 +411,9 @@
     <project name="android_packages_apps_Nfc" resourceID="packages/apps/Nfc/res/values">
         <skip-string type="string-array" name="provisioning_mime_types"/>
     </project>
+    <!-- android_packages_apps_OmniStyle -->
+    <project name="android_packages_apps_OmniStyle" resourceID="packages/apps/OmniStyle/app/src/main/res/values">
+    </project>
     <!-- android_packages_apps_PackageInstaller -->
     <project name="android_packages_apps_PackageInstaller" resourceID="packages/apps/PackageInstaller/res/values">
     </project>
@@ -491,6 +495,8 @@
         <skip-string type="string-array" name="display_rotation_entries"/>
         <skip-string type="string" name="wifi_calling_roaming_mode_summary"/>
         <skip-string type="string" name="qs_night_brightness_value_entries"/>
+        <skip-string type="string-array" name="night_brightness_value_entries"/>
+        <skip-string type="string" name="intent_sender_data_label"/>
     </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
