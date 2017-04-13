@@ -324,6 +324,7 @@
         <skip-string type="string-array" name="backlight_timeout_entries"/>
         <skip-string type="string-array" name="backlight_timeout_values"/>
         <skip-string type="string-array" name="wired_ringtone_focus_mode_entries"/>
+        <skip-string type="string-array" name="ticker_mode_entries"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
