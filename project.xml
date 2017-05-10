@@ -501,6 +501,7 @@
         <skip-string type="string" name="qs_night_brightness_value_entries"/>
         <skip-string type="string-array" name="night_brightness_value_entries"/>
         <skip-string type="string" name="intent_sender_data_label"/>
+        <skip-string type="string-array" name="entries_font_size_percent"/>
     </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
