@@ -331,7 +331,7 @@
         <skip-string type="string-array" name="smartbar_longpress_delay_entries"/>
     </project>
     <!-- android_packages_apps_DU_about -->
-    <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/res/values">
+    <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/app/src/main/res/values">
     </project>
     <!-- android_packages_apps_DU_changelog -->
     <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
