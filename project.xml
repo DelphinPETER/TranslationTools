@@ -189,6 +189,55 @@
         <skip-string type="string-array" name="camera_mode_text"/>
         <skip-string type="string-array" name="camera_mode_content_description"/>
     </project>
+    <!-- android_packages_apps_Car -->
+    <!-- android_packages_apps_Car_Dialer -->
+    <project name="android_packages_apps_Car_Dialer" resourceID="packages/apps/Car/Dialer/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_LatinIME -->
+    <project name="android_packages_apps_Car_LatinIME" resourceID="packages/apps/Car/LatinIME/res/values">
+    </project>
+    <!-- android_packages_apps_Car_LensPicker -->
+    <project name="android_packages_apps_Car_LensPicker" resourceID="packages/apps/Car/LensPicker/res/values">
+    </project>
+    <!-- android_packages_apps_Car_libs -->
+    <project name="android_packages_apps_Car_libs" resourceID="packages/apps/Car/libs/car-stream-ui-lib/res/values">
+    </project>
+    <!-- android_packages_apps_Car_LocalMediaPlayer -->
+    <project name="android_packages_apps_Car_LocalMediaPlayer" resourceID="packages/apps/Car/LocalMediaPlayer/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Media -->
+    <project name="android_packages_apps_Car_Media" resourceID="packages/apps/Car/Media/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Messenger -->
+    <project name="android_packages_apps_Car_Messenger" resourceID="packages/apps/Car/Messenger/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
+    <!-- android_packages_apps_Car_Hvac -->
+    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    </project>
     <!-- android_packages_apps_CellBroadcastReceiver -->
     <project name="android_packages_apps_CellBroadcastReceiver" resourceID="packages/apps/CellBroadcastReceiver/res/values">
         <skip-string type="string-array" name="alert_sound_duration_values"/>
@@ -205,6 +254,8 @@
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
         <skip-file name="donottranslate_config.xml"/>
         <skip-string type="string" name="from_account_format"/>
+        <skip-string type="string" name="letter_tile_letter_font_family"/>
+        <skip-string type="string" name="search_font_family"/>
     </project>
     <!-- android_packages_apps_ContactsCommon -->
     <project name="android_packages_apps_ContactsCommon" resourceID="packages/apps/ContactsCommon/res/values">
@@ -218,6 +269,7 @@
         <skip-file name="donottranslate.xml"/>
         <skip-file name="donottranslate_events.xml"/>
         <skip-string type="string" name="control_set_alarm_with_existing"/>
+        <skip-string type="string" name="seconds"/>
     </project>
     <!-- android_packages_apps_Dialer -->
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
