@@ -352,7 +352,7 @@
     <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
 </project>
     <!-- android_packages_apps_DU-Tweaks -->
-    <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
+    <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/app/src/main/res/values">
         <skip-string type="string-array" name="advanced_reboot_entries"/>
         <skip-string type="string-array" name="entries_status_bar_am_pm"/>
         <skip-string type="string-array" name="clock_date_display_entries"/>
@@ -480,6 +480,7 @@
     <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/res/values">
         <skip-string type="string" name="dummy_custom_cling_error_message"/>
         <skip-string type="string" name="debug_memory_activity"/>
+        <skip-string type="string-array" name="icon_shape_override_paths_names"/>
     </project>
     <!-- android_packages_apps_ManagedProvisioning -->
     <project name="android_packages_apps_ManagedProvisioning" resourceID="packages/apps/ManagedProvisioning/res/values">
@@ -598,6 +599,7 @@
         <skip-string type="string-array" name="night_brightness_value_entries"/>
         <skip-string type="string" name="intent_sender_data_label"/>
         <skip-string type="string-array" name="entries_font_size_percent"/>
+        <skip-string type="string" name="supersu_title"/>
     </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
