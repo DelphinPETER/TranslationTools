@@ -193,18 +193,55 @@
     <!-- android_packages_apps_Car -->
     <!-- android_packages_apps_Car_Dialer -->
     <project name="android_packages_apps_Car_Dialer" resourceID="packages/apps/Car/Dialer/res/values">
+        <skip-string type="string" name="one"/>
+        <skip-string type="string" name="two"/>
+        <skip-string type="string" name="three"/>
+        <skip-string type="string" name="four"/>
+        <skip-string type="string" name="five"/>
+        <skip-string type="string" name="six"/>
+        <skip-string type="string" name="seven"/>
+        <skip-string type="string" name="eight"/>
+        <skip-string type="string" name="nine"/>
+        <skip-string type="string" name="zero"/>
+        <skip-string type="string" name="star"/>
+        <skip-string type="string" name="pound"/>
+        <skip-string type="string" name="two_letters"/>
+        <skip-string type="string" name="three_letters"/>
+        <skip-string type="string" name="four_letters"/>
+        <skip-string type="string" name="five_letters"/>
+        <skip-string type="string" name="six_letters"/>
+        <skip-string type="string" name="seven_letters"/>
+        <skip-string type="string" name="eight_letters"/>
+        <skip-string type="string" name="nine_letters"/>
+        <skip-string type="string" name="zero_letters"/>
+        <skip-string type="string" name="star_letters"/>
+        <skip-string type="string" name="pound_letters"/>
+        <skip-string type="string" name="phone_label_with_info"/>
+        <skip-string type="string" name="pound_letters"/>
     </project>
     <!-- android_packages_apps_Car_Hvac -->
     <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
     </project>
     <!-- android_packages_apps_Car_LatinIME -->
     <project name="android_packages_apps_Car_LatinIME" resourceID="packages/apps/Car/LatinIME/res/values">
+        <skip-string type="string" name="alternates_for_a"/>
+        <skip-string type="string" name="alternates_for_c"/>
+        <skip-string type="string" name="alternates_for_e"/>
+        <skip-string type="string" name="alternates_for_i"/>
+        <skip-string type="string" name="alternates_for_l"/>
+        <skip-string type="string" name="alternates_for_n"/>
+        <skip-string type="string" name="alternates_for_o"/>
+        <skip-string type="string" name="alternates_for_s"/>
+        <skip-string type="string" name="alternates_for_u"/>
+        <skip-string type="string" name="alternates_for_y"/>
+        <skip-string type="string" name="alternates_for_z"/>
     </project>
     <!-- android_packages_apps_Car_LensPicker -->
     <project name="android_packages_apps_Car_LensPicker" resourceID="packages/apps/Car/LensPicker/res/values">
     </project>
     <!-- android_packages_apps_Car_libs -->
     <project name="android_packages_apps_Car_libs" resourceID="packages/apps/Car/libs/car-stream-ui-lib/res/values">
+        <skip-string type="string" name="car_drawer_unused"/>
     </project>
     <!-- android_packages_apps_Car_LocalMediaPlayer -->
     <project name="android_packages_apps_Car_LocalMediaPlayer" resourceID="packages/apps/Car/LocalMediaPlayer/res/values">
