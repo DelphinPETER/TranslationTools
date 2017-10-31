@@ -128,6 +128,7 @@
     </project>
     <!-- android_frameworks_base_packages_SettingsProvider -->
     <project name="android_frameworks_base_SettingsProvider" resourceID="frameworks/base/packages/SettingsProvider/res/values">
+        <skip-string type="string" name="def_battery_plugged_sound"/>
     </project>
     <!-- android_frameworks_base_packages_Shell -->
     <project name="android_frameworks_base_packages_Shell" resourceID="frameworks/base/packages/Shell/res/values">
@@ -146,6 +147,7 @@
         <skip-string type="string" name="regrettable_lack_of_easter_egg"/>
         <skip-string type="string-array" name="telephony_data_type_sim"/>
         <skip-string type="string" name="accessibility_battery_level_charging"/>
+        <skip-string type="string" name="accessibility_data_connection_hspap"/>
     </project>
     <!-- android_frameworks_base_packages_VpnDialogs -->
     <project name="android_frameworks_base_packages_VpnDialogs" resourceID="frameworks/base/packages/VpnDialogs/res/values">
@@ -308,7 +310,10 @@
         <skip-file name="donottranslate_events.xml"/>
         <skip-string type="string" name="seconds"/>
         <skip-string type="string" name="control_set_alarm_with_existing"/>
-        <skip-string type="string" name="seconds"/>
+        <skip-string type="string" name="timer_alarm_custom_summary"/>
+        <skip-string type="string" name="show_background_image_summary"/>
+        <skip-string type="string" name="sw_pause_button"/>
+        <skip-string type="string" name="world_day_of_week_label"/>
     </project>
     <!-- android_packages_apps_Dialer -->
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
@@ -352,7 +357,7 @@
     <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
 </project>
     <!-- android_packages_apps_DU-Tweaks -->
-    <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/app/src/main/res/values">
+    <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
         <skip-string type="string-array" name="advanced_reboot_entries"/>
         <skip-string type="string-array" name="entries_status_bar_am_pm"/>
         <skip-string type="string-array" name="clock_date_display_entries"/>
@@ -420,6 +425,7 @@
         <skip-string type="string-array" name="heads_up_snooze_entries"/>
         <skip-string type="string-array" name="fp_swipe_call_actions_entries"/>
         <skip-string type="string-array" name="smartbar_longpress_delay_entries"/>
+        <skip-string type="string" name="hex_hint"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/app/src/main/res/values">
