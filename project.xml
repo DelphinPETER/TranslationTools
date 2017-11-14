@@ -324,7 +324,7 @@
         <skip-string type="string" name="sw_pause_button"/>
         <skip-string type="string" name="world_day_of_week_label"/>
     </project>
-    <!-- android_packages_apps_DeskClock -->
+    <!-- android_packages_apps_DeskClock_MaterialDateTimePicker-->
     <project name="android_packages_apps_DeskClock_MaterialDateTimePicker" resourceID="packages/apps/DeskClock/MaterialDateTimePicker/res/values">
         <skip-string type="string" name="mdtp_ok"/>
         <skip-string type="string" name="mdtp_cancel"/>
