@@ -9,11 +9,15 @@
 <resources>
     <!-- android_device -->
     <!-- device_oneplus_cheeseburger -->
-    <!-- android_frameworks_base_packages_BackupRestoreConfirmation -->
+    <!-- android_device_oneplus_cheeseburger -->
     <project name="android_device_oneplus_cheeseburger" resourceID="device/oneplus/cheeseburger/doze/res/values">
     </project>
-    <!-- device_oneplus_cheeseburger -->
-    <!-- android_frameworks_base_packages_BackupRestoreConfirmation -->
+    <!-- device_oneplus_msm8998-common -->
+    <!-- android_device_oneplus_msm8998-common -->
+    <project name="android_device_oneplus_msm8998-common" resourceID="device/oneplus/msm8998-common/doze/res/values">
+    </project>
+    <!-- device_oneplus_oppo -->
+    <!-- android_device_oppo -->
     <project name="android_device_oppo" resourceID="device/oppo/common/configpanel/res/values">
     </project>
     <!-- android_frameworks_base -->
