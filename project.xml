@@ -147,7 +147,7 @@
     <project name="android_frameworks_base_packages_Shell" resourceID="frameworks/base/packages/Shell/res/values">
     </project>
     <!-- android_frameworks_base-SystemUI -->
-    <project name="android_frameworks_base/SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values">
+    <project name="android_frameworks_base_SystemUI" resourceID="frameworks/base/packages/SystemUI/res/values">
         <skip-file name="donottranslate.xml"/>
         <skip-file name="arrays.xml"/>
         <skip-file name="custom_donottranslate.xml"/>
@@ -447,6 +447,7 @@
         <skip-string type="string-array" name="heads_up_snooze_entries"/>
         <skip-string type="string-array" name="fp_swipe_call_actions_entries"/>
         <skip-string type="string-array" name="smartbar_longpress_delay_entries"/>
+        <skip-string type="string-array" name="torch_power_button_gesture_entries"/>
         <skip-string type="string" name="hex_hint"/>
     </project>
     <!-- android_packages_apps_DU_about -->
