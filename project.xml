@@ -478,6 +478,7 @@
         <skip-string type="string-array" name="fp_swipe_call_actions_entries"/>
         <skip-string type="string-array" name="smartbar_longpress_delay_entries"/>
         <skip-string type="string-array" name="torch_power_button_gesture_entries"/>
+        <skip-string type="string-array" name="force_ambient_for_media_entries"/>
         <skip-string type="string" name="hex_hint"/>
     </project>
     <!-- android_packages_apps_DU_about -->
