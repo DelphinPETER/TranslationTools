@@ -753,4 +753,10 @@
     <project name="android_packages_apps_WallpaperPicker" resourceID="packages/apps/WallpaperPicker/res/values">
         <skip-string type="string-array" name="which_wallpaper_options"/>
     </project>
+    <!-- android_vendor -->
+    <!-- android_vendor_codeaurora_telephony -->
+    <project name="android_vendor_codeaurora_telephony" resourceID="vendor/codeaurora/telephony/ims/ConfURIDialer/res/values">
+    </project>
+    <project name="android_vendor_codeaurora_telephony" resourceID="vendor/codeaurora/telephony/ims/InCallUi/res/values">
+    </project>
 </resources>
