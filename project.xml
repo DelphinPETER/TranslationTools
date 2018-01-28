@@ -480,6 +480,8 @@
         <skip-string type="string-array" name="torch_power_button_gesture_entries"/>
         <skip-string type="string-array" name="force_ambient_for_media_entries"/>
         <skip-string type="string" name="hex_hint"/>
+        <skip-string type="string-array" name="screen_off_animation_entries"/>
+        <skip-string type="string-array" name="notification_sound_vib_screen_on_entries"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/app/src/main/res/values">
@@ -742,6 +744,7 @@
         <skip-string type="string-array" name="flip_action_setting_entries"/>
         <skip-string type="string-array" name="flip_action_summary_entries"/>
         <skip-string type="string" name="voicemail_change_pin_key"/>
+        <skip-string type="string-array" name="time_formate_items"/>
         <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_wallpapers -->
@@ -758,5 +761,14 @@
     <project name="android_vendor_codeaurora_telephony" resourceID="vendor/codeaurora/telephony/ims/ConfURIDialer/res/values">
     </project>
     <project name="android_vendor_codeaurora_telephony" resourceID="vendor/codeaurora/telephony/ims/InCallUi/res/values">
+    </project>
+    <!-- android_vendor_du -->
+    <project name="android_vendor_du" resourceID="vendor/du/themes/DuiDarkTheme/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/SettingsDarkTheme/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/SystemDarkTheme/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/GboardDarkTheme/res/values">
     </project>
 </resources>
