@@ -333,6 +333,11 @@
     <!-- android_packages_apps_CertInstaller -->
     <project name="android_packages_apps_CertInstaller" resourceID="packages/apps/CertInstaller/res/values">
     </project>
+    <!-- android_packages_apps_Changelog -->
+    <project name="android_packages_apps_Changelog" resourceID="packages/apps/Changelog/app/src/main/res/values">
+        <skip-string type="string" name="list_action_entries"/>
+        <skip-string type="string" name="list_action_values"/>
+    </project>
     <!-- android_packages_apps_Contacts -->
     <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
         <skip-file name="donottranslate_config.xml"/>
@@ -482,6 +487,7 @@
         <skip-string type="string" name="hex_hint"/>
         <skip-string type="string-array" name="screen_off_animation_entries"/>
         <skip-string type="string-array" name="notification_sound_vib_screen_on_entries"/>
+        <skip-string type="string-array" name="less_notification_sounds_entries"/>
     </project>
     <!-- android_packages_apps_DU_about -->
     <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/app/src/main/res/values">
@@ -543,6 +549,12 @@
         <skip-string type="string" name="dummy_custom_cling_error_message"/>
         <skip-string type="string" name="debug_memory_activity"/>
         <skip-string type="string-array" name="icon_shape_override_paths_names"/>
+        <skip-string type="string" name="icu_abbrev_wday_month_day_no_year"/>
+        <skip-string type="string" name="default_live_wallpaper"/>
+        <skip-string type="string" name="pref_show_google_now_summary"/>
+        <skip-string type="string" name="app_releases_url"/>
+        <skip-string type="string" name="about_amirzaidi_url"/>
+        <skip-string type="string" name="pref_show_google_now_summary"/>
     </project>
     <!-- android_packages_apps_ManagedProvisioning -->
     <project name="android_packages_apps_ManagedProvisioning" resourceID="packages/apps/ManagedProvisioning/res/values">
