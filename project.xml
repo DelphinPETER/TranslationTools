@@ -786,12 +786,54 @@
     <project name="android_vendor_codeaurora_telephony" resourceID="vendor/codeaurora/telephony/ims/InCallUi/res/values">
     </project>
     <!-- android_vendor_du -->
-    <project name="android_vendor_du" resourceID="vendor/du/themes/DuiDarkTheme/res/values">
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Amber/res/values">
     </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/SettingsDarkTheme/res/values">
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Black/res/values">
     </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/SystemDarkTheme/res/values">
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Blue/res/values">
     </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/GboardDarkTheme/res/values">
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/BlueGrey/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Brown/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Cyan/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/DeepOrange/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/DeepPurple/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Green/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Grey/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Indigo/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/LightBlue/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/LightGreen/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Lime/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Orange/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Pink/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Purple/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Red/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Teal/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/White/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Yellow/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/DuiDialogs/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/Gboard/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/Settings/res/values">
+    </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/System/res/values">
     </project>
 </resources>
