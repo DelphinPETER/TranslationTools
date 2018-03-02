@@ -566,6 +566,9 @@
         <skip-string type="string" name="app_releases_url"/>
         <skip-string type="string" name="about_amirzaidi_url"/>
         <skip-string type="string" name="pref_show_google_now_summary"/>
+        <skip-string type="string-array" name="pref_show_clock_weather_names"/>
+        <skip-string type="string-array" name="grid_names"/>
+        <skip-string type="string-array" name="grid_values"/>
     </project>
     <!-- android_packages_apps_ManagedProvisioning -->
     <project name="android_packages_apps_ManagedProvisioning" resourceID="packages/apps/ManagedProvisioning/res/values">
