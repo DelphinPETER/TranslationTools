@@ -855,6 +855,8 @@
     </project>
     <project name="android_vendor_du" resourceID="vendor/du/themes/Clocks/DeadPool/res/values">
     </project>
+    <project name="android_vendor_du" resourceID="vendor/du/themes/Clocks/DeepNightClock/res/values">
+    </project>
     <project name="android_vendor_du" resourceID="vendor/du/themes/Clocks/DU/res/values">
     </project>
     <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/DuiDialogs/res/values">
