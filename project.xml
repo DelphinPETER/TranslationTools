@@ -71,6 +71,10 @@
     <!-- android_device_moto_shamu -->
     <project name="android_device_moto_shamu" resourceID="device/moto/shamu/ShamuLayout/res/values">
     </project>
+    <!-- android_external -->
+    <!-- android_external_DUI -->
+    <project name="android_external_DUI" resourceID="external/DUI/res/values">
+    </project>
     <!-- android_frameworks_base -->
     <!-- android_frameworks_base_core -->
     <project name="android_frameworks_base_core" resourceID="frameworks/base/core/res/res/values">
@@ -434,9 +438,6 @@
     <!-- android_packages_apps_Dialer3 -->
     <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/java/com/android/dialer/lookup/res/values">
     </project>
-    <!-- android_packages_apps_DUI -->
-    <project name="android_packages_apps_DUI" resourceID="packages/apps/DUI/res/values">
-</project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
         <skip-string type="string-array" name="advanced_reboot_entries"/>
