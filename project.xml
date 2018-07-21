@@ -588,6 +588,7 @@
         <skip-string type="string-array" name="grid_names"/>
         <skip-string type="string-array" name="grid_values"/>
         <skip-string type="string-array" name="pref_homescreen_dt_gestures_names"/>
+        <skip-string type="string-array" name="pref_homescreen_notification_gestures_names"/>
     </project>
     <!-- android_packages_apps_ManagedProvisioning -->
     <project name="android_packages_apps_ManagedProvisioning" resourceID="packages/apps/ManagedProvisioning/res/values">
