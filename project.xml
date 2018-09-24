@@ -216,6 +216,7 @@
         <skip-string type="string-array" name="telephony_data_type_sim"/>
         <skip-string type="string" name="accessibility_battery_level_charging"/>
         <skip-string type="string" name="accessibility_data_connection_hspap"/>
+        <skip-string type="string" name="accessibility_work_mode"/>
     </project>
     <!-- android_frameworks_base_packages_VpnDialogs -->
     <project name="android_frameworks_base_packages_VpnDialogs" resourceID="frameworks/base/packages/VpnDialogs/res/values">
@@ -709,6 +710,9 @@
         <skip-string type="string-array" name="entries_font_size_percent"/>
         <skip-string type="string" name="supersu_title"/>
         <skip-string type="string" name="aosp_security_bulletin_url"/>
+        <skip-string type="string-array" name="wifi_tether_security"/>
+        <skip-string type="string-array" name="wifi_ap_band_summary_full"/>
+        <skip-string type="string-array" name="systemui_theme_entries"/>
     </project>
     <!-- android_packages_apps_SoundRecorder -->
     <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
