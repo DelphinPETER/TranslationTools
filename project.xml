@@ -82,6 +82,9 @@
     <!-- android_external_DUI -->
     <project name="android_external_DUI" resourceID="external/DUI/res/values">
     </project>
+    <!-- android_frameworks_av_packages_MediaComponents -->
+    <project name="android_frameworks_av_packages_MediaComponents" resourceID="frameworks/av/packages/MediaComponents/res/values">
+    </project>
     <!-- android_frameworks_base -->
     <!-- android_frameworks_base_core -->
     <project name="android_frameworks_base_core" resourceID="frameworks/base/core/res/res/values">
@@ -230,6 +233,10 @@
     </project>
     <!-- android_frameworks_base_packages_WallpaperCropper -->
     <project name="android_frameworks_base_packages_WallpaperCropper" resourceID="frameworks/base/packages/WallpaperCropper/res/values">
+    </project>
+    <!-- android_frameworks_support -->
+    <!-- android_frameworks_support_mediarouter -->
+    <project name="android_frameworks_support_mediarouter" resourceID="frameworks/support/mediarouter/src/main/res/values">
     </project>
     <!-- android_packages_apps -->
     <!-- android_packages_apps_BasicSmsReceiver -->
@@ -754,6 +761,12 @@
         <skip-file name="arraysNoLocalize.xml"/>
         <skip-string type="string" name="menu_new_tab"/>
         <skip-string type="string" name="menu_close_tab"/>
+    </project>
+    <!-- android_packages_apps_Traceur -->
+    <project name="android_packages_apps_Traceur" resourceID="packages/apps/Traceur/res/values">
+        <skip-file name="unlocalizable_strings.xml"/>
+        <skip-file name="buffer_sizes.xml"/>
+        <skip-file name="preference_keys.xml"/>
     </project>
     <!-- android_packages_inputmethods -->
     <!-- android_packages_inputmethods_LatinIME -->
