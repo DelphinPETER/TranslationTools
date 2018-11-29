@@ -84,6 +84,7 @@
     </project>
     <!-- android_frameworks_av_packages_MediaComponents -->
     <project name="android_frameworks_av_packages_MediaComponents" resourceID="frameworks/av/packages/MediaComponents/res/values">
+        <skip-string type="string" name="MediaControlView2_time_placeholder"/>
     </project>
     <!-- android_frameworks_base -->
     <!-- android_frameworks_base_core -->
@@ -155,6 +156,8 @@
         <skip-string type="string" name="anr_title"/>
         <skip-string type="string" name="resolver_target_actions_pin"/>
         <skip-string type="string" name="resolver_target_actions_unpin"/>
+        <skip-string type="string-array" name="resolver_target_actions_pin_custom"/>
+        <skip-string type="string-array" name="resolver_target_actions_unpin_custom"/>
     </project>
     <!-- android_frameworks_base_packages_BackupRestoreConfirmation -->
     <project name="android_frameworks_base_packages_BackupRestoreConfirmation" resourceID="frameworks/base/packages/BackupRestoreConfirmation/res/values">
@@ -250,31 +253,6 @@
         <skip-string type="string" name="process"/>
         <skip-string type="string" name="format_progress_text"/>
     </project>
-    <!-- android_packages_apps_Calculator -->
-    <project name="android_packages_apps_Calculator" resourceID="packages/apps/Calculator/res/values">
-        <skip-file name="donottranslate_strings.xml"/>
-    </project>
-    <!-- android_packages_apps_Calendar -->
-    <project name="android_packages_apps_Calendar" resourceID="packages/apps/Calendar/res/values">
-    </project>
-    <!-- android_packages_apps_CalendarWidget -->
-    <project name="android_packages_apps_CalendarWidget" resourceID="packages/apps/CalendarWidget/res/values">
-    </project>
-    <!-- android_packages_apps_Camera2 -->
-    <project name="android_packages_apps_Camera2" resourceID="packages/apps/Camera2/res/values">
-        <skip-string type="string" name="pref_camera_timer_sound_default"/>
-        <skip-string type="string" name="pref_camera_hdr_default"/>
-        <skip-string type="string" name="pref_camera_hdr_plus_default"/>
-        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
-        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
-        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
-        <skip-string type="string-array" name="pref_camera_countdown_labels"/>
-        <skip-string type="string-array" name="pref_camera_jpeg_quality_entryvalues"/>
-        <skip-string type="string-array" name="pref_camera_gridlines_entryvalues"/>
-        <skip-string type="string-array" name="pref_camera_pano_orientation_entryvalues"/>
-        <skip-string type="string-array" name="camera_mode_text"/>
-        <skip-string type="string-array" name="camera_mode_content_description"/>
-    </project>
     <!-- android_packages_apps_Car -->
     <!-- android_packages_apps_Car_Dialer -->
     <project name="android_packages_apps_Car_Dialer" resourceID="packages/apps/Car/Dialer/res/values">
@@ -321,6 +299,9 @@
         <skip-string type="string" name="alternates_for_y"/>
         <skip-string type="string" name="alternates_for_z"/>
     </project>
+    <!-- android_packages_apps_Car_Launcher -->
+    <project name="android_packages_apps_Car_Launcher" resourceID="packages/apps/Car/Launcher/res/values">
+    </project>
     <!-- android_packages_apps_Car_LensPicker -->
     <project name="android_packages_apps_Car_LensPicker" resourceID="packages/apps/Car/LensPicker/res/values">
     </project>
@@ -337,29 +318,14 @@
     <!-- android_packages_apps_Car_Messenger -->
     <project name="android_packages_apps_Car_Messenger" resourceID="packages/apps/Car/Messenger/res/values">
     </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    <!-- android_packages_apps_Car_Radio -->
+    <project name="android_packages_apps_Car_Radio" resourceID="packages/apps/Car/Radio/res/values">
     </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    <!-- android_packages_apps_Car_Settings -->
+    <project name="android_packages_apps_Car_Settings" resourceID="packages/apps/Car/Settings/res/values">
     </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
-    </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
-    </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
-    </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
-    </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
-    </project>
-    <!-- android_packages_apps_Car_Hvac -->
-    <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
+    <!-- android_packages_apps_Car_SystemUpdater -->
+    <project name="android_packages_apps_Car_SystemUpdater" resourceID="packages/apps/Car/SystemUpdater/res/values">
     </project>
     <!-- android_packages_apps_CellBroadcastReceiver -->
     <project name="android_packages_apps_CellBroadcastReceiver" resourceID="packages/apps/CellBroadcastReceiver/res/values">
@@ -373,85 +339,11 @@
     <!-- android_packages_apps_CertInstaller -->
     <project name="android_packages_apps_CertInstaller" resourceID="packages/apps/CertInstaller/res/values">
     </project>
-    <!-- android_packages_apps_Changelog -->
-    <project name="android_packages_apps_Changelog" resourceID="packages/apps/Changelog/app/src/main/res/values">
-        <skip-string type="string" name="list_action_entries"/>
-        <skip-string type="string" name="list_action_values"/>
+    <!-- android_packages_apps_DocumentsUI -->
+    <project name="android_packages_apps_DocumentsUI" resourceID="packages/apps/DocumentsUI/minimal/res/values">
     </project>
-    <!-- android_packages_apps_Contacts -->
-    <project name="android_packages_apps_Contacts" resourceID="packages/apps/Contacts/res/values">
-        <skip-file name="donottranslate_config.xml"/>
-        <skip-string type="string" name="from_account_format"/>
-        <skip-string type="string" name="letter_tile_letter_font_family"/>
-        <skip-string type="string" name="search_font_family"/>
-    </project>
-    <!-- android_packages_apps_ContactsCommon -->
-    <project name="android_packages_apps_ContactsCommon" resourceID="packages/apps/ContactsCommon/res/values">
-        <skip-string type="string" name="tab_font_family"/>
-        <skip-string type="string" name="letter_tile_letter_font_family"/>
-        <skip-string type="string" name="search_font_family"/>
-        <skip-file name="donottranslate_config.xml"/>
-    </project>
-    <!-- android_packages_apps_DeskClock -->
-    <project name="android_packages_apps_DeskClock" resourceID="packages/apps/DeskClock/res/values">
-        <skip-file name="donottranslate.xml"/>
-        <skip-file name="donottranslate_events.xml"/>
-        <skip-string type="string" name="seconds"/>
-        <skip-string type="string" name="control_set_alarm_with_existing"/>
-        <skip-string type="string" name="timer_alarm_custom_summary"/>
-        <skip-string type="string" name="show_background_image_summary"/>
-        <skip-string type="string" name="sw_pause_button"/>
-        <skip-string type="string" name="world_day_of_week_label"/>
-    </project>
-    <!-- android_packages_apps_DeskClock_MaterialDateTimePicker-->
-    <project name="android_packages_apps_DeskClock_MaterialDateTimePicker" resourceID="packages/apps/DeskClock/MaterialDateTimePicker/res/values">
-        <skip-string type="string" name="mdtp_ok"/>
-        <skip-string type="string" name="mdtp_cancel"/>
-    </project>
-    <!-- android_packages_apps_Dialer -->
-    <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/res/values">
-        <skip-file name="donottranslate_config.xml"/>
-        <skip-string type="string" name="call_log_activity_title_font_family"/>
-        <skip-string type="string" name="show_all_contacts_title_font_family"/>
-        <skip-string type="string" name="dialpad_star_number"/>
-        <skip-string type="string" name="dialpad_pound_number"/>
-        <skip-string type="string" name="dialpad_0_letters"/>
-        <skip-string type="string" name="dialpad_1_letters"/>
-        <skip-string type="string" name="dialpad_2_letters"/>
-        <skip-string type="string" name="dialpad_3_letters"/>
-        <skip-string type="string" name="dialpad_4_letters"/>
-        <skip-string type="string" name="dialpad_5_letters"/>
-        <skip-string type="string" name="dialpad_6_letters"/>
-        <skip-string type="string" name="dialpad_7_letters"/>
-        <skip-string type="string" name="dialpad_8_letters"/>
-        <skip-string type="string" name="dialpad_9_letters"/>
-        <skip-string type="string" name="dialpad_2_2_letters"/>
-        <skip-string type="string" name="dialpad_3_2_letters"/>
-        <skip-string type="string" name="dialpad_4_2_letters"/>
-        <skip-string type="string" name="dialpad_5_2_letters"/>
-        <skip-string type="string" name="dialpad_6_2_letters"/>
-        <skip-string type="string" name="dialpad_7_2_letters"/>
-        <skip-string type="string" name="dialpad_8_2_letters"/>
-        <skip-string type="string" name="dialpad_9_2_letters"/>
-        <skip-string type="string" name="dialpad_star_letters"/>
-        <skip-string type="string" name="dialpad_pound_letters"/>
-        <skip-string type="string" name="tab_font_family"/>
-        <skip-string type="string" name="search_font_family"/>
-        <skip-string type="string" name="favorites_menu_speed_dial_font_family"/>
-        <skip-string type="string" name="favorites_menu_all_contacts_font_family"/>
-        <skip-string type="string" name="call_log_empty_geocode"/>
-        <skip-string type="string" name="call_log_empty_gecode"/>
-        <skip-string type="string" name="view_full_call_history_font_family"/>
-        <skip-string type="string" name="voicemailCallLogToday"/>
-        <skip-string type="string" name="handle_restricted"/>
-        <skip-string type="string" name="migrate_blocked_numbers_dialog_cancel_button"/>
-    </project>
-    <!-- android_packages_apps_Dialer2 -->
-    <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/java/com/android/dialer/app/res/values">
-        <skip-file name="donottranslate_config.xml"/>
-    </project>
-    <!-- android_packages_apps_Dialer3 -->
-    <project name="android_packages_apps_Dialer" resourceID="packages/apps/Dialer/java/com/android/dialer/lookup/res/values">
+    <!-- android_packages_apps_DocumentsUI -->
+    <project name="android_packages_apps_DocumentsUI" resourceID="packages/apps/DocumentsUI/res/values">
     </project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
@@ -533,22 +425,12 @@
         <skip-string type="string" name="qs_set_animation_interpolator"/>
         <skip-string type="string-array" name="smart_pixels_shift_values"/>
         <skip-string type="string-array" name="quick_pulldown_entries"/>
-    </project>
-    <!-- android_packages_apps_DU_about -->
-    <project name="android_packages_apps_DU-About" resourceID="packages/apps/DU-About/app/src/main/res/values">
-    </project>
-    <!-- android_packages_apps_DU_changelog -->
-    <project name="android_packages_apps_DU-Changelog" resourceID="packages/apps/DU-Changelog/res/values">
-        <skip-string type="string" name="changelog_header_version"/>
-    </project>
-    <!-- android_packages_apps_DU_HFM -->
-    <project name="android_packages_apps_DU_HFM" resourceID="packages/apps/DU_HFM/res/values">
+        <skip-string type="string" name="qs_set_animation_style"/>
+        <skip-string type="string" name="qs_set_animation_duration"/>
+        <skip-string type="string" name="qs_set_animation_interpolator"/>
     </project>
     <!-- android_packages_apps_DU_Updater -->
     <project name="android_packages_apps_DU_Updater" resourceID="packages/apps/DU-Updater/app/src/main/res/values">
-    </project>
-    <!-- android_packages_apps_DU_walls -->
-    <project name="android_packages_apps_DU_walls" resourceID="packages/apps/DU_walls/res/values">
     </project>
     <!-- android_packages_apps_EmergencyInfo -->
     <project name="android_packages_apps_EmergencyInfo" resourceID="packages/apps/EmergencyInfo/res/values">
@@ -557,30 +439,6 @@
         <skip-string type="string-array" name="blood_type_content_description"/>
         <skip-string type="string-array" name="organ_donor_entries"/>
         <skip-string type="string-array" name="organ_donor_values"/>
-    </project>
-    <!-- android_packages_apps_Gallery2 -->
-    <project name="android_packages_apps_Gallery2" resourceID="packages/apps/Gallery2/res/values">
-        <skip-string type="string" name="aspectOriginal_effect"/>
-        <skip-string type="string" name="history_original"/>
-        <skip-string type="string" name="original_picture_text"/>
-        <skip-string type="string" name="crop"/>
-        <skip-string type="string" name="rotate"/>
-        <skip-string type="string" name="saturation"/>
-        <skip-string type="string" name="straighten"/>
-        <skip-string type="string" name="vignette"/>
-        <skip-string type="string" name="done"/>
-        <skip-string type="string" name="save"/>
-        <skip-string type="string" name="redeye"/>
-        <skip-string type="string" name="pref_camera_timer_sound_default"/>
-        <skip-string type="string" name="pref_camera_hdr_default"/>
-        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_entries"/>
-        <skip-string type="string-array" name="pref_video_time_lapse_frame_interval_units"/>
-        <skip-string type="string-array" name="pref_camera_scenemode_labels"/>
-        <skip-string type="string-array" name="pref_camera_countdown_labels"/>
-        <skip-string type="string" name="ingest_import"/>
-        <skip-string type="string" name="ingest_import_complete"/>
-        <skip-string type="string" name="ingest_switch_photo_grid"/>
-        <skip-string type="string" name="ingest_switch_photo_fullscreen"/>
     </project>
     <!-- android_packages_apps_HTMLViewer -->
     <project name="android_packages_apps_HTMLViewer" resourceID="packages/apps/HTMLViewer/res/values">
@@ -632,22 +490,12 @@
         <skip-string type="string-array" name="vendor_required_apps_managed_profile"/>
         <skip-string type="string-array" name="vendor_required_apps_managed_device"/>
     </project>
-    <!-- android_packages_apps_Masquerade -->
-    <project name="android_packages_apps_Masquerade" resourceID="packages/apps/Masquerade/res/values">
-    </project>
-    <!-- android_packages_apps_Messaging -->
-    <project name="android_packages_apps_Messaging" resourceID="packages/apps/Messaging/res/values">
-        <skip-string type="string" name="default_sms_app"/>
-    </project>
     <!-- android_packages_MusicFX -->
     <project name="android_packages_MusicFX" resourceID="packages/apps/MusicFX/res/values">
     </project>
     <!-- android_packages_apps_Nfc -->
     <project name="android_packages_apps_Nfc" resourceID="packages/apps/Nfc/res/values">
         <skip-string type="string-array" name="provisioning_mime_types"/>
-    </project>
-    <!-- android_packages_apps_OmniStyle -->
-    <project name="android_packages_apps_OmniStyle" resourceID="packages/apps/OmniStyle/app/src/main/res/values">
     </project>
     <!-- android_packages_apps_PackageInstaller -->
     <project name="android_packages_apps_PackageInstaller" resourceID="packages/apps/PackageInstaller/res/values">
@@ -668,6 +516,9 @@
         <skip-string type="string" name="dialpad_9_letters"/>
         <skip-string type="string" name="dialpad_star_letters"/>
         <skip-string type="string" name="dialpad_pound_letters"/>
+    </project>
+    <!-- android_packages_apps_SafetyRegulatoryInfo -->
+    <project name="android_packages_apps_SafetyRegulatoryInfo" resourceID="packages/apps/SafetyRegulatoryInfo/res/values">
     </project>
     <!-- android_packages_apps_Settings -->
     <project name="android_packages_apps_Settings" resourceID="packages/apps/Settings/res/values">
@@ -739,14 +590,10 @@
         <skip-string type="string-array" name="wifi_ap_band_summary_full"/>
         <skip-string type="string-array" name="systemui_theme_entries"/>
         <skip-string type="string-array" name="dark_ui_mode_entries"/>
+        <skip-string type="string" name="packagename_text"/>
     </project>
     <!-- android_packages_apps_SettingsIntelligence -->
     <project name="android_packages_apps_SettingsIntelligence" resourceID="packages/apps/SettingsIntelligence/res/values">
-    </project>
-    <!-- android_packages_apps_SoundRecorder -->
-    <project name="android_packages_apps_SoundRecorder" resourceID="packages/apps/SoundRecorder/res/values">
-        <skip-file name="arrays.xml"/>
-        <skip-string type="string" name="audio_db_title_format"/>
     </project>
     <!-- android_packages_apps_Stk -->
     <project name="android_packages_apps_Stk" resourceID="packages/apps/Stk/res/values">
@@ -767,6 +614,21 @@
         <skip-file name="unlocalizable_strings.xml"/>
         <skip-file name="buffer_sizes.xml"/>
         <skip-file name="preference_keys.xml"/>
+    </project>
+    <!-- android_packages_apps_TV -->
+    <project name="android_packages_apps_TV" resourceID="packages/apps/TV/common/res/values">
+    </project>
+    <!-- android_packages_apps_TV -->
+    <project name="android_packages_apps_TV" resourceID="packages/apps/TV/res/values">
+    </project>
+    <!-- android_packages_apps_TV -->
+    <project name="android_packages_apps_TV" resourceID="packages/apps/TV/tuner/res/values">
+    </project>
+    <!-- android_packages_apps_TvSettings -->
+    <project name="android_packages_apps_TvSettings" resourceID="packages/apps/TvSettings/QuickSettings/res/values">
+    </project>
+    <!-- android_packages_apps_TvSettings -->
+    <project name="android_packages_apps_TvSettings" resourceID="packages/apps/TvSettings/Settings/res/values">
     </project>
     <!-- android_packages_inputmethods -->
     <!-- android_packages_inputmethods_LatinIME -->
