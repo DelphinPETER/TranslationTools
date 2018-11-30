@@ -301,6 +301,7 @@
     </project>
     <!-- android_packages_apps_Car_Launcher -->
     <project name="android_packages_apps_Car_Launcher" resourceID="packages/apps/Car/Launcher/res/values">
+        <skip-string type="string" name="app_title"/>
     </project>
     <!-- android_packages_apps_Car_LensPicker -->
     <project name="android_packages_apps_Car_LensPicker" resourceID="packages/apps/Car/LensPicker/res/values">
@@ -320,9 +321,24 @@
     </project>
     <!-- android_packages_apps_Car_Radio -->
     <project name="android_packages_apps_Car_Radio" resourceID="packages/apps/Car/Radio/res/values">
+        <skip-string type="string" name="app_name"/>
+        <skip-string type="string" name="radio_am_text"/>
+        <skip-string type="string" name="radio_fm_text"/>
+        <skip-string type="string" name="manual_tuner_0"/>
+        <skip-string type="string" name="manual_tuner_1"/>
+        <skip-string type="string" name="manual_tuner_2"/>
+        <skip-string type="string" name="manual_tuner_3"/>
+        <skip-string type="string" name="manual_tuner_4"/>
+        <skip-string type="string" name="manual_tuner_5"/>
+        <skip-string type="string" name="manual_tuner_6"/>
+        <skip-string type="string" name="manual_tuner_7"/>
+        <skip-string type="string" name="manual_tuner_8"/>
+        <skip-string type="string" name="manual_tuner_9"/>
+        <skip-string type="string" name="manual_tuner_period"/>
     </project>
     <!-- android_packages_apps_Car_Settings -->
     <project name="android_packages_apps_Car_Settings" resourceID="packages/apps/Car/Settings/res/values">
+        <skip-string type="string-array" name="wifi_security_method"/>
     </project>
     <!-- android_packages_apps_Car_SystemUpdater -->
     <project name="android_packages_apps_Car_SystemUpdater" resourceID="packages/apps/Car/SystemUpdater/res/values">
@@ -341,9 +357,13 @@
     </project>
     <!-- android_packages_apps_DocumentsUI -->
     <project name="android_packages_apps_DocumentsUI" resourceID="packages/apps/DocumentsUI/minimal/res/values">
+        <skip-string type="string" name="app_label"/>
+        <skip-string type="string" name="launcher_label"/>
     </project>
     <!-- android_packages_apps_DocumentsUI -->
     <project name="android_packages_apps_DocumentsUI" resourceID="packages/apps/DocumentsUI/res/values">
+        <skip-string type="string" name="app_label"/>
+        <skip-string type="string" name="launcher_label"/>
     </project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
@@ -620,15 +640,25 @@
     </project>
     <!-- android_packages_apps_TV -->
     <project name="android_packages_apps_TV" resourceID="packages/apps/TV/res/values">
+        <skip-string type="string" name="app_name"/>
+        <skip-string type="string" name="intro_title"/>
     </project>
     <!-- android_packages_apps_TV -->
     <project name="android_packages_apps_TV" resourceID="packages/apps/TV/tuner/res/values">
+        <skip-string type="string" name="ut_app_name"/>
+        <skip-string type="string" name="bt_app_name"/>
     </project>
     <!-- android_packages_apps_TvSettings -->
     <project name="android_packages_apps_TvSettings" resourceID="packages/apps/TvSettings/QuickSettings/res/values">
+        <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_TvSettings -->
     <project name="android_packages_apps_TvSettings" resourceID="packages/apps/TvSettings/Settings/res/values">
+        <skip-string type="string" name="sync_item_title"/>
+        <skip-string type="string" name="enable_opengl_traces_logcat"/>
+        <skip-string type="string" name="enable_opengl_traces_systrace"/>
+        <skip-string type="string" name="enable_opengl_traces_error"/>
+        <skip-string type="string" name="track_frame_time_gfxinfo"/>
     </project>
     <!-- android_packages_inputmethods -->
     <!-- android_packages_inputmethods_LatinIME -->
@@ -656,16 +686,10 @@
     <!-- android_packages_providers_MediaProvider -->
     <project name="android_packages_providers_MediaProvider" resourceID="packages/providers/MediaProvider/res/values">
     </project>
-    <!-- android_packages_apps_OmniSwitch -->
-    <project name="android_packages_apps_OmniSwitch" resourceID="packages/apps/OmniSwitch/res/values">
-    </project>
     <!-- android_packages_providers_TelephonyProvider -->
     <project name="android_packages_providers_TelephonyProvider" resourceID="packages/providers/TelephonyProvider/res/values">
     </project>
     <!-- android_packages_services -->
-    <!-- android_packages_services_OmniJaws -->
-    <project name="android_packages_services_OmniJaws" resourceID="packages/services/OmniJaws/app/src/main/res/values">
-    </project>
     <!-- android_packages_services_Telecomm -->
     <project name="android_packages_services_Telecomm" resourceID="packages/services/Telecomm/res/values">
         <skip-string type="string" name="test_account_0_label"/>
@@ -716,62 +740,6 @@
     <project name="android_vendor_du" resourceID="vendor/du/overlay/common/packages/apps/Settings/res/values">
         <skip-string type="string" name="aosp_security_bulletin_url"/>
         <skip-string type="string-array" name="color_picker"/>
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Amber/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Black/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Blue/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/BlueGrey/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Brown/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Cyan/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/DeepOrange/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/DeepPurple/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Green/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Grey/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Indigo/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/LightBlue/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/LightGreen/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Lime/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Orange/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Pink/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Purple/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Red/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Teal/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/White/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Accents/Yellow/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Clocks/DeadPool/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Clocks/DeepNightClock/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Clocks/DU/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/DuiDialogs/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/Gboard/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/Settings/res/values">
-    </project>
-    <project name="android_vendor_du" resourceID="vendor/du/themes/Dark/System/res/values">
     </project>
     <project name="android_vendor_support" resourceID="vendor/support/res/values">
         <skip-string type="string" name="hex_hint"/>
