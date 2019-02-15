@@ -28,6 +28,7 @@
         <language value="fa"/>
         <language value="fi"/>
         <language value="fr"/>
+        <language value="fr-rFR" subst="fr"/>
         <language value="fr-rCA"/>
         <language value="gl"/>
         <language value="gu"/>
