@@ -3,88 +3,177 @@
     <rom-name>DIRTY UNICORNS p9x</rom-name>
     <languages>
         <language value="af"/>
+        <language value="af-rZA" subst="af"/>
         <language value="am"/>
+        <language value="am-rET" subst="am"/>
         <language value="ar"/>
+        <language value="ar-rSA" subst="ar"/>
+        <language value="as-rIN"/>
+        <language value="ast-rES"/>
         <language value="az"/>
+        <language value="az-rAZ" subst="az"/>
         <language value="b+sr+Latn"/>
         <language value="be"/>
+        <language value="be-rBY" subst="be"/>
         <language value="bg"/>
+        <language value="bg-rBG" subst="bg"/>
         <language value="bn"/>
+        <language value="bn-rBD" subst="bn"/>
+        <language value="bo-rBT"/>
         <language value="bs"/>
+        <language value="bs-rBA" subst="bs"/>
         <language value="ca"/>
+        <language value="ca-rES" subst="ca"/>
         <language value="cs"/>
-        <language value="da"/>
+        <language value="cs-rCZ" subst="cs"/>
+        <language value="da"/>        
+        <language value="da-rDK" subst="da"/>
         <language value="de"/>
+        <language value="de-rDE" subst="de"/>
         <language value="el"/>
+        <language value="el-rGR" subst="el"/>
         <language value="en-rAU"/>
         <language value="en-rCA"/>
         <language value="en-rGB"/>
         <language value="en-rIN"/>
         <language value="en-rXC"/>
+        <language value="eo-rUY"/>
         <language value="es"/>
+        <language value="es-rES" subst="es"/>
+        <language value="es-rMX" subst="es"/>
         <language value="es-rUS"/>
         <language value="et"/>
+        <language value="et-rEE" subst="et"/>
         <language value="eu"/>
+        <language value="eu-rES" subst="eu"/>
         <language value="fa"/>
+        <language value="fa-rIR" subst="fa"/>
         <language value="fi"/>
+        <language value="fi-rFI" subst="fi"/>
         <language value="fr"/>
+        <language value="fr-rFR" subst="fr"/>
         <language value="fr-rCA"/>
+        <language value="fy-rNL"/>
+        <language value="gd-rGB"/>
         <language value="gl"/>
+        <language value="gl-rES" subst="gl"/>
         <language value="gu"/>
+        <language value="gu-rIN" subst="gu"/>
+        <language value="ha-rHG"/>
+        <language value="haw-rUS"/>
         <language value="hi"/>
+        <language value="hi-rIN" subst="hi"/>
         <language value="hr"/>
+        <language value="hr-rHR" subst="hr"/>
         <language value="hu"/>
+        <language value="hu-rHU" subst="hu"/>
         <language value="hy"/>
+        <language value="hy-rAM" subst="hy"/>
         <language value="in"/>
+        <language value="in-rID" subst="in"/>
         <language value="is"/>
+        <language value="is-rIS" subst="is"/>
         <language value="it"/>
+        <language value="it-rIT" subst="it"/>
         <language value="iw"/>
+        <language value="iw-rIL" subst="iw"/>
         <language value="ja"/>
+        <language value="ja-rJP" subst="ja"/>
         <language value="ka"/>
+        <language value="ka-rGE" subst="ka"/>
+        <language value="kab-rDZ"/>
         <language value="kk"/>
+        <language value="kk-rKZ" subst="kk"/>
+        <language value="kl-rGL"/>
         <language value="km"/>
+        <language value="km-rKH" subst="km"/>
         <language value="kn"/>
+        <language value="kn-rIN" subst="kn"/>
         <language value="ko"/>
+        <language value="ko-rKR" subst="ko"/>
         <language value="ky"/>
+        <language value="ky-rKG" subst="ky"/>
+        <language value="lb-rLU"/>
         <language value="lo"/>
+        <language value="lo-rLA" subst="lo"/>
         <language value="lt"/>
+        <language value="lt-rLT" subst="lt"/>
         <language value="lv"/>
+        <language value="lv-rLV" subst="lv"/>
         <language value="mk"/>
+        <language value="mk-rMK" subst="mk"/>
         <language value="ml"/>
+        <language value="ml-rIN" subst="ml"/>
         <language value="mn"/>
+        <language value="mn-rMN" subst="mn"/>
         <language value="mr"/>
+        <language value="mr-rIN" subst="mr"/>
         <language value="ms"/>
+        <language value="ms-rMY" subst="ms"/>
+        <language value="mt-rMT"/>
         <language value="my"/>
+        <language value="my-rMM" subst="my"/>
         <language value="nb"/>
+        <language value="nb-rNO" subst="nb"/>
         <language value="ne"/>
+        <language value="ne-rIN" subst="ne"/>
+        <language value="ne-rNP" subst="ne"/>
         <language value="nl"/>
+        <language value="nl-rNL" subst="nl"/>
         <language value="no-rNO"/>
+        <language value="or-rIN"/>
         <language value="pa"/>
+        <language value="pa-rIN" subst="pa"/>
         <language value="pl"/>
+        <language value="pl-rPL" subst="pl"/>
         <language value="pt"/>
         <language value="pt-rBR" subst="pt"/>
         <language value="pt-rPT"/>
         <language value="rm"/>
         <language value="ro"/>
+        <language value="ro-rRO" subst="ro"/>
         <language value="ru"/>
+        <language value="ru-rRU" subst="ru"/>
         <language value="si"/>
+        <language value="si-rLK" subst="si"/>
         <language value="sk"/>
+        <language value="sk-rSK" subst="sk"/>
         <language value="sl"/>
+        <language value="sl-rSI" subst="sl"/>
+        <language value="so-rSO"/>
         <language value="sq"/>
+        <language value="sq-rAL" subst="sq"/>
         <language value="sr"/>
+        <language value="sr-rSP" subst="sr"/>
         <language value="sv"/>
+        <language value="sv-rSE" subst="sv"/>
         <language value="sw"/>
+        <language value="sw-rKE" subst="sw"/>
         <language value="ta"/>
+        <language value="ta-rIN" subst="ta"/>
         <language value="te"/>
+        <language value="te-rIN" subst="te"/>
         <language value="th"/>
+        <language value="th-rTH" subst="th"/>
         <language value="tl"/>
+        <language value="tl-rPH" subst="tl"/>
         <language value="tr"/>
+        <language value="tr-rTR" subst="tr"/>
+        <language value="ug-rCN"/>
         <language value="uk"/>
+        <language value="uk-rUA" subst="uk"/>
         <language value="ur"/>
+        <language value="ur-rIN" subst="ur"/>
+        <language value="ur-rPK" subst="ur"/>
         <language value="uz"/>
+        <language value="uz-rUZ" subst="uz"/>
         <language value="vi"/>
+        <language value="vi-rVN" subst="vi"/>
         <language value="zh-rCN"/>
+        <language value="zh-rHK"/>
+        <language value="zh-rSG"/>
         <language value="zh-rTW"/>
         <language value="zu"/>
+        <language value="zu-rZA" subst="zu"/>
     </languages>
 </resources>
