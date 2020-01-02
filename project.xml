@@ -2,7 +2,7 @@
 <!--
 ===================================================================
 |                                                                 |
-|                      DIRTY UNICORNS p9x                         |
+|                      DIRTY UNICORNS q10x                         |
 |                                                                 |
 ===================================================================
 -->
@@ -158,6 +158,8 @@
         <skip-string type="string" name="resolver_target_actions_unpin"/>
         <skip-string type="string-array" name="resolver_target_actions_pin_custom"/>
         <skip-string type="string-array" name="resolver_target_actions_unpin_custom"/>
+        <skip-string type="string-array" name="resolver_target_actions"/>
+        <skip-string type="string" name="wfcSpnFormat_spn"/>
     </project>
     <!-- android_frameworks_base_packages_BackupRestoreConfirmation -->
     <project name="android_frameworks_base_packages_BackupRestoreConfirmation" resourceID="frameworks/base/packages/BackupRestoreConfirmation/res/values">
@@ -175,18 +177,28 @@
     <project name="android_frameworks_base_packages_EasterEgg" resourceID="frameworks/base/packages/EasterEgg/res/values">
         <skip-string type="string-array" name="food_intervals"/>
         <skip-string type="string-array" name="food_new_cat_prob"/>
+        <skip-file name="q_puzzles.xml"/>
     </project>
     <!-- android_frameworks_base_packages_ExternalStorageProvider -->
     <project name="android_frameworks_base_packages_ExternalStorageProvider" resourceID="frameworks/base/packages/ExternalStorageProvider/res/values">
     </project>
     <!-- android_frameworks_basepackages_InputDevices -->
-    <project name="android_frameworks_base/InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
+    <project name="android_frameworks_base_InputDevices" resourceID="frameworks/base/packages/InputDevices/res/values">
     </project>
     <!-- android_frameworks_base_packages_keyguard -->
     <project name="android_frameworks_base_packages_keyguard" resourceID="frameworks/base/packages/Keyguard/res/values">
         <skip-file name="donottranslate.xml"/>
         <skip-file name="config.xml"/>
         <skip-string type="string" name="accessibility_ime_switch_button"/>
+    </project>
+    <!-- android_frameworks_base_packages_overlays -->
+    <project name="android_frameworks_base_packages_overlays" resourceID="frameworks/base/packages/overlays/IconShapeRoundedRectOverlay/res/values">
+    </project>
+    <project name="android_frameworks_base_packages_overlays" resourceID="frameworks/base/packages/overlays/IconShapeSquircleOverlay/res/values">
+    </project>
+    <project name="android_frameworks_base_packages_overlays" resourceID="frameworks/base/packages/overlays/IconShapeTeardropOverlay/res/values">
+    </project>
+    <project name="android_frameworks_base_packages_overlays" resourceID="frameworks/base/packages/overlays/IconShapeSquareOverlay/res/values">
     </project>
     <!-- android_frameworks_base_packages_SettingsLib -->
     <project name="android_frameworks_base_packages_SettingsLib" resourceID="frameworks/base/packages/SettingsLib/res/values">
@@ -206,6 +218,7 @@
         <skip-string type="string" name="wifi_security_passpoint"/>
         <skip-string type="string-array" name="tts_rate_values"/>
         <skip-string type="string-array" name="config_hideWhenDisabled_packageNames"/>
+        <skip-string type="string" name="power_remaining_duration_only_short"/>
     </project>
     <!-- android_frameworks_base_packages_SettingsProvider -->
     <project name="android_frameworks_base_SettingsProvider" resourceID="frameworks/base/packages/SettingsProvider/res/values">
@@ -281,6 +294,10 @@
         <skip-string type="string" name="pound_letters"/>
         <skip-string type="string" name="phone_label_with_info"/>
         <skip-string type="string" name="pound_letters"/>
+        <skip-string type="string-array" name="tabs_title"/>
+        <skip-string type="string-array" name="contact_order_entries"/>
+        <skip-string type="string-array" name="tabs_config"/>
+        <skip-string type="string-array" name="contact_order_entry_values"/>
     </project>
     <!-- android_packages_apps_Car_Hvac -->
     <project name="android_packages_apps_Car_Hvac" resourceID="packages/apps/Car/Hvac/res/values">
@@ -339,6 +356,7 @@
     <!-- android_packages_apps_Car_Settings -->
     <project name="android_packages_apps_Car_Settings" resourceID="packages/apps/Car/Settings/res/values">
         <skip-string type="string-array" name="wifi_security_method"/>
+        <skip-file name="config.xml"/>
     </project>
     <!-- android_packages_apps_Car_SystemUpdater -->
     <project name="android_packages_apps_Car_SystemUpdater" resourceID="packages/apps/Car/SystemUpdater/res/values">
@@ -618,6 +636,15 @@
         <skip-string type="string-array" name="systemui_theme_entries"/>
         <skip-string type="string-array" name="dark_ui_mode_entries"/>
         <skip-string type="string" name="packagename_text"/>
+        <skip-string type="string-array" name="swipe_direction_titles"/>
+        <skip-string type="string-array" name="enhanced_4g_lte_mode_title_variant"/>
+        <skip-string type="string-array" name="enhanced_4g_lte_mode_sumary_variant"/>
+        <skip-string type="string" name="wifi_connected_to_message"/>
+        <skip-string type="string" name="wifi_disconnect"/>
+        <skip-string type="string" name="wifi_saved_access_points_tab"/>
+        <skip-string type="string" name="battery_saver_seekbar_title"/>
+        <skip-string type="string-array" name="game_driver_all_apps_preference_values"/>
+        <skip-string type="string-array" name="game_driver_app_preference_values"/>
     </project>
     <!-- android_packages_apps_SettingsIntelligence -->
     <project name="android_packages_apps_SettingsIntelligence" resourceID="packages/apps/SettingsIntelligence/res/values">
@@ -711,6 +738,7 @@
     </project>
     <!-- android_packages_services_Telephony -->
     <project name="android_packages_services_Telephony" resourceID="packages/services/Telephony/res/values">
+        <skip-string type="string-array" name="enhanced_4g_lte_mode_sumary_variant"/>
         <skip-string type="string" name="call_settings_title_font_family"/>
         <skip-string type="string-array" name="sip_call_options_entries"/>
         <skip-string type="string-array" name="sip_call_options_wifi_only_entries"/>
