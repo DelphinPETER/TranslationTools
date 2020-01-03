@@ -389,6 +389,9 @@
         <skip-string type="string" name="app_label"/>
         <skip-string type="string" name="launcher_label"/>
     </project>
+    <!-- android_packages_apps_DU-Themes -->
+    <project name="android_packages_apps_DU-Themes" resourceID="packages/apps/DU-Themes/res/values">
+    </project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
         <skip-string type="string-array" name="advanced_reboot_entries"/>
