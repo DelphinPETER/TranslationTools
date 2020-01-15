@@ -397,6 +397,8 @@
         <skip-string type="string-array" name="adapative_icon_shape_values"/>
         <skip-string type="string-array" name="statusbar_icons_titles"/>
         <skip-string type="string-array" name="statusbar_icons_values"/>
+        <skip-string type="string-array" name="theme_type_titles"/>
+        <skip-string type="string-array" name="theme_type_values"/>
     </project>
     <!-- android_packages_apps_DU-Tweaks -->
     <project name="android_packages_apps_DU-Tweaks" resourceID="packages/apps/DU-Tweaks/res/values">
@@ -481,6 +483,8 @@
         <skip-string type="string" name="qs_set_animation_style"/>
         <skip-string type="string" name="qs_set_animation_duration"/>
         <skip-string type="string" name="qs_set_animation_interpolator"/>
+        <skip-string type="string-array" name="lockscreen_clock_titles"/>
+        <skip-string type="string-array" name="lockscreen_clock_values"/>
     </project>
     <!-- android_packages_apps_DU_Updater -->
     <project name="android_packages_apps_DU_Updater" resourceID="packages/apps/DU-Updater/app/src/main/res/values">
