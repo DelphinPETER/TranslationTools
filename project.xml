@@ -498,6 +498,7 @@
         <skip-string type="string-array" name="skip_direction_values"/>
         <skip-string type="string-array" name="gesture_navbar_handle_entries"/>
         <skip-string type="string-array" name="gesture_navbar_handle_values"/>
+        <skip-string type="string-array" name="battery_percent_entries"/>
     </project>
     <!-- android_packages_apps_DU_Updater -->
     <project name="android_packages_apps_DU_Updater" resourceID="packages/apps/DU-Updater/app/src/main/res/values">
