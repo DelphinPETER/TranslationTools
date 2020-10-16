@@ -2,7 +2,7 @@
 <!--
 ===================================================================
 |                                                                 |
-|                      DIRTY UNICORNS 11                          |
+|                      DIRTY UNICORNS r11x                         |
 |                                                                 |
 ===================================================================
 -->
@@ -223,6 +223,7 @@
     </project>
     <!-- android_frameworks_base_packages_SettingsProvider -->
     <project name="android_frameworks_base_SettingsProvider" resourceID="frameworks/base/packages/SettingsProvider/res/values">
+        <skip-file name="blocked_settings.xml"/>
         <skip-string type="string" name="def_battery_plugged_sound"/>
     </project>
     <!-- android_frameworks_base_packages_Shell -->
@@ -266,6 +267,7 @@
         <skip-string type="string" name="sharedUserId"/>
         <skip-string type="string" name="process"/>
         <skip-string type="string" name="format_progress_text"/>
+        <skip-string type="string" name="exposure_notification_package"/>
     </project>
     <!-- android_packages_apps_Car -->
     <!-- android_packages_apps_Car_Dialer -->
@@ -499,6 +501,7 @@
         <skip-string type="string-array" name="gesture_navbar_handle_entries"/>
         <skip-string type="string-array" name="gesture_navbar_handle_values"/>
         <skip-string type="string-array" name="battery_percent_entries"/>
+        <skip-string type="string-array" name="pulse_color_mode_entries"/>
     </project>
     <!-- android_packages_apps_DU_Updater -->
     <project name="android_packages_apps_DU_Updater" resourceID="packages/apps/DU-Updater/app/src/main/res/values">
@@ -535,6 +538,7 @@
         <skip-string type="string-array" name="pref_homescreen_dt_gestures_names"/>
         <skip-string type="string-array" name="pref_homescreen_notification_gestures_names"/>
         <skip-string type="string-array" name="pref_homescreen_gestures_names"/>
+        <skip-string type="string-array" name="live_wallpapers_remove_sysui_scrims"/>
     </project>
     <!-- android_packages_apps_Launcher3 -->
     <project name="android_packages_apps_Launcher3" resourceID="packages/apps/Launcher3/go/res/values">
@@ -673,6 +677,12 @@
         <skip-string type="string-array" name="game_driver_all_apps_preference_values"/>
         <skip-string type="string-array" name="game_driver_app_preference_values"/>
         <skip-string type="string-array" name="dark_ui_scheduler_preference_titles"/>
+        <skip-string type="string-array" name="rtt_setting_mode"/>
+        <skip-string type="string" name="cell_broadcast_receiver_package"/>
+        <skip-string type="string" name="zen_mode_calls_summary_one"/>
+        <skip-string type="string-array" name="graphics_driver_all_apps_preference_values"/>
+        <skip-string type="string-array" name="graphics_driver_app_preference_values"/>
+        <skip-string type="string" name="platform_compat_target_sdk_title"/>
     </project>
     <!-- android_packages_apps_SettingsIntelligence -->
     <project name="android_packages_apps_SettingsIntelligence" resourceID="packages/apps/SettingsIntelligence/res/values">
